@@ -31,16 +31,29 @@
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-    <div class="container">
-        <a href="" class="navbar-brand p-0">
-            <h1 class="text-primary m-0 text-center m-4" >P.K.M Catering</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
-        </a><br>
-        <h1 class="text-center">Orders</h1>
+    <div class="container-fluid position-relative mt-3 p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0">P.K.M Catering</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                   
+                </div>
+                <a href="book.html" class="btn btn-primary py-2 px-4">LOG OUT</a>
+            </div>
+        </nav>
+
     </div>
-    <div class="container orders">
+    
+    <div class="container order">
            <div class="m-4 neworder">
             <h3 class="m-4 white">New Order</h3>
             <a href="#" class="view">VIEW ORDER</a>

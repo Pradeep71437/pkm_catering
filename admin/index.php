@@ -1,7 +1,7 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "pkm_catering");
 
-$result = mysqli_query($conn, "SELECT * FROM order_details");
+$result = mysqli_query($conn, "SELECT * FROM orders");
 ?>
 
 
@@ -38,6 +38,7 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
    <link rel="stylesheet" href="../css/style2.css">
+   <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <div class="container">
@@ -54,7 +55,10 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
             ?>
            <div class="m-4 container neworder ">
             <h3 class="m-4 white">New Order: <span> <?= $row['id'] ?></span></h3>
+            <div class="opt">
+            <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
             <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>
+        </div>
            </div>
            <?php
         }
