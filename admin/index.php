@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// Check if the user is not logged in
+if (!isset($_SESSION['admin_username'])) {
+    // Redirect the user to the login page
+    header("Location: ../index.html");
+    exit(); // Make sure to stop execution after redirecting
+}
 $conn = mysqli_connect("localhost", "root", "", "pkm_catering");
 
 $result = mysqli_query($conn, "SELECT * FROM orders");
