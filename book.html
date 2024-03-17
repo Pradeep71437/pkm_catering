@@ -163,8 +163,11 @@
         
                         <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
                             <div class="row">
-                                <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox" style="color: black;"> Select All</li> 
-
+                                <!-- <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox" style="color: black;"> Select All</li>  -->
+                                <li class="px-3 m-2">
+                                    <input type="checkbox" style="color: black;" id="select-all" class="select-all" onchange="checkAll(this)" /> 
+                                    <label for="select-all">Select All</label>
+                                </li>
                                 <div class="col-sm-4">
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybag[]" value="Laddu"> Laddu</li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybag[]" value="Mysorepak"> Mysorepak</li>
@@ -202,8 +205,10 @@
         
                         <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
                             <div class="row">
-                                <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox2" style="color: black;"> Select All</li> 
-
+                                <li class="px-3 m-2">
+                                    <input type="checkbox" style="color: black;" id="select-all" class="select-all" onchange="checkAll(this)" /> 
+                                    <label for="select-all">Select All</label>
+                                </li>
                                 <div class="col-sm-6">
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Laddu"> Laddu</li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Badusha"> Badusha</li>
@@ -230,8 +235,10 @@
         
                         <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
                             <div class="row">
-                                <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox3" style="color: black;"> Select All</li> 
-
+                                <li class="px-3 m-2">
+                                    <input type="checkbox" style="color: black;" id="select-all" class="select-all" onchange="checkAll(this)" /> 
+                                    <label for="select-all">Select All</label>
+                                </li>
                                 <div class="col-sm-6">
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagcookie[]" value="Laddu"> Laddu</li>
                                    
@@ -260,8 +267,10 @@
         
                         <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
                             <div class="row">
-                                <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox4" style="color: black;"> Select All</li> 
-
+                                <li class="px-3 m-2">
+                                    <input type="checkbox" style="color: black;" id="select-all" class="select-all" onchange="checkAll(this)" /> 
+                                    <label for="select-all">Select All</label>
+                                </li>
                                 <div class="col-sm-6">
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Pineapple Pudding"> Pineapple Pudding (பைனாப்பிள் புட்டிங்)</li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Aval Kesari"> Aval Kesari (அவல் கேசரி)</li>
@@ -293,19 +302,43 @@
         
                         <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
                             <div class="row">
-                                <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox5" style="color: black;"> Select All</li> 
+                                <li class="px-3 m-2">
+                                    <input type="checkbox" style="color: black;" id="select-all" class="select-all" onchange="checkAll(this)" /> 
+                                    <label for="select-all">Select All</label>
+                                </li>
+                                <div class="col-sm-4">
+                                    <h6 class="px-3">SWEETS</h6>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="மைசூர் பாக்"> மைசூர் பாக்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="ஜாங்கிரி"> ஜாங்கிரி</li>
 
-                                <div class="col-sm-4">
-                                    <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                                 <div class="col-sm-4">
-                                    <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <h6 class="px-3">SIDE DISH</h6>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="தயிர் பச்சடி"> தயிர் பச்சடி</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="கத்திரிக்காய் கூட்டு"> கத்திரிக்காய் கூட்டு</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="சௌ சௌ கூட்டு"> சௌ சௌ கூட்டு</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="வெண்டைக்காய் பொறியல்"> வெண்டைக்காய் பொறியல்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="சேனை ரோஸ்ட்"> சேனை ரோஸ்ட்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="அவரைக்காய் பொறியல்"> அவரைக்காய் பொறியல்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="கோஸ் பட்டாணி பொறியல்"> கோஸ் பட்டாணி பொறியல்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="வாழை சிப்ஸ்"> வாழை சிப்ஸ்</li>
+
+
+
                                     </div>
                                 <div class="col-sm-4">
-                                    <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <h6 class="px-3">MAIN DISH</h6>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> நெய் & பருப்பு</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="சாம்பார்  வடை"> சாம்பார்  வடை</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="ரச வடை"> ரச வடை</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="சாம்பார்"> சாம்பார்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="ரசம்"> ரசம்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="பால் பாயாசம்"> பால் பாயாசம்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="தயிர்"> தயிர்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="ஊறுகாய்"> ஊறுகாய்</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="அப்பளம்"> அப்பளம்</li>
+
+
                                     </div>
                             </div>
                         </ul>
@@ -886,49 +919,8 @@ window.addEventListener('click', function(event) {
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script>
-        function checkAll(myCheckbox) {
-    var checkboxes = myCheckbox.parentNode.parentNode.querySelectorAll(".dropdown-menu input[type='checkbox']");
-    checkboxes.forEach(function(checkbox) {
-        checkbox.checked = myCheckbox.checked;
-    });
-}
-    </script>
-    <script>
-        // Function to handle "Select All" checkbox
-        document.getElementById("selectAllCheckbox").addEventListener("change", function() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="carrybag[]"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = document.getElementById("selectAllCheckbox").checked;
-            });
-        });
-
-
-
-        document.getElementById("selectAllCheckbox2").addEventListener("change", function() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="carrybagsweat[]"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = document.getElementById("selectAllCheckbox2").checked;
-            });
-        });
-
-        document.getElementById("selectAllCheckbox3").addEventListener("change", function() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="carrybagcookie[]"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = document.getElementById("selectAllCheckbox3").checked;
-            });
-        });
-
-
-        document.getElementById("selectAllCheckbox4").addEventListener("change", function() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="firdaymor[]"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = document.getElementById("selectAllCheckbox4").checked;
-            });
-        });
-
-       
-    </script>
+ 
+    <script src="js/selector.js"></script>
     
     <!-- Template Javascript --> 
     <script src="js/main.js"></script>
