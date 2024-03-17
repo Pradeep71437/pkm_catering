@@ -2,35 +2,6 @@
 $connection = mysqli_connect("localhost", "root", "");
 $db = mysqli_select_db($connection, "pkm_catering");
 
-// if(isset($_POST['submit'])) {
-//     $uname = mysqli_real_escape_string($connection, $_POST['uname']);
-//     $unumber = mysqli_real_escape_string($connection, $_POST['unumber']);
-//     $umail = mysqli_real_escape_string($connection, $_POST['umail']);
-//     $ucity = mysqli_real_escape_string($connection, $_POST['ucity']);
-//     $udate = mysqli_real_escape_string($connection, $_POST['udate']);
-//     $uguests = mysqli_real_escape_string($connection, $_POST['uguests']);
-
-//     // Check if the checkboxes are set before serializing
-//     $breakfast = isset($_POST['breakfast']) ? serialize($_POST['breakfast']) : '';
-//     $lunch = isset($_POST['lunch']) ? serialize($_POST['lunch']) : '';
-//     $dinner = isset($_POST['dinner']) ? serialize($_POST['dinner']) : '';
-
-//     $query = "INSERT INTO orders VALUES (null, '$uname', '$unumber', '$umail', '$ucity', '$udate', '$uguests', '$breakfast', '$lunch', '$dinner')";
-    
-//     $result = mysqli_query($connection, $query);
-
-//     if($result) {
-//         echo "<script type='text/javascript'>
-//               alert('Order submitted successfully...'); 
-//               window.location.href = 'book.html';
-//               </script>";
-//     } else {
-//         echo "<script type='text/javascript'>
-//               alert('Error... Please try again.'); 
-//               window.location.href = 'index.html';
-//               </script>";
-//     }
-// }
 
 if(isset($_POST['submit'])) {
     $uname = mysqli_real_escape_string($connection, $_POST['uname']);
@@ -77,14 +48,14 @@ if(isset($_POST['submit'])) {
     $firdaysnack = isset($_POST['firdaysnack']) ? serialize($_POST['firdaysnack']) : '';
     $firdaydinner = isset($_POST['firdaydinner']) ? serialize($_POST['firdaydinner']) : '';
     $secdaymor = isset($_POST['secdaymor']) ? serialize($_POST['secdaymor']) : '';
-    $secdayafter = isset($_POST['secdayafter']) ? serialize($_POST['secdayafter']) : '';
+    $secdayaft = isset($_POST['secdayaft']) ? serialize($_POST['secdayaft']) : '';
     $secdayeve = isset($_POST['secdayeve']) ? serialize($_POST['secdayeve']) : '';
     $secdaydinner = isset($_POST['secdaydinner']) ? serialize($_POST['secdaydinner']) : '';
     $guestfood = isset($_POST['guestfood']) ? serialize($_POST['guestfood']) : '';
     $packetfood = isset($_POST['packetfood']) ? serialize($_POST['packetfood']) : '';
 
 
-    $query = "INSERT INTO order_details VALUES (null, '$uname', '$unumber', '$uemail', '$ucity', '$usdate', '$uedate', '$upartydetails', '$uhalldetails', '$malaifirday', '$wedmalaiset', '$kasiyathiraiset', '$samangalset', '$wedplateset', '$toiletset', '$vedicset', '$carrybag', '$carrybagcou', '$carrybagweat', '$carrybagsweatcou', '$carrybagcookie', '$carrybagcookiecou', '$firdaymor', '$firdaymorcou', ' $firdayaft', '$firdayaftcou', '$firdayeve', '$firdayevecou', '$firdaycooldrink', '$firdaycooldrinkcou', '$firdaysnack', '$firdaysnackcou', '$firdaydinner', '$firdaydinnercou', '$secdaymor', '$secdaymorcou', ' $secdayafter', '$secdayaftercou', '$secdayeve', '$secdayevecou', '$secdaydinner', '$secdaydinnercou', '$guestfood', '$guestfoodcou', '$packetfood', '$packetfoodcou')";
+    $query = "INSERT INTO order_details VALUES (null, '$uname', '$unumber', '$uemail', '$ucity', '$usdate', '$uedate', '$upartydetails', '$uhalldetails', '$malaifirday', '$wedmalaiset', '$kasiyathiraiset', '$samangalset', '$wedplateset', '$toiletset', '$vedicset', '$carrybag', '$carrybagcou', '$carrybagweat', '$carrybagsweatcou', '$carrybagcookie', '$carrybagcookiecou', '$firdaymor', '$firdaymorcou', ' $firdayaft', '$firdayaftcou', '$firdayeve', '$firdayevecou', '$firdaycooldrink', '$firdaycooldrinkcou', '$firdaysnack', '$firdaysnackcou', '$firdaydinner', '$firdaydinnercou', '$secdaymor', '$secdaymorcou', ' $secdayaft', '$secdayaftercou', '$secdayeve', '$secdayevecou', '$secdaydinner', '$secdaydinnercou', '$guestfood', '$guestfoodcou', '$packetfood', '$packetfoodcou')";
     
     $result = mysqli_query($connection, $query);
 
