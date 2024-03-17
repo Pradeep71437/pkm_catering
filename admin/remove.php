@@ -8,7 +8,7 @@ if(isset($_GET['remove_id']) && is_numeric($_GET['remove_id'])) {
     $remove_id = mysqli_real_escape_string($conn, $_GET['remove_id']);
 
     // Prepare the SQL query to delete the order with the given ID
-    $delete_query = "DELETE FROM orders WHERE id = $remove_id";
+    $delete_query = "DELETE FROM order_details WHERE id = $remove_id";
 
     // Execute the delete query
     if(mysqli_query($conn, $delete_query)) {

@@ -9,7 +9,7 @@ if (!isset($_SESSION['admin_username'])) {
 }
 $conn = mysqli_connect("localhost", "root", "", "pkm_catering");
 
-$result = mysqli_query($conn, "SELECT * FROM orders");
+$result = mysqli_query($conn, "SELECT * FROM order_details");
 ?>
 
 
