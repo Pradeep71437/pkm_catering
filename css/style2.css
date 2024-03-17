@@ -22,11 +22,25 @@
     border-radius: 24px;
     border: 1px solid #FEA116;
     width: 500px;
+    height: 500px;
+    overflow: scroll;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(255, 211, 14, 0.2), 0 6px 20px 0 rgba(248, 190, 0, 0.19);
 
 }
+.menu-card::-webkit-scrollbar {
+  width: 4px; /* Change the width of the scrollbar */
+  /* margin: 30px; */
+}
 
+.menu-card::-webkit-scrollbar-track {
+  display: none;
+}
+
+.menu-card::-webkit-scrollbar-thumb {
+  background: #FEA116; /* Change the color of the scrollbar thumb */
+  border-radius: 4px; /* Optional: Round the corners of the scrollbar thumb */
+}
 
 .popup {
     display: none;
