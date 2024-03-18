@@ -21,13 +21,13 @@ if (isset($_GET['id'])) {
     $carrybagweat = isset($row['carrybagweat']) ? unserialize($row['carrybagweat']) : [];
     $carrybagcookie = isset($row['carrybagcookie']) ? unserialize($row['carrybagcookie']) : [];
     $firdaymor = isset($row['firdaymor']) ? unserialize($row['firdaymor']) : [];
-    $firdayaft = isset($row['firdayaft']) ? unserialize($row['firdayaft']) : [];
+    $dayfirafter = isset($row['fir_day_after']) ? unserialize($row['fir_day_after']) : [];
     $firdayeve = isset($row['firdayeve']) ? unserialize($row['firdayeve']) : [];
-    $firdaycooldrink = isset($row['firdaycooldrink']) ? unserialize($row['firdaycooldrink']) : [];
+    $firdaydrink = isset($row['firdaydrink']) ? unserialize($row['firdaydrink']) : [];
     $firdaysnack = isset($row['firdaysnack']) ? unserialize($row['firdaysnack']) : [];
     $firdaydinner = isset($row['firdaydinner']) ? unserialize($row['firdaydinner']) : [];
     $secdaymor = isset($row['secdaymor']) ? unserialize($row['secdaymor']) : [];
-    $secdayaft = isset($row['secdayafter']) ? unserialize($row['secdayafter']) : [];
+    $daysecafter = isset($row['sec_day_after']) ? unserialize($row['sec_day_after']) : [];
     $secdayeve = isset($row['secdayeve']) ? unserialize($row['secdayeve']) : [];
     $secdaydinner = isset($row['secdaydinner']) ? unserialize($row['secdaydinner']) : [];
     $guestfood = isset($row['guestfood']) ? unserialize($row['guestfood']) : [];
@@ -101,12 +101,18 @@ if (isset($_GET['id'])) {
         
         color: black
     }
-    table,input{
+    table input{
         width: 100px;
         align-items: center;
         justify-content: center;
+        border: white;
+        text-align: center;
     }
-
+    #cou{
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
     </style>
     <div class="container orders-table">
 
@@ -120,14 +126,14 @@ if (isset($_GET['id'])) {
             <tr>
                 <th style="color: black">Customer Name :</th>
                 <td><?= $row['uname'] ?></td>
-                <td></td>
+                <td id="cou"></td>
                 <td id="amount"></td>
             </tr>
 
             <tr>
             <th style="color: black">Customer Mobile :</th>
             <td><?= $row['unumber'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td ></td>
 
             </tr>
@@ -135,7 +141,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Customer E-Mail :</th>
             <td><?= $row['uemail'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -143,7 +149,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Customer City :</th>
             <td><?= $row['ucity'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -151,7 +157,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Event Starting Date :</th>
             <td><?= $row['usdate'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -159,7 +165,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Event Ending Date :</th>
             <td><?= $row['uedate'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -167,7 +173,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Party Details :</th>
             <td><?= $row['upartydetails'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -175,7 +181,7 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Mandapam Details :</th>
             <td><?= $row['uhalldetails'] ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td></td>
 
             </tr>
@@ -183,49 +189,49 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">புஷ்பம், மாலைகள் ஜானவாசம்</th>
             <td id="deatils"><?php echo !empty($malaifirday) ? implode(', ', $malaifirday) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f1"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">முகூர்த்தம்</th>
             <td><?php echo !empty($wedmalaiset) ? implode(', ', $wedmalaiset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f2"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">காசியாத்திரை செட்</th>
             <td><?php echo !empty($kasiyathiraiset) ? implode(', ', $kasiyathiraiset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f3"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">ஷேம தண்டல சாமான்கள்</th>
             <td><?php echo !empty($samangalset) ? implode(', ', $samangalset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f4"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">நிச்சயதார்த்த தட்டுகள்</th>
             <td><?php echo !empty($wedplateset) ? implode(', ', $wedplateset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f5"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">TOILET SET (with Plastic Tray)</th>
             <td><?php echo !empty($toiletset) ? implode(', ', $toiletset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f6"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">வைதீக சாமான்கள்</th>
             <td><?php echo !empty($vedicset) ? implode(', ', $vedicset) : ''; ?></td>
-            <td></td>
+            <td id="cou"></td>
             <td><input placeholder="Amount" type="number" id="f7"  oninput="calculateTotal()" required></td>
             </tr>
 
@@ -233,49 +239,109 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">விரத பட்சணங்கள்</th>
             <td><?php echo !empty($carrybag) ? implode(', ', $carrybag) : ''; ?></td>
-            <td><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
+            <td id="cou"><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
             <td><input placeholder="Amount" type="number" id="f8"  oninput="calculateTotal()" required></td>
             </tr>
             
             <tr>
             <th style="color: black">ஸ்வீட் பாக்ஸ்</th>
             <td><?php echo !empty($carrybagweat) ? implode(', ', $carrybagweat) : ''; ?></td>
-            <td><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
+            <td id="cou"><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
             <td><input placeholder="Amount" type="number" id="f9"  oninput="calculateTotal()" required></td>
             </tr>
             
             <tr>
             <th style="color: black">பணியாரக்காய்கள்</th>
             <td><?php echo !empty($carrybagcookie) ? implode(', ', $carrybagcookie) : ''; ?></td>
-            <td><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
+            <td id="cou"><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
             <td><input placeholder="Amount" type="number" id="f10"  oninput="calculateTotal()" required></td>
             </tr>
             
             <tr>
                 <th style="color: black">ஜானவாசம் காலை டிபன்</th>
                 <td><?php echo !empty($firdaymor) ? implode(', ', $firdaymor) : ''; ?></td>
-                <td><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
+                <td id="cou"><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
                 <td><input placeholder="Amount" type="number" id="f11" oninput="calculateTotal()" required></td>
             </tr>
 
 
             <tr>
-            <th style="color: black">ஜானவாசம் காலை டிபன்</th>
-            <td><?php echo !empty($firdayeve) ? implode(', ', $firdayeve) : ''; ?></td>
-            <td><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f11"  oninput="calculateTotal()" required></td>
+            <th style="color: black">ஜானவாசம் சாப்பாடு</th>
+            <td><?php echo !empty($dayfirafter) ? implode(', ', $dayfirafter) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdayaftcou']) ? $row['firdayaftcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
-            <th style="color: black">ஜானவாசம் காலை டிபன்</th>
-            <td><?php echo !empty($firdayaft) ? implode(', ', $firdayaft) : ''; ?></td>
-            <td><?= !empty($row['firdayaftcou']) ? $row['firdayaftcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f11"  oninput="calculateTotal()" required></td>
+            <th style="color: black">ஜானவாசம் மாலை டிபன்</th>
+            <td><?php echo !empty($firdayeve) ? implode(', ', $firdayeve) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f13"  oninput="calculateTotal()" required></td>
             </tr>
             
+            <tr>
+            <th style="color: black">பிரெஷ் ஜூஸ்</th>
+            <td><?php echo !empty($firdaydrink) ? implode(', ', $firdaydrink) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f14"  oninput="calculateTotal()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">சாட்ஸ்</th>
+            <td><?php echo !empty($firdaysnack) ? implode(', ', $firdaysnack) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f15"  oninput="calculateTotal()" required></td>
+            </tr>
 
+            <tr>
+            <th style="color: black">ஸ்பெஷல் டின்னர்</th>
+            <td><?php echo !empty($firdaydinner) ? implode(', ', $firdaydinner) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f16"  oninput="calculateTotal()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் காலை டிபன்</th>
+            <td><?php echo !empty($secdaymor) ? implode(', ', $secdaymor) : ''; ?></td>
+            <td id="cou"><?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f17"  oninput="calculateTotal()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் சாப்பாடு</th>
+            <td><?php echo !empty($daysecafter) ? implode(', ', $daysecafter) : ''; ?></td>
+            <td id="cou"><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f18"  oninput="calculateTotal()" required></td>
+            </tr>
             
-            
+            <tr>
+            <th style="color: black">முகூர்த்தம் மாலை ஸ்நாக்ஸ்</th>
+            <td><?php echo !empty($secdayeve) ? implode(', ', $secdayeve) : ''; ?></td>
+            <td id="cou"><?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f19"  oninput="calculateTotal()" required></td>
+            </tr> 
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் டின்னர்</th>
+            <td><?php echo !empty($secdaydinner) ? implode(', ', $secdaydinner) : ''; ?></td>
+            <td id="cou"><?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f20"  oninput="calculateTotal()" required></td>
+            </tr>
+                        
+            <tr>
+            <th style="color: black">சம்மந்தி விருந்து</th>
+            <td><?php echo !empty($guestfood) ? implode(', ', $guestfood) : ''; ?></td>
+            <td id="cou"><?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f21"  oninput="calculateTotal()" required></td>
+            </tr>
+                        
+            <tr>
+            <th style="color: black">Packet food</th>
+            <td><?php echo !empty($packetfood) ? implode(', ', $packetfood) : ''; ?></td>
+            <td id="cou"><?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f22"  oninput="calculateTotal()" required></td>
+            </tr>
+    
             <tr>
                 <th></th>
                 <td></td>
@@ -291,6 +357,184 @@ if (isset($_GET['id'])) {
         </div>
      
     </div>
+    <div class="container justify-content-center align-items-center">
+        <table class="table table-bordered" id="pdfTable2" style="width: 300px;height:fit-content;"> 
+            <tr class="text-primary">
+                <th class="text-primary text-center" style="width : 150px;">Title</th>
+                <td class="text-primary text-center">Rate</td>
+                <td class="text-primary text-center">Count</td>
+                <td class="text-primary text-center">Amount</td>
+            </tr>
+
+            <tr>
+            <th style="color: black">புஷ்பம், மாலைகள் ஜானவாசம்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t1"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">முகூர்த்தம்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t2"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">காசியாத்திரை செட்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t3"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">ஷேம தண்டல சாமான்கள்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t4"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">நிச்சயதார்த்த தட்டுகள்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t5"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">TOILET SET (with Plastic Tray)</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t6"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">வைதீக சாமான்கள்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"></td>
+            <td><input placeholder="Amount" type="number" id="t7"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <!-- long and count -->
+            <tr>
+            <th style="color: black">விரத பட்சணங்கள்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
+            <td><input placeholder="Amount" type="number" id="t8"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">ஸ்வீட் பாக்ஸ்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
+            <td><input placeholder="Amount" type="number" id="t9"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">பணியாரக்காய்கள்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
+            <td><input placeholder="Amount" type="number" id="t10"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+                <th style="color: black">ஜானவாசம் காலை டிபன்</th>
+                <td><input placeholder="Amount" type="number" required></td>
+                <td id="cou"><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
+                <td><input placeholder="Amount" type="number" id="t11" oninput="calculateTotal1()" required></td>
+            </tr>
+
+
+            <tr>
+            <th style="color: black">ஜானவாசம் சாப்பாடு</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['firdayaftcou']) ? $row['firdayaftcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t12"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">ஜானவாசம் மாலை டிபன்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t13"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">பிரெஷ் ஜூஸ்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t14"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">சாட்ஸ்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t15"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">ஸ்பெஷல் டின்னர்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t16"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் காலை டிபன்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t17"  oninput="calculateTotal1()" required></td>
+            </tr>
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் சாப்பாடு</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t18"  oninput="calculateTotal1()" required></td>
+            </tr>
+            
+            <tr>
+            <th style="color: black">முகூர்த்தம் மாலை ஸ்நாக்ஸ்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t19"  oninput="calculateTotal1()" required></td>
+            </tr> 
+
+            <tr>
+            <th style="color: black">முகூர்த்தம் டின்னர்</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t20"  oninput="calculateTotal1()" required></td>
+            </tr>
+                        
+            <tr>
+            <th style="color: black">சம்மந்தி விருந்து</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t21"  oninput="calculateTotal1()" required></td>
+            </tr>
+                        
+            <tr>
+            <th style="color: black">Packet food</th>
+            <td><input placeholder="Amount" type="number" required></td>
+            <td id="cou"><?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="t22"  oninput="calculateTotal1()" required></td>
+            </tr>
+    
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td>
+                    Total: ₹ <span id="total1" style="color: green"></span>
+                </td>
+            </tr>
+        </table>
+        <div class="download text-center p-3">
+            <button id="downloadButton" onclick="downloadPDF2()" class="btn btn-warning">Download</button>
+        </div>
+    </div>
 </body>
 
 <script>
@@ -303,7 +547,19 @@ function downloadPDF() {
             filename: 'order_details.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: '' }
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+        });
+    }
+
+    function downloadPDF2() {
+        var element = document.getElementById('pdfTable2');
+
+        html2pdf(element, {
+            margin: 1,
+            filename: 'order_details.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
         });
     }
 
@@ -315,12 +571,24 @@ function calculateTotal() {
             var total = 0;
 
     // Iterate over input fields and calculate total
-    for (var i = 1; i <= 11; i++) {
+    for (var i = 1; i <= 22; i++) {
         var fieldValue = document.getElementById("f" + i).valueAsNumber || 0;
         total += fieldValue;
     }
         document.getElementById("total").textContent = total;
     }
+
+function calculateTotal1() {
+
+var total = 0;
+
+// Iterate over input fields and calculate total
+for (var i = 1; i <= 22; i++) {
+var fieldValue = document.getElementById("t" + i).valueAsNumber || 0;
+total += fieldValue;
+}
+document.getElementById("total1").textContent = total;
+}
 
 </script>
 </html>

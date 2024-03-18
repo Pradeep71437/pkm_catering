@@ -62,7 +62,7 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
         while ($row = mysqli_fetch_assoc($result)) {
             ?>
            <div class="m-4 container neworder ">
-            <h3 class="m-4 white">New Order: <span> <?= $row['id'] ?></span></h3>
+            <h3 class="m-4 white">New Order: <span> <?= $row['id'] ?>(<?= $row['uname'] ?>)</span></h3>
             <div class="opt">
             <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
             <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>

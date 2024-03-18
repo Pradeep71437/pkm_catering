@@ -205,14 +205,14 @@
                                 <li class="px-3 m-2 text-center"> <input type="checkbox" id="selectAllCheckbox2" style="color: black;"> Select All</li> 
 
                                 <div class="col-sm-6">
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Laddu"> Laddu</li>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Badusha"> Badusha</li>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Milk Cake"> Milk Cake</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagweat[]" value="Laddu"> Laddu</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagweat[]" value="Badusha"> Badusha</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagweat[]" value="Milk Cake"> Milk Cake</li>
 
                                 </div>
                                 <div class="col-sm-6">
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Bournvita Cake"> Bournvita Cake</li>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagsweat[]" value="Mixture"> Mixture</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagweat[]" value="Bournvita Cake"> Bournvita Cake</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="carrybagweat[]" value="Mixture"> Mixture</li>
 
                                 </div>
                                 
@@ -297,15 +297,15 @@
 
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="dayfirafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="dayfirafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdayaft[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="dayfirafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                             </div>
                         </ul>
@@ -353,8 +353,9 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaycooldrink" value="Ashoka alwa"> Ashoka alwa</li>
-                                   </div>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaydrink[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaydrink[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                </div>
                             </div>
                         </ul>
                     </div>
@@ -452,15 +453,15 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="secdayafter[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="daysecafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="secdayafter[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="daysecafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                                 <div class="col-sm-4">
                                     <h6 class="px-3">CATEGORY 1</h6>
-                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="secdayafter[]" value="Ashoka alwa"> Ashoka alwa</li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="daysecafter[]" value="Ashoka alwa"> Ashoka alwa</li>
                                     </div>
                             </div>
                         </ul>
@@ -906,7 +907,7 @@ window.addEventListener('click', function(event) {
 
 
         document.getElementById("selectAllCheckbox2").addEventListener("change", function() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="carrybagsweat[]"]');
+            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="carrybagweater[]"]');
             checkboxes.forEach(function(checkbox) {
                 checkbox.checked = document.getElementById("selectAllCheckbox2").checked;
             });
