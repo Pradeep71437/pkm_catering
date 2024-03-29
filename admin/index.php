@@ -18,7 +18,7 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>P.K.M Catering</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

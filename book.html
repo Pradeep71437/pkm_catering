@@ -128,6 +128,40 @@
         </div>
         <h4>Order Details:</h4>
         <div class="row m-3">
+            <div class="col-sm-12">
+                <label for="daysno" class="mx-3"><b>Total Days</b></label>
+                <select class="form-control m-3" id="daysno" name="usday" onchange="updateTabs()">
+                    <option value="" disabled selected>Select Days</option>
+
+                    <option value="1">1 Day</option>
+                    <option value="2">2 Days</option>
+                    <option value="3">3 Days</option>
+                    <option value="more_than_3">More Than 3 Days</option>
+                </select>
+                
+            </div>
+            <script>
+                function updateTabs() {
+                    var days = document.getElementById("daysno").value;
+                    var tab1 = document.getElementById("tab1").value;
+                    var tab2 = document.getElementById("tab2").value;
+                    var tab3 = document.getElementById("tab3").value;
+            
+                    // Hide all tabs
+                    tab1.style.display = "none";
+                    tab2.style.display = "none";
+                    tab3.style.display = "none";
+            
+                    // Show respective tab based on selected days
+                    if (days === "1") {
+                        tab1.style.display = "block";
+                    } else if (days === "2") {
+                        tab2.style.display = "block";
+                    } else if (days === "3" || days === "more_than_3") {
+                        tab3.style.display = "block";
+                    }
+                }
+            </script>
             <div class="col-md-6">
                 <label for="date" class="mx-3"><b>Event Strating Date</b></label>
                 <input type="date" class="form-control m-3" id="date" name="usdate">
@@ -146,6 +180,9 @@
             </div>
 
         </div>
+
+     
+        <div class="tab1" id="tab1" style="display: none;">
         <h5 class="text-center mt-4">Food Details:</h5>
         <p class="text-center">Please select the required food items!</p>
         <div class="row m-3">
@@ -709,7 +746,6 @@
         </div>
 
 
-
         <h5 class="text-center mt-5">Required Items Details:</h5>
         <p class="text-center">Please select the required items!</p>
         <div class="row m-3">
@@ -927,8 +963,10 @@
            
            </div>
             
+        </div>
 
-
+        <div class="tab2" id="tab2" style="display: none;"></div>
+        <div class="tab3" id="tab3" style="display: none;"></div>
 
 
 
@@ -1088,6 +1126,28 @@ window.addEventListener('click', function(event) {
         });
 
        
+    </script>
+    <script>
+        function updateTabs() {
+            var days = document.getElementById("daysno").value;
+            var tab1 = document.querySelector(".tab1");
+            var tab2 = document.querySelector(".tab2");
+            var tab3 = document.querySelector(".tab3");
+    
+            // Hide all tabs
+            tab1.style.display = "none";
+            tab2.style.display = "none";
+            tab3.style.display = "none";
+    
+            // Show respective tab based on selected days
+            if (days === "1") {
+                tab1.style.display = "block";
+            } else if (days === "2") {
+                tab2.style.display = "block";
+            } else if (days === "3" || days === "more_than_3") {
+                tab3.style.display = "block";
+            }
+        }
     </script>
     
     <!-- Template Javascript --> 
