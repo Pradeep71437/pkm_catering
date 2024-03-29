@@ -38,11 +38,13 @@ if(isset($_POST['submit'])) {
     $toiletset = isset($_POST['toiletset']) ? serialize($_POST['toiletset']) : '';
     $vedicset = isset($_POST['vedicset']) ? serialize($_POST['vedicset']) : '';
     // long data with count
+    //1.d.ayfirafter
     $carrybag = isset($_POST['carrybag']) ? serialize($_POST['carrybag']) : '';
     $carrybagweat = isset($_POST['carrybagweat']) ? serialize($_POST['carrybagweat']) : '';
     $carrybagcookie = isset($_POST['carrybagcookie']) ? serialize($_POST['carrybagcookie']) : '';
     $firdaymor = isset($_POST['firdaymor']) ? serialize($_POST['firdaymor']) : '';
-    $dayfirafter = isset($_POST['dayfirafter']) ? serialize($_POST['dayfirafter']) : '';
+    // $fir_day_after = isset($_POST['fir_day_after']) ? serialize($_POST['fir_day_after']) : '';
+    $fir_day_after = isset($_POST['fir_day_after']) ? serialize($_POST['fir_day_after']) : '';
     $firdayeve = isset($_POST['firdayeve']) ? serialize($_POST['firdayeve']) : '';
     $firdaydrink = isset($_POST['firdaydrink']) ? serialize($_POST['firdaydrink']) : '';
     $firdaysnack = isset($_POST['firdaysnack']) ? serialize($_POST['firdaysnack']) : '';
@@ -53,9 +55,9 @@ if(isset($_POST['submit'])) {
     $secdaydinner = isset($_POST['secdaydinner']) ? serialize($_POST['secdaydinner']) : '';
     $guestfood = isset($_POST['guestfood']) ? serialize($_POST['guestfood']) : '';
     $packetfood = isset($_POST['packetfood']) ? serialize($_POST['packetfood']) : '';
+    
 
-
-    $query = "INSERT INTO order_details VALUES (null, '$uname', '$unumber', '$uemail', '$ucity', '$usdate', '$uedate', '$upartydetails', '$uhalldetails', '$malaifirday', '$wedmalaiset', '$kasiyathiraiset', '$samangalset', '$wedplateset', '$toiletset', '$vedicset', '$carrybag', '$carrybagcou', '$carrybagweat', '$carrybagsweatcou', '$carrybagcookie', '$carrybagcookiecou', '$firdaymor', '$firdaymorcou', ' $dayfirafter', '$firdayaftcou', '$firdayeve', '$firdayevecou', '$firdaydrink', '$firdaycooldrinkcou', '$firdaysnack', '$firdaysnackcou', '$firdaydinner', '$firdaydinnercou', '$secdaymor', '$secdaymorcou', ' $daysecafter', '$secdayaftercou', '$secdayeve', '$secdayevecou', '$secdaydinner', '$secdaydinnercou', '$guestfood', '$guestfoodcou', '$packetfood', '$packetfoodcou')";
+    $query = "INSERT INTO order_details VALUES (null, '$uname', '$unumber', '$uemail', '$ucity', '$usdate', '$uedate', '$upartydetails', '$uhalldetails', '$malaifirday', '$wedmalaiset', '$kasiyathiraiset', '$samangalset', '$wedplateset', '$toiletset', '$vedicset', '$carrybag', '$carrybagcou', '$carrybagweat', '$carrybagsweatcou', '$carrybagcookie', '$carrybagcookiecou', '$firdaymor', '$firdaymorcou', ' $fir_day_after', '$firdayaftcou', '$firdayeve', '$firdayevecou', '$firdaydrink', '$firdaycooldrinkcou', '$firdaysnack', '$firdaysnackcou', '$firdaydinner', '$firdaydinnercou', '$secdaymor', '$secdaymorcou', ' $daysecafter', '$secdayaftercou', '$secdayeve', '$secdayevecou', '$secdaydinner', '$secdaydinnercou', '$guestfood', '$guestfoodcou', '$packetfood', '$packetfoodcou')";
     
     $result = mysqli_query($connection, $query);
 

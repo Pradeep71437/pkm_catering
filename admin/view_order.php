@@ -21,7 +21,7 @@ if (isset($_GET['id'])) {
     $carrybagweat = isset($row['carrybagweat']) ? unserialize($row['carrybagweat']) : [];
     $carrybagcookie = isset($row['carrybagcookie']) ? unserialize($row['carrybagcookie']) : [];
     $firdaymor = isset($row['firdaymor']) ? unserialize($row['firdaymor']) : [];
-    $dayfirafter = isset($row['fir_day_after']) ? unserialize($row['fir_day_after']) : [];
+    $fir_day_after = isset($row['fir_day_after']) ? unserialize($row['fir_day_after']) : [];
     $firdayeve = isset($row['firdayeve']) ? unserialize($row['firdayeve']) : [];
     $firdaydrink = isset($row['firdaydrink']) ? unserialize($row['firdaydrink']) : [];
     $firdaysnack = isset($row['firdaysnack']) ? unserialize($row['firdaysnack']) : [];
@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>PKM Catering</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -267,7 +267,7 @@ if (isset($_GET['id'])) {
 
             <tr>
             <th style="color: black">ஜானவாசம் சாப்பாடு</th>
-            <td><?php echo !empty($dayfirafter) ? implode(', ', $dayfirafter) : ''; ?></td>
+            <td><?php echo !empty($fir_day_after) ? implode(', ', $fir_day_after) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdayaftcou']) ? $row['firdayaftcou'] : ''; ?></td>
             <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculateTotal()" required></td>
             </tr>
