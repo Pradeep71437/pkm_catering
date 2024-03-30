@@ -357,7 +357,7 @@ if (isset($_GET['id'])) {
         </div>
      
     </div>
-    <div class="container justify-content-center align-items-center">
+    <div class="container justify-content-center align-items-center text-center">
         <table class="table table-bordered" id="pdfTable2" style="width: 300px;height:fit-content;"> 
             <tr class="text-primary">
                 <th class="text-primary text-center" style="width : 150px;">Title</th>

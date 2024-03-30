@@ -42,13 +42,13 @@ if(isset($_POST['submit'])) {
     $carrybagweat = isset($_POST['carrybagweat']) ? serialize($_POST['carrybagweat']) : '';
     $carrybagcookie = isset($_POST['carrybagcookie']) ? serialize($_POST['carrybagcookie']) : '';
     $firdaymor = isset($_POST['firdaymor']) ? serialize($_POST['firdaymor']) : '';
-    $dayfirafter = isset($_POST['dayfirafter']) ? serialize($_POST['dayfirafter']) : '';
+    // $dayfirafter = isset($_POST['dayfirafter']) ? serialize($_POST['dayfirafter']) : '';
     $firdayeve = isset($_POST['firdayeve']) ? serialize($_POST['firdayeve']) : '';
     $firdaydrink = isset($_POST['firdaydrink']) ? serialize($_POST['firdaydrink']) : '';
     $firdaysnack = isset($_POST['firdaysnack']) ? serialize($_POST['firdaysnack']) : '';
     $firdaydinner = isset($_POST['firdaydinner']) ? serialize($_POST['firdaydinner']) : '';
     $secdaymor = isset($_POST['secdaymor']) ? serialize($_POST['secdaymor']) : '';
-    $daysecafter = isset($_POST['daysecafter']) ? serialize($_POST['daysecafter']) : '';
+    // $daysecafter = isset($_POST['daysecafter']) ? serialize($_POST['daysecafter']) : '';
     $secdayeve = isset($_POST['secdayeve']) ? serialize($_POST['secdayeve']) : '';
     $secdaydinner = isset($_POST['secdaydinner']) ? serialize($_POST['secdaydinner']) : '';
     $guestfood = isset($_POST['guestfood']) ? serialize($_POST['guestfood']) : '';
