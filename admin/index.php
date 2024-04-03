@@ -66,11 +66,13 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
             <div class="opt">
             <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
             <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>
-        </div>
+            <a href="update-process.php?id=<?php echo $row["id"]; ?>" class="view">Update</a>
+            </div>
            </div>
            <?php
         }
         ?>
     </div>
+
 </body>
 </html>

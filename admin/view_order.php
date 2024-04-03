@@ -21,13 +21,13 @@ if (isset($_GET['id'])) {
     $carrybagweat = isset($row['carrybagweat']) ? unserialize($row['carrybagweat']) : [];
     $carrybagcookie = isset($row['carrybagcookie']) ? unserialize($row['carrybagcookie']) : [];
     $firdaymor = isset($row['firdaymor']) ? unserialize($row['firdaymor']) : [];
-    $fir_day_after = isset($row['fir_day_after']) ? unserialize($row['fir_day_after']) : [];
+    $firdayaft = isset($row['firdayaft']) ? unserialize($row['firdayaft']) : [];
     $firdayeve = isset($row['firdayeve']) ? unserialize($row['firdayeve']) : [];
     $firdaydrink = isset($row['firdaydrink']) ? unserialize($row['firdaydrink']) : [];
     $firdaysnack = isset($row['firdaysnack']) ? unserialize($row['firdaysnack']) : [];
     $firdaydinner = isset($row['firdaydinner']) ? unserialize($row['firdaydinner']) : [];
     $secdaymor = isset($row['secdaymor']) ? unserialize($row['secdaymor']) : [];
-    $daysecafter = isset($row['sec_day_after']) ? unserialize($row['sec_day_after']) : [];
+    $secdayaft = isset($row['secdayaft']) ? unserialize($row['secdayaft']) : [];
     $secdayeve = isset($row['secdayeve']) ? unserialize($row['secdayeve']) : [];
     $secdaydinner = isset($row['secdaydinner']) ? unserialize($row['secdaydinner']) : [];
     $guestfood = isset($row['guestfood']) ? unserialize($row['guestfood']) : [];
@@ -264,12 +264,11 @@ if (isset($_GET['id'])) {
                 <td><input placeholder="Amount" type="number" id="f11" oninput="calculateTotal()" required></td>
             </tr>
 
-
             <tr>
             <th style="color: black">ஜானவாசம் சாப்பாடு</th>
-            <td><?php echo !empty($fir_day_after) ? implode(', ', $fir_day_after) : ''; ?></td>
-            <td id="cou"><?= !empty($row['firdayaftcou']) ? $row['firdayaftcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculateTotal()" required></td>
+            <td><?php echo !empty($firdayaft) ? implode(', ', $firdayaft) : ''; ?></td>
+            <td id="cou"><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
+            <td ><input placeholder="Amount" type="number" id="f13"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
@@ -309,7 +308,7 @@ if (isset($_GET['id'])) {
 
             <tr>
             <th style="color: black">முகூர்த்தம் சாப்பாடு</th>
-            <td><?php echo !empty($daysecafter) ? implode(', ', $daysecafter) : ''; ?></td>
+            <td><?php echo !empty($secdayaft) ? implode(', ', $secdayaft) : ''; ?></td>
             <td id="cou"><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
             <td ><input placeholder="Amount" type="number" id="f18"  oninput="calculateTotal()" required></td>
             </tr>
