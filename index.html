@@ -193,9 +193,24 @@ input:checked + .slider:before {
                 <a href="" class="navbar-brand p-0">
                     <h1 class="text-primary m-0">P.K.M Catering</h1>
                 </a>
+                <style>
+                    #languageSelector{
+                        background-color: transparent;
+                        border: 2px solid #FEA116;
+                        color: white;
+                        padding: 4px;
+                        width: 80px;
+                        height: auto;
+                        border-radius: 15px;
+                    }
+                    .lang{
+                        background-color: #FEA116;
+                        color: white;
+                    }
+                </style>
                 <select id="languageSelector" onchange="toggleLanguage()">
-                    <option value="english">English</option>
-                    <option value="tamil">Tamil</option>
+                    <option value="english" class="lang">Eng</option>
+                    <option value="tamil" class="lang">தமிழ்</option>
                 </select>
                 <!-- <button class="nav-item nav-link btn btn-link text-center" onclick="toggleLanguage()">Toggle</button> -->
                 
@@ -219,14 +234,25 @@ input:checked + .slider:before {
                     <!-- </div> -->
                     
                 <!-- <span style="color: white;">Tam</span> -->
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="book.html" class="nav-item nav-link">Book</a>
+                        <a href="index.html" class="nav-item nav-link active english-content">Home</a>
+                        <a href="index.html" class="nav-item nav-link active tamil-content">ஹோம்</a>
+
+                        <a href="#about" class="nav-item nav-link english-content">About</a>
+                        <a href="#about" class="nav-item nav-link tamil-content">பற்றி</a>
+
+                        <a href="#service" class="nav-item nav-link english-content">Service</a>
+                        <a href="#service" class="nav-item nav-link tamil-content">சேவை</a>
+
+                        <a href="#menu" class="nav-item nav-link english-content">Menu</a>
+                        <a href="#menu" class="nav-item nav-link tamil-content">மெனு</a>
                        
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link english-content">Contact</a>
+                        <a href="#contact" class="nav-item nav-link tamil-content">தொடர்பு</a>
+
                     </div>
-                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1">ORDER NOW</a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">ORDER NOW</a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content">ஆர்டர்</a>
+
                 </div>
             </nav>
 <!-- 
@@ -293,56 +319,76 @@ input:checked + .slider:before {
         <section id="service">
         <div class="container-xxl py-5">
             <div class="container text-center">
-                <h1 class="section-title text-dark mb-5">Our Services</h1>
+                <!-- <h1 class="section-title text-dark mb-5">Our Services</h1> -->
+                <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5">Our Services</h1>
 
+                </div>
+                <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5 ">எங்கள் சேவைகள்</h1>
+
+                </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
+                        <div class="service-item rounded pt-3 ">
                             <div class="p-4">
-                                <div class="img">
                                 <img src="img/food1.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
-                            </div>
+                            
                                 <!-- <i class="fa fa-3x fa-user-tie text-primary mb-4"></i> -->
-                                <h5 class="text-orange">Marraige & Reception</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                    <!-- <div class="english-content"> -->
+                                <h5 class="text-orange english-content">Marraige & Reception</h5>
+                                <!-- </div> -->
+                                <!-- <div class="tamil-content"> -->
+                                    <h5 class="text-orange tamil-content">திருமண விழா</h5>
+                                    <!-- </div> -->
+                                <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
+                        <div class="service-item rounded pt-3 ">
                             <div class="p-4">
-                                <div class="img">
+                                <div class="simg ">
                                     <img src="img/food2.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
-                                <h5 class="text-orange">Puberty Function</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <div class="stit ">
+                                <h5 class="text-orange english-content">Puberty Function</h5>
+                                    <h5 class="text-orange tamil-content">மஞ்சள் நீராட்டு விழா</h5>
+                                </div>
+                                <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <div class="img">
+                        <div class="service-item rounded pt-3 ">
+                            <div class="p-4 container">
+                                <div class="simg ">
                                     <img src="img/food6.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
-                                <h5 class="text-orange">Valaikappu Function</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <div class="stit container">
+                                <h5 class="text-orange english-content">Valaikappu Function</h5>
+                                    <h5 class="text-orange tamil-content">வளைகாப்பு விழா</h5>
+                                </div>
+                                <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
+                        <div class="service-item rounded pt-3 " >
                             <div class="p-4">
-                                <div class="img">
+                                <div class="simg  ">
                                     <img src="img/food5.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
-                                <h5 class="text-orange">Housewarming</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <div class="stit container">
+                                <h5 class="text-orange  english-content">Housewarming</h5>
+                                    <h5 class="text-orange tamil-content">புதுமனை புகுவிழா</h5>
+                            </div>
+                                <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
                             </div>
                         </div>
                     </div>
@@ -359,7 +405,18 @@ input:checked + .slider:before {
         <section id="about">
         <div class="container-xxl py-5">
             <div class="container text-center">
-                <h1 class="section-title text-dark mb-5">About Us</h1>
+                <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5">About Us</h1>
+
+                </div>
+                <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5 ">எங்கள் பற்றி</h1>
+
+                </div>
+                <!-- <h1 class="section-title text-dark mb-5 english-content">About Us</h1>
+                <h1 class="section-title text-dark mb-5 tamil-content">About Us</h1> -->
+
+            
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="row g-3">
@@ -373,6 +430,8 @@ input:checked + .slider:before {
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        <div class="english-content">
+
                         <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
                         <p class="mb-4"><strong>Srimate Ramanujaya Namah.</strong>
                             P.K.Mayakootha Iyengar Catering services has been operating since 1996, working in this field since 1954, "Matama Mayilai Thiru Allikeni" attracted all the Vaishnavas of Divya Desam by his hand cooking. Sri.U.V.
@@ -386,7 +445,7 @@ input:checked + .slider:before {
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">24</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">24</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                     <div class="ps-4">
                                         <p class="mb-0">Years of</p>
                                         <h6 class="text-uppercase mb-0">Experience</h6>
@@ -395,15 +454,49 @@ input:checked + .slider:before {
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                     <div class="ps-4">
-                                        <p class="mb-0">Popular</p>
-                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                        <p class="mb-0">Events</p>
+                                        <h6 class="text-uppercase mb-0">Attended</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tamil-content">
+                        <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
+                        <p class="mb-4"><strong>ஸ்ரீமதே ராமாநுஜாய நமஹா.</strong>
+                        பி.கே.மயகூத ஐயங்கார் கேட்டரிங் சேவைகள் 1996 இல் தொடங்கியுள்ளன, 1954 இல் இந்த படைப்பில் பணியாற்றும் "மாடமா மயிலை திரு அள்ளிக்கேணி" அவரது கையைப் பயிற்சி செய்து, திவ்ய தேசத்தின் அனைத்து வைஷ்ணவர்களையும் ஆக்கியுள்ளார். ஸ்ரீ.யு.வி. அடியேன் பி.கே.ம. நரசிம்மன் பி.கே. மயகூத ஐயங்காரின் ஒரு மகனாக இருந்தார். இந்த நிறுவனம் என் தந்தையின் பெயரில் இயங்குகிறது.</p>
+                        <p class="mb-4">போட்டி சேவை துறையில் போட்டி போட்டி மிகவும் போட்டி உயர்ந்த போட்டி உடைய, சுவையான, ஆரோக்கியமான உணவு குறைந்த விலையில், விருப்பங்களை அறிந்து கேட்டரிங் செய்தல், சிறந்த விருந்தினரின் தேவைகளை அறிந்து கேட்டரிங் செய்தல், சிறந்த விருந்து சேவை ... இவை எங்கள் இலக்குகள்! போட்டியில் கட்டணத்திற்காக உணவின் தரம் குறைக்காது உணவு தயாரிப்பில் கட்டணம் எடுக்கும் போது போத்தி சேவைக்கு கீழ்ப்பட்டது. உத்திரப்புண் அனுமதியை மீறுகின்றது.
+                            </p>
+                        <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p> -->
+                        <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">24</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                    <div class="ps-4">
+                                        <p class="mb-0">அனுபவ </p>
+                                        <h6 class="text-uppercase mb-0">ஆண்டுகள்</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                    <div class="ps-4">
+                                        <p class="mb-0">செயலாக்கப்பட்ட </p>
+                                        <h6 class="text-uppercase mb-0">நிகழ்வுகள்</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                       
+                    
                 </div>
             </div>
         </div>
@@ -413,24 +506,32 @@ input:checked + .slider:before {
         <section id="menu">
             <div class="container-xxl py-5">
                 <div class="container">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
                         <h1 class="section-title text-dark mb-5">Our Menu</h1>
+
+                    </div>
+                    <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                        <h1 class="section-title text-dark mb-5 ">மெனு</h1>
+
                     </div>
                     <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                         <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" href="#tab-1">
-                                    <h4 class="mt-n1 mb-0 ">Breakfast</h4>
+                                    <h4 class="mt-n1 mb-0 english-content">Breakfast</h4>
+                                    <h4 class="mt-n1 mb-0 tamil-content" style="font-size: 20px;">காலை உணவு</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="pill" href="#tab-2">
-                                    <h4 class="mt-n1 mb-0">Lunch</h4>
+                                    <h4 class="mt-n1 mb-0 english-content">Lunch</h4>
+                                    <h4 class="mt-n1 mb-0 tamil-content" style="font-size: 20px;">மதிய உணவு</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="pill" href="#tab-3">
-                                    <h4 class="mt-n1 mb-0">Dinner</h4>
+                                    <h4 class="mt-n1 mb-0 english-content">Dinner</h4>
+                                    <h4 class="mt-n1 mb-0 tamil-content" style="font-size: 20px;">இரவு உணவு</h4>
                                 </a>
                             </li>
                         </ul>
@@ -438,17 +539,28 @@ input:checked + .slider:before {
                             <div id="tab-1" class="tab-pane fade show active">
                                 <div class="row">
 
-                                    <h1 class="text-center mt-4">Jaanavasam</h1>
+                                    <h1 class="text-center mt-4 english-content">Jaanavasam</h1>
+                                    <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
+                                    
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">BREAKFAST</h4>
+                                        <h4 class="text-primary m-3" class="english-content">BREAKFAST</h4>
+                                        <h4 class="text-primary m-3" class="tamil-content">காலை உணவு</h4>
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Pineapple Pudding - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Aval Kesari - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Pongal</h5></li>
-                                         <li><h5 class="m-4">Veg Kichadi</h5></li>
+                                         <li><h5 class="m-4 english-content">Pineapple Pudding - <span class="text-primary">Sweet</span></h5>
+                                        <h5 class="m-4 tamil-content">பைனாப்பிள் புட்டிங் - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Aval Kesari - <span class="text-primary">Sweet</span></h5>
+                                         <h5 class="m-4 tamil-content">அவல் கேசரி - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Pongal</h5>
+                                         <h5 class="m-4 tamil-content">பொங்கல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Veg Kichadi</h5>
+                                         <h5 class="m-4 tamil-content">வெஜ். கிச்சடி</h5></li>
+
                                     
                                          
 
@@ -458,11 +570,18 @@ input:checked + .slider:before {
                                         </div>
                                         <div class="col-6">
                                             <ol start="8">
-                                                <li><h5 class="m-4">Medhu Vadai</h5></li>
+                                                <li><h5 class="m-4 english-content">Medhu Vadai</h5>
+                                                <h5 class="m-4 tamil-content">மெது வடை</h5></li>
 
-                                          <li><h5 class="m-4">Coconut Chutney</h5></li>
-                                         <li><h5 class="m-4">Sambaar</h5></li>
-                                         <li><h5 class="m-4">Coffee</h5></li>
+                                          <li><h5 class="m-4 english-content" >Coconut Chutney</h5>
+                                          <h5 class="m-4" class="tamil-content">தேங்காய் சட்னி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Sambaar</h5>
+                                         <h5 class="m-4" class="tamil-content">சாம்பார்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Coffee</h5>
+                                         <h5 class="m-4" class="tamil-content">காபி</h5></li>
+
                                          
       
                                                </ol>
@@ -471,32 +590,64 @@ input:checked + .slider:before {
                                     </div>
                                     
 
-                                    <h1 class="text-center mt-4">Mugurtham</h1>
+                                    <h1 class="text-center english-content mt-4">Mugurtham</h1>
+                                    <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">BREAKFAST</h4>
-                                        <div class="row text-start food-items">
+                                        <h4 class="text-primary m-3" class="english-content">BREAKFAST</h4>
+                                        <h4 class="text-primary m-3" class="tamil-content">காலை உணவு</h4>
+                                     <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Carrot Alva - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Ashoka Alva - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Idli</h5></li>
-                                         <li><h5 class="m-4">Nei Pongal</h5></li>                                         <li><h5 class="m-4">Nei Pongal</h5></li>
-                                         <li><h5 class="m-4">Uttapam</h5></li>
-                                         <li><h5 class="m-4">Masala Dosai</h5></li>
-                                         <li><h5 class="m-4">Medhu Vadai</h5></li>
+                                         <li><h5 class="m-4 english-content">Carrot Alva - <span class="text-primary">Sweet</span></h5>
+                                         <h5 class="m-4 tamil-content">கேரட் அல்வா - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Ashoka Alva - <span class="text-primary">Sweet</span></h5>
+                                        <h5 class="m-4 tamil-content">அசோகா அல்வா - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Idli</h5>
+                                         <h5 class="m-4 tamil-content">இட்லி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Nei Pongal</h5>                                          
+                                         <h5 class="m-4 tamil-content">நெய் பொங்கல்</h5></li>                                        
+
+                                         <li><h5 class="m-4 english-content">Uttapam</h5>
+                                         <h5 class="m-4 tamil-content">ஊத்தப்பம்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Masala Dosai</h5>
+                                        <h5 class="m-4 tamil-content">மசால் தோசை</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Medhu Vadai</h5>
+                                         <h5 class="m-4 tamil-content">மெது வடை</h5></li>
+
                                         </ol>
                                         </div>
                                         <div class="col-6">
                                             <ol start="8">
-                                               <li><h5 class="m-4">Masala Vadai</h5></li>
-                                         <li><h5 class="m-4">Coconut Chutney</h5></li>
-                                         <li><h5 class="m-4">Special Chutney</h5></li>
-                                         <li><h5 class="m-4">Sambaar</h5></li>
-                                         <li><h5 class="m-4">Milagai Podi & Nallennai</h5></li>
-                                         <li><h5 class="m-4">Coffee</h5></li>
-                                         <li><h5 class="m-4">Tea</h5></li>
-                                         <li><h5 class="m-4">Milk</h5></li>
+                                               <li ><h5 class="m-4 english-content">Masala Vadai</h5>
+                                              <h5 class="m-4 tamil-content">மசால் வடை</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Coconut Chutney</h5>
+                                        <h5 class="m-4 tamil-content">தேங்காய் சட்னி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Special Chutney</h5>
+                                         <h5 class="m-4 tamil-content">ஸ்பெஷல் சட்னி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Sambaar</h5>
+                                         <h5 class="m-4 tamil-content">சாம்பார்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Milagai Podi & Nallennai</h5>
+                                         <h5 class="m-4 tamil-content">மிளகாய் பொடி & நல்லெண்ணெய்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Coffee</h5>
+                                         <h5 class="m-4 tamil-content">காபி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Tea</h5>
+                                         <h5 class="m-4 tamil-content">டீ</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Milk</h5>
+                                         <h5 class="m-4 tamil-content">பால்</h5></li>
+
                                                </ol>
                                         </div>
                                         </div>
@@ -504,44 +655,45 @@ input:checked + .slider:before {
                                 </div>
                             </div>
                             <div id="tab-2" class="tab-pane fade">
-                                <h1 class="text-center">Jaanavasam</h1>
+                                <h1 class="text-center english-content">Jaanavasam</h1>
+                                <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
+
                                 <div class="row">
-                                    <!-- <div class="col-sm-6 menu-card container" style="height: 200px;" >
-                                            <h4 class="text-primary m-3">SWEET</h4>
-                                            <div class="row text-start">
-                                                <div class="col-6">
-                                                    <ol>
-                                             <li><h5 class="m-4">Mysorepak</h5></li>
-                                             <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                             <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                             <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                            </ol>
-                                            </div>
-                                            <div class="col-6">
-                                                <ol start="5"> 
-                                                    <li><h5 class="m-4">Jangiri</h5></li>
-                                                    <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                                    <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                                    <li><h5 class="m-4">Ashoka Alwa</h5></li>
-                                                   </ol>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                 
         
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">LUNCH</h4>
+                                        <h4 class="text-primary m-3 english-content">LUNCH</h4>
+                                        <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Mysorepak - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Jangiri - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Thayir Pachadi</h5></li>
-                                         <li><h5 class="m-4">Kathirikai Kootu</h5></li>
-                                         <li><h5 class="m-4">Chow Chow Kootu</h5></li>
-                                         <li><h5 class="m-4">Vendaikai Poriyal</h5></li>
-                                         <li><h5 class="m-4">Chenai Roast</h5></li>
-                                         <li><h5 class="m-4">Avaraikai Poriyal</h5></li>
-                                          <li><h5 class="m-4">Kos Pattani Poriyal</h5></li>
+                                         <li><h5 class="m-4 english-content">Mysorepak - <span class="text-primary">Sweet</span></h5>
+                                         <h5 class="m-4 tamil-content" >மைசூர்பாகு - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Jangiri - <span class="text-primary">Sweet</span></h5>
+                                         <h5 class="m-4 tamil-content" >ஜாங்கிரி - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Curd Pachadi</h5>
+                                         <h5 class="m-4 tamil-content" >தயிர் பச்சடி</h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Kathirikai Kootu</h5>
+                                         <h5 class="m-4 tamil-content" >கத்திரிக்காய் கூட்டு</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Chow Chow Kootu</h5>
+                                         <h5 class="m-4 tamil-content" >செளசெள கூட்டு</h5></li>
+
+                                         <li ><h5 class="m-4 english-content" >Vendaikai Poriyal</h5>
+                                         <h5 class="m-4 tamil-content" >வெண்டைக்காய் பொறியல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Chenai Roast</h5>
+                                         <h5 class="m-4 tamil-content">சேனை வறுவல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Avaraikai Poriyal</h5>
+                                         <h5 class="m-4 tamil-content">அவரைக்காய் பொறியல்</h5></li>
+
+                                          <li ><h5 class="m-4 english-content">Kos Pattani Poriyal</h5>
+                                          <h5 class="m-4 tamil-content">கோஸ்பட்டாணி பொறியல்</h5></li>
+
                                           
 
                                      
@@ -551,15 +703,33 @@ input:checked + .slider:before {
                                         </div>
                                         <div class="col-6">
                                             <ol start="10">
-                                         <li><h5 class="m-4">Nei & Parupu</h5></li> 
-                                         <li><h5 class="m-4">Vazhai Chips</h5></li>
-                                         <li><h5 class="m-4">Sambaar Vadai</h5></li>
-                                         <li><h5 class="m-4">Rasa Vadai</h5></li>
-                                         <li><h5 class="m-4">Sambaar & Rasam</h5></li>
-                                         <li><h5 class="m-4">Paal Payasam</h5></li>
-                                         <li><h5 class="m-4">Thayir</h5></li>
-                                         <li><h5 class="m-4">Oorkai</h5></li>
-                                         <li><h5 class="m-4">Appalam</h5></li>
+                                         <li><h5 class="m-4 english-content">Nei & Parupu</h5>
+                                        <h5 class="m-4 tamil-content">நெய் & பருப்பு</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Vazhai Chips</h5>
+                                         <h5 class="m-4 tamil-content">வாழை சிப்ஸ்</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Sambaar Vadai</h5>
+                                        <h5 class="m-4 tamil-content">சாம்பார் வடை</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Rasa Vadai</h5>
+                                        <h5 class="m-4 tamil-content" >ரசவடை</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Sambaar & Rasam</h5>
+                                         <h5 class="m-4 tamil-content" >சாம்பார் & ரசம்</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Paal Payasam</h5>
+                                        <h5 class="m-4 tamil-content">பால் பாயசம்</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Curd</h5>
+                                         <h5 class="m-4 tamil-content">தயிர்</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Oorkai</h5>
+                                        <h5 class="m-4 tamil-content">ஊறுகாய்</h5></li> 
+
+                                         <li><h5 class="m-4 english-content">Appalam</h5>
+                                        <h5 class="m-4 tamil-content">அப்பளம்</h5></li> 
+
                                                </ol>
                                         </div>
                                         </div>
@@ -568,25 +738,48 @@ input:checked + .slider:before {
 
 
 
-                                    <h1 class="text-center mt-5">Mugurtham</h1>
+                                    <h1 class="text-center english-content mt-5">Mugurtham</h1>
+                                    <h1 class="text-center  mt-5 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">LUNCH</h4>
+                                        <h4 class="text-primary m-3 english-content">LUNCH</h4>
+                                        <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>                                        
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                        <li><h5 class="m-4">Jangiri - <span class="text-primary">Sweet</span></h5></li>
-                                        <li><h5 class="m-4">Mini Laddu - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Milk Cake - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Fruit Salad</h5></li>
-                                         <li><h5 class="m-4">Kos Malli</h5></li>
-                                         <li><h5 class="m-4">Thayir Pachadi</h5></li>
-                                         <li><h5 class="m-4">Aviyal</h5></li>
-                                         <li><h5 class="m-4">Poosinikai Pullipu Kootu</h5></li>
-                                         <li><h5 class="m-4">Beans Parupu Vusili</h5></li>
-                                         <li><h5 class="m-4">Vazhaikai Kaara Karamathu</h5></li>
-                                         <li><h5 class="m-4">Nei & Parupu</h5></li>
-                                          
+                                        <li ><h5 class="m-4 english-content">Jangiri - <span class="text-primary">Sweet</span></h5>
+                                       <h5 class="m-4 tamil-content">ஜாங்கிரி - <span class="text-primary">Sweet</span></h5></li>
+
+                                        <li ><h5 class="m-4 english-content">Mini Laddu - <span class="text-primary">Sweet</span></h5>
+                                        <h5 class="m-4" >மினி லட்டு - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Milk Cake - <span class="text-primary">Sweet</span></h5>
+                                        <h5 class="m-4">பால் கேக் - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Fruit Salad</h5>
+                                         <h5 class="m-4">ஃப்ரூட் சலாட்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Kos Malli</h5>
+                                        <h5 class="m-4">கோஸ் மல்லி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Curd Pachadi</h5>
+                                         <h5 class="m-4">தயிர் பச்சடி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Aviyal</h5>
+                                      <h5 class="m-4" >அவியல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Poosinikai Pullipu Kootu</h5>
+                                         <h5 class="m-4" >பூசணிக்காய் புள்ளிப்பு கூட்டு</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Beans Parupu Vusili</h5>
+                                         <h5 class="m-4">பீன்ஸ் பருப்பு உசிலி</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Vazhaikai Kaara Karamathu</h5>
+                                        <h5 class="m-4">வாழைக்காய் காரகறமது</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Nei & Parupu</h5>
+                                      <h5 class="m-4">நெய் & பருப்பு</h5></li>
+
 
                                           
 
@@ -597,16 +790,36 @@ input:checked + .slider:before {
                                         </div>
                                         <div class="col-6">
                                             <ol start="12">
-                                            <li><h5 class="m-4">Thayir Vadai</h5></li>
-                                          <li><h5 class="m-4">Potato Chips</h5></li>
-                                         <li><h5 class="m-4">Mix Veg Sambaar & Moor Kolambu</h5></li> 
-                                         <li><h5 class="m-4">Thakali Rasam</h5></li>
-                                         <li><h5 class="m-4">Puliyotharai</h5></li>
-                                         <li><h5 class="m-4">Akkara Adisal</h5></li>
-                                         <li><h5 class="m-4">Kaarasev</h5></li>
-                                         <li><h5 class="m-4">Bagalabath</h5></li>
-                                         <li><h5 class="m-4">Lemon Oorkai</h5></li>
-                                         <li><h5 class="m-4">Appalam</h5></li>
+                                            <li ><h5 class="m-4 english-content" >Curd Vadai</h5>
+                                           <h5 class="m-4 tamil-content">தயிர்வடை</h5></li>
+
+                                          <li ><h5 class="m-4 english-content">Potato Chips</h5>
+                                      <h5 class="m-4 tamil-content">வாழை சிப்ஸ்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Mix Veg Sambaar & Moor Kolambu</h5>
+                                         <h5 class="m-4 tamil-content">சாம்பார் & மோர் கொழம்பு</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Thakali Rasam</h5>
+                                         <h5 class="m-4 tamil-content">தக்காளி ரசம்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Puliyotharai</h5>
+                                        <h5 class="m-4 tamil-content">புளியோதரை</h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Akkaravadisal</h5>
+                                         <h5 class="m-4 tamil-content">அக்கரவடிசல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Kaarasev</h5>
+                                        <h5 class="m-4 tamil-content">காரசேவ்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Bagalabath</h5>
+                                         <h5 class="m-4 tamil-content">பகாலாபாத்</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Lemon Oorkai</h5>
+                                        <h5 class="m-4 tamil-content">எலுமிச்சை ஊறுகாய்</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Appalam</h5>
+                                       <h5 class="m-4 tamil-content">அப்பளம்</h5></li>
+
                                                </ol>
                                         </div>
                                         </div>
@@ -615,21 +828,39 @@ input:checked + .slider:before {
                             </div>
                             <div id="tab-3" class="tab-pane fade">
                                 <div class="row">
-                                    <h1 class="text-center mt-3">Jaanavasam</h1>
+                                    <h1 class="text-center english-content mt-3">Jaanavasam</h1>
+                                    <h1 class="text-center  mt-3 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">DINNER</h4>
+                                        <h4 class="text-primary m-3 english-content">Dinner</h4>
+                                        <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>  
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Badam Alva - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Kaasi Alva - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Thayir Pachadi</h5></li>
-                                         <li><h5 class="m-4">Veg Kichidi</h5></li>
-                                         <li><h5 class="m-4">Veg Sevai</h5></li>
-                                         <li><h5 class="m-4">Kanchipuram Idly</h5></li>
-                                         <li><h5 class="m-4">Adai Aviyal</h5></li>
-                                         <li><h5 class="m-4">Veg Bonda</h5></li>
+                                         <li><h5 class="m-4 english-content">Badam Alva - <span class="text-primary">Sweet</span></h5>
+                                        <h5 class="m-4 tamil-content">பாதாம் அல்வா - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Kaasi Alva - <span class="text-primary">Sweet</span></h5>
+                                         <h5 class="m-4 tamil-content">காசி அல்வா - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Curd Pachadi</h5>
+                                        <h5 class="m-4 tamil-content">தயிர் பச்சடி</h5></li>
+
+                                         <li ><h5 class="m-4 english-content" >Veg Kichidi</h5>
+                                         <h5 class="m-4 tamil-content" >வெஜ் கிச்சடி</h5></li>
+
+                                         <li><h5 class="m-4 english-content" >Veg Sevai</h5>
+                                         <h5 class="m-4 tamil-content">வெஜ் சேவை</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Kanchipuram Idly</h5>
+                                        <h5 class="m-4 tamil-content" >காஞ்சீபுரம் இட்லி</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Adai Aviyal</h5>
+                                     <h5 class="m-4 tamil-content">அடை அவியல்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Veg Bonda</h5>
+                                         <h5 class="m-4 tamil-content">வெஜ் போண்டா</h5></li>
+
                                          
 
 
@@ -638,15 +869,58 @@ input:checked + .slider:before {
                                         </div>
                                         <div class="col-6">
                                             <ol start="9">
-                                                <li><h5 class="m-4">Mysore Bonda</h5></li>
-                                          
+                                                <li>
+                                                    <h5 class="m-4 english-content">Mysore Bonda</h5>
+                                                    <h5 class="m-4 tamil-content">மைசூர் போண்டா</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Coconut Chutney</h5>
+                                                    <h5 class="m-4 tamil-content">தேங்காய் சட்னி</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Malli Chutney</h5>
+                                                    <h5 class="m-4 tamil-content">மல்லி சட்னி</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Sambaar</h5>
+                                                    <h5 class="m-4 tamil-content">சாம்பார்</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Coffee</h5>
+                                                    <h5 class="m-4 tamil-content">காபி</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Tea</h5>
+                                                    <h5 class="m-4 tamil-content">டீ</h5>
+                                                </li>
+                                                
+                                                <li>
+                                                    <h5 class="m-4 english-content">Milk</h5>
+                                                    <h5 class="m-4 tamil-content">பால்</h5>
+                                                </li>
+                                                <!-- <li class="english-content"><h5 class="m-4">Coconut Chutney</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">தேங்காய் சட்னி</h5></li>
 
-                                                <li><h5 class="m-4">Coconut Chutney</h5></li> 
-                                                <li><h5 class="m-4">Malli Chutney</h5></li>
-                                                <li><h5 class="m-4">Sambaar</h5></li>
-                                                <li><h5 class="m-4">Coffee</h5></li>
-                                                <li><h5 class="m-4">Tea</h5></li>
-                                                <li><h5 class="m-4">Milk</h5></li>
+                                                <li class="english-content"><h5 class="m-4">Malli Chutney</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">மல்லி சட்னி</h5></li>
+
+                                                <li class="english-content"><h5 class="m-4">Sambaar</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">சாம்பார்</h5></li>
+
+                                                <li class="english-content"><h5 class="m-4">Coffee</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">காபி</h5></li>
+
+                                                <li class="english-content"><h5 class="m-4">Tea</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">டீ</h5></li>
+
+                                                <li class="english-content"><h5 class="m-4">Milk</h5></li>
+                                                <li class="tamil-content"><h5 class="m-4">பால்</h5></li> -->
+
       
                                                </ol>
                                         </div>
@@ -658,38 +932,118 @@ input:checked + .slider:before {
 
 
 
-                                    <h1 class="text-center mt-4">Mugurtham</h1>
+                                    <h1 class="text-center mt-4 english-content">Mugurtham</h1>
+                                    <h1 class="text-center  mt-5 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3">DINNER</h4>
+                                        <h4 class="text-primary m-3 english-content">Dinner</h4>
+                                        <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>  
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Gulab Jamun - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Badam Cake - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Thayir Pachadi</h5></li>
-                                         <li><h5 class="m-4">Kathirikai Poriyal</h5></li>
-                                         <li><h5 class="m-4">Carrot Poriyal</h5></li>
-                                         <li><h5 class="m-4">Nei & Parupu</h5></li>
-                                         <li><h5 class="m-4">Manathakaali Vaththa Kolambu</h5></li>
-                                         
+                                        <li>
+                                            <h5 class="m-4 english-content">Gulab Jamun - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">குலாப் ஜாமுன் - <span class="text-primary">Sweet</span></h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Badam Cake - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">பாதாம் கேக் - <span class="text-primary">Sweet</span></h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Curd Pachadi</h5>
+                                            <h5 class="m-4 tamil-content">தயிர் பச்சடி</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Kathirikai Poriyal</h5>
+                                            <h5 class="m-4 tamil-content">கத்திரிக்காய் பொறியல்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Carrot Poriyal</h5>
+                                            <h5 class="m-4 tamil-content">கேரட் பொறியல்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Nei & Parupu</h5>
+                                            <h5 class="m-4 tamil-content">நெய் & பருப்பு</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Manathakaali Vaththa Kolambu</h5>
+                                            <h5 class="m-4 tamil-content">மணத்தக்காளி வத்தக் குழம்பு</h5>
+                                        </li>
+                                         <!-- <li class="english-content"><h5 class="m-4">Badam Cake - <span class="text-primary">Sweet</span></h5></li>
+                                         <li class="tamil-content"><h5 class="m-4" >பாதாம் கேக் - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Curd Pachadi</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">தயிர் பச்சடி</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Kathirikai Poriyal</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">கத்திரிக்காய் பொறியல்</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Carrot Poriyal</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">கேரட் பொறியல்</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Nei & Parupu</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">நெய் & பருப்பு</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Manathakaali Vaththa Kolambu</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">மணத்தக்காளி வத்தக் குழம்பு</h5></li> -->
+
 
 
 
                                         </ol>
                                         </div>
                                         <div class="col-6">
-                                            <ol start="8">
-                                                <li><h5 class="m-4">Thakkali Rasam</h5></li>
+                                        <ol start="8">
+                                        <li>
+                                            <h5 class="m-4 english-content">Thakkali Rasam</h5>
+                                            <h5 class="m-4 tamil-content">தக்காளி ரசம்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Javvarisi Kheer</h5>
+                                            <h5 class="m-4 tamil-content">ஜவ்வரிசி பாயாசம்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Semiya Kheer</h5>
+                                            <h5 class="m-4 tamil-content">சேமியா பாயாசம்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Curd</h5>
+                                            <h5 class="m-4 tamil-content">தயிர்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Oorkai</h5>
+                                            <h5 class="m-4 tamil-content">ஊறுகாய்</h5>
+                                        </li>
+                                        
+                                        <li>
+                                            <h5 class="m-4 english-content">Appalam</h5>
+                                            <h5 class="m-4 tamil-content">அப்பளம்</h5>
+                                        </li>
 
-                                          <li><h5 class="m-4">Javvarisi Kheer</h5></li>
-                                         <li><h5 class="m-4">Semiya Kheer</h5></li>
-                                         <li><h5 class="m-4">Thayir</h5></li>
-                                         <li><h5 class="m-4">Oorkai</h5></li>
-                                         <li><h5 class="m-4">Appalam</h5></li>
+                                         <!-- <li class="english-content"><h5 class="m-4">Semiya Kheer</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">சேமியா பாயாசம்</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Curd</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">தயிர்</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Oorkai</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">ஊறுகாய்</h5></li>
+
+                                         <li class="english-content"><h5 class="m-4">Appalam</h5></li>
+                                         <li class="tamil-content"><h5 class="m-4">அப்பளம்</h5></li> -->
 
       
-                                               </ol>
+                                        </ol>
                                         </div>
                                         </div>
                                     </div>
@@ -703,43 +1057,73 @@ input:checked + .slider:before {
                                         <div class="row text-start food-items">
                                             <div class="col-6">
                                                 <ol>
-                                         <li><h5 class="m-4">Rasamalai - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Padhir Peni - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Dry Jamun - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Cashew Cake - <span class="text-primary">Sweet</span></h5></li>
-                                         <li><h5 class="m-4">Veg Cutlet</h5></li>
-                                         <li><h5 class="m-4">Special Vadai </h5></li>
-                                         <li><h5 class="m-4">Keerai Vadai</h5></li>
-                                         <li><h5 class="m-4">Poori & Chenna</h5></li>
-                                         <li><h5 class="m-4">Chappati & Kuruma</h5></li>
-                                         <li><h5 class="m-4">Butter Naan</h5></li>
-                                         <li><h5 class="m-4">Panner Sabji</h5></li>
-                                         <li><h5 class="m-4">Podi Uttapam & Puthina Chutney</h5></li>
-                                         <li><h5 class="m-4">Set Dosai & Kuruma </h5></li>
-                                         <li><h5 class="m-4">Onion Raitha</h5></li>
-                                         <li><h5 class="m-4">Vellarikai Raitha</h5></li>
-                                        
+                                         <li ><h5 class="m-4 english-content">Rasamalai - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">ரசமலாய் - <span class="text-primary">Sweet</span></h5></li>
+                                         <!-- <li class="english-content"><h5 class="m-4">Rasamalai - <span class="text-primary">Sweet</span></h5></li> -->
+
+                                         <li><h5 class="m-4 english-content">Padhir Peni - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">பதிர் பேணி - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Dry Jamun - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">ட்ரை ஜாமூன் - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li><h5 class="m-4 english-content">Cashew Cake - <span class="text-primary">Sweet</span></h5>
+                                            <h5 class="m-4 tamil-content">முந்திரி கேக் - <span class="text-primary">Sweet</span></h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Veg Cutlet</h5>
+                                            <h5 class="m-4 tamil-content">வெஜ் கட்லெட்</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Special Vadai </h5>
+                                            <h5 class="m-4 tamil-content">ஸ்பெஷல் வடை </h5></li>
+
+                                         <li><h5 class="m-4 english-content">Keerai Vadai</h5>
+                                            <h5 class="m-4 tamil-content">கீரை வடை</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Poori & Chenna</h5>
+                                            <h5 class="m-4 tamil-content">பூரி & சென்னா</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Chappati & Kuruma</h5>
+                                            <h5 class="m-4 tamil-content">சப்பாத்தி & குருமா</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Butter Naan</h5>
+                                            <h5 class="m-4 tamil-content">பட்டர் நான்</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Panner Sabji</h5>
+                                            <h5 class="m-4 tamil-content">பன்னீர் சப்ஜி</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Podi Uttapam & Puthina Chutney</h5>
+                                            <h5 class="m-4 tamil-content">பொடி ஊத்தப்பம் & புதினா சட்னி</h5></li>
+
+                                         <li ><h5 class="m-4 english-content">Set Dosai & Kuruma </h5>
+                                            <h5 class="m-4 tamil-content">செட் தோசை & குருமா</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Onion Raitha</h5>
+                                            <h5 class="m-4 tamil-content">வெங்காய ரைத்தா</h5></li>
+
+                                         <li><h5 class="m-4 english-content">Vellarikai Raitha</h5>
+                                            <h5 class="m-4 tamil-content">வெள்ளரிக்காய் ரைத்தா</h5></li>
+
 
                                         </ol>
                                         </div>
                                         <div class="col-6">
                                             <ol start="16">
-                                       <li><h5 class="m-4">Potato Roast & Senai Roast</h5></li>
-                                         <li><h5 class="m-4">Veg Poriyal / Kos Poriyal</h5></li>
-                                         <li><h5 class="m-4">Bisibelabath / Kadambam</h5></li>
+                                       <li><h5 class="m-4 english-content">Potato Roast & Senai Roast</h5><h5 class="m-4 tamil-content">உருளை வறுவல் & சேனை வறுவல்</h5></li>
+                                         <li><h5 class="m-4 english-content">Veg Poriyal / Kos Poriyal</h5><h5 class="m-4 tamil-content">வெஜ் பொறியல் / கோஸ் பொரியல்</h5></li>
+                                         <li><h5 class="m-4 english-content">Bisibelabath / Kadambam</h5><h5 class="m-4 tamil-content">பிசிபிளாபத் / கதம்பம்</h5></li>
 
-                                         <li><h5 class="m-4">Veg Pulao / Tandoori Pulao</h5></li>
-                                         <li><h5 class="m-4">Malli Rice / Puthina Rice</h5></li>
-                                         <li><h5 class="m-4">White Rice</h5></li>
-                                         <li><h5 class="m-4">Pineapple Rasam / Ginger Lemon Rasam</h5></li>
-                                         <li><h5 class="m-4">Carrot Kheer / Aval Payasam</h5></li>
-                                         <li><h5 class="m-4">Special Appalam / Pappadam</h5></li>
-                                         <li><h5 class="m-4">Nenthrakai Chips / Mini Vaththal</h5></li>
-                                         <li><h5 class="m-4">Butterbath</h5></li>
-                                         <li><h5 class="m-4">Vaththa Kolambu</h5></li>
-                                         <li><h5 class="m-4">Moor Milagai</h5></li>
-                                         <li><h5 class="m-4">Mango Pickle</h5></li>
-                                         <li><h5 class="m-4">Ice Cream & Beeda</h5></li>
+                                         <li><h5 class="m-4 english-content">Veg Pulao / Tandoori Pulao</h5><h5 class="m-4 tamil-content">வெஜ் / தந்தூரி புலாவ்</h5></li>
+                                         <li><h5 class="m-4 english-content">Malli Rice / Puthina Rice</h5><h5 class="m-4 tamil-content">மல்லி / புதினா சாதம்</h5></li>
+                                         <li><h5 class="m-4 english-content">White Rice</h5><h5 class="m-4 tamil-content">சாதம்</h5></li>
+                                         <li><h5 class="m-4 english-content">Pineapple Rasam / Ginger Lemon Rasam</h5><h5 class="m-4 tamil-content">அன்னாசி ரசம் / இஞ்சி எலுமிச்சை ரசம்</h5></li>
+                                         <li><h5 class="m-4 english-content">Carrot Kheer / Aval Payasam</h5><h5 class="m-4 tamil-content">கேரட் பாயாசம் / அவல் பாயாசம்</h5></li>
+                                         <li><h5 class="m-4 english-content">Special Appalam / Pappadam</h5><h5 class="m-4 tamil-content">ஸ்பெஷல் அப்பளம்</h5></li>
+                                         <li><h5 class="m-4 english-content">Nenthrakai Chips / Mini Vaththal</h5><h5 class="m-4 tamil-content">நேந்திரங்காய் சிப்ஸ் / வத்தல்</h5></li>
+                                         <li><h5 class="m-4 english-content">Butterbath</h5><h5 class="m-4 tamil-content">பட்டர்பாத்</h5></li>
+                                         <li><h5 class="m-4 english-content">Vaththa Kolambu</h5><h5 class="m-4 tamil-content">வத்த குழம்பு</h5></li>
+                                         <li><h5 class="m-4 english-content">Moor Milagai</h5><h5 class="m-4 tamil-content">மோர் மிளகாய்</h5></li>
+                                         <li><h5 class="m-4 english-content">Mango Pickle</h5><h5 class="m-4 tamil-content">மாங்காய் ஊறுகாய்</h5></li>
+                                         <li><h5 class="m-4 english-content">Ice Cream & Beeda</h5><h5 class="m-4 tamil-content">ஐஸ் கிரீம் & பீடா</h5></li>
 
       
                                                </ol>
@@ -747,45 +1131,7 @@ input:checked + .slider:before {
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col-sm-6 menu-card container" >
-                                            <h4 class="text-primary m-3">SWE</h4>
-                                            <div class="row text-start">
-                                            <div class="col-6">
-                                              
-                                         <h5 class="m-4 foods">Ashoka Alwa</h5>
-                                         <h5 class="m-4">Awal Kesari</h5>
-                                         <h5 class="m-4">Pineapple Milk Pudding</h5>
-                                         <h5 class="m-4">Mysorepak</h5>
-                                        
-                                        </div>
-                                        <div class="col-6">
-                                         <h5 class="m-4">Jangiri</h5>
-                                         <h5 class="m-4">Ajmir Cake</h5>
-                                         <h5 class="m-4">Mookandal</h5>
-                                         <h5 class="m-4">Saako Cake</h5>
-                                         <h5 class="m-4">Kaasi Alwa</h5>
-                                        </div>
-                                        </div>
-                                    </div> -->
-        
-                                    <!-- <div class="col-sm-6 menu-card container">
-                                        <h4 class="text-primary m-3">TIF</h4>
-                                        <div class="row text-start">
-                                            <div class="col-6">
-                                         <h5 class="m-4">Ashoka Alwa</h5>
-                                         <h5 class="m-4">Awal Kesari</h5>
-                                         <h5 class="m-4">Pineapple Milk Pudding</h5>
-                                         <h5 class="m-4">Mysorepak</h5>
-                                        </div>
-                                        <div class="col-6">
-                                         <h5 class="m-4">Jangiri</h5>
-                                         <h5 class="m-4">Ajmir Cake</h5>
-                                         <h5 class="m-4">Mookandal</h5>
-                                         <h5 class="m-4">Saako Cake</h5>
-                                         <h5 class="m-4">Kaasi Alwa</h5>
-                                        </div>
-                                        </div>
-                                    </div> -->
+                                  
                                 </div>
                             </div>
                         </div>
@@ -799,8 +1145,11 @@ input:checked + .slider:before {
         <!-- Contact Start -->
         <section id="contact">
             <div class="container-fluid py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center wow fadeInUp english-content" data-wow-delay="0.1s">
                     <h1 class="section-title text-dark mb-5">Contact Us</h1>
+                </div>
+                <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5">தொடர்பு கொள்ள</h1>
                 </div>
                 <div class="row g-0">
                     <div class="col-md-6">
@@ -813,31 +1162,45 @@ input:checked + .slider:before {
                     <div class="col-md-6 bg-dark d-flex align-items-center">
                         <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                             <!-- <h5 class="section-title ff-secondary text-start text-warning fw-normal">Reservation</h5> -->
-                            <h1 class="text-primary mb-4">Send us a message!</h1>
+                            <h1 class="text-primary mb-4 english-content">Send us a message!</h1>
+                            <h1 class="text-primary mb-4 tamil-content" style="font-size: 37px;">எங்களை தொடர்பு கொள்ள!</h1>
+
+                            
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
+                                            <label for="name" class="english-content">Your Name</label>
+                                            <label for="name" class="tamil-content">பெயர்</label>
+
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
+                                            <label for="email" class="english-content">Your Email</label>
+                                            <label for="email" class="tamil-content">இமெயில்</label>
+
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating date" id="date3" data-target-input="nearest">
                                             <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                            <label for="datetime">Date & Time</label>
+                                            <label for="datetime" class="english-content">Date & Time</label>
+                                            <label for="datetime" class="tamil-content"> தேதி & நேரம்</label>
+
+                                           
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">mandapam details</label>
+                                            <label for="name" class="english-content">Mandapam details</label>
+                                            <label for="name" class="tamil-content">மண்டபம் விவரங்கள்</label>
+
                                         </div>
                                     </div>
                                     <!-- <div class="col-md-6">
@@ -853,11 +1216,15 @@ input:checked + .slider:before {
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                            <label for="message">Special Request</label>
+                                            <label for="message" class="english-content">Special Request</label>
+                                            <label for="message" class="tamil-content">உங்கள் கோரிக்கை</label>
+
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-warning w-100 py-3" type="submit">SEND MESSAGE</button>
+                                        <button class="btn btn-warning w-100 py-3 english-content" type="submit">SEND MESSAGE</button>
+                                        <button class="btn btn-warning w-100 py-3 tamil-content" type="submit">அனுப்பு</button>
+                                        
                                     </div>
                                 </div>
                             </form>
@@ -866,44 +1233,7 @@ input:checked + .slider:before {
                 </div>
             </div>
     
-        <!-- <div class=" container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 0px;">
-            <div class=" g-0">
-                
-                <div class="message-box  justify-content-center align-items-center d-flex bg-dark d-flex align-items-center">
-                    <div class="p-5 wow fadeInUp text-center " data-wow-delay="0.2s">
-                        <h1 class="section-title text-white mb-5">Contact Us</h1>
        
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                
-                               
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 200px"></textarea>
-                                        <label for="message">Special Request</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">SEND</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
     </section>
    
@@ -913,8 +1243,14 @@ input:checked + .slider:before {
        <div class="container-xxl py-5 wow mb-4 fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h5 class="section-title  text-center text-primary fw-normal">Testimonial</h5>
-                <h1 class="mb-5">Our Clients Say!!!</h1>
+                <!-- <h5 class="section-title  text-center text-primary fw-normal">Testimonial</h5> -->
+                <div class="text-center wow fadeInUp english-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5">Testimonials</h1>
+                </div>
+                <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <h1 class="section-title text-dark mb-5">பரிந்துரை</h1>
+                </div>
+                <!-- <h1 class="mb-5">Our Clients Say!!!</h1> -->
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item bg-transparent border rounded p-4">
