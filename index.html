@@ -121,18 +121,39 @@ input:checked + .slider:before {
 
 
 <script>
-     function toggleLanguage() {
-            var englishContent = document.querySelectorAll('.english-content');
-            var tamilContent = document.querySelectorAll('.tamil-content');
+    //  function toggleLanguage() {
+    //         var englishContent = document.querySelectorAll('.english-content');
+    //         var tamilContent = document.querySelectorAll('.tamil-content');
 
-            for (var i = 0; i < englishContent.length; i++) {
-                englishContent[i].style.display = (englishContent[i].style.display === 'none') ? 'block' : 'none';
-            }
+    //         for (var i = 0; i < englishContent.length; i++) {
+    //             englishContent[i].style.display = (englishContent[i].style.display === 'none') ? 'block' : 'none';
+    //         }
 
-            for (var i = 0; i < tamilContent.length; i++) {
-                tamilContent[i].style.display = (tamilContent[i].style.display === 'none') ? 'block' : 'none';
-            }
+    //         for (var i = 0; i < tamilContent.length; i++) {
+    //             tamilContent[i].style.display = (tamilContent[i].style.display === 'none') ? 'block' : 'none';
+    //         }
+    //     }
+    function toggleLanguage() {
+    var selectedLanguage = document.getElementById("languageSelector").value;
+    var englishContent = document.querySelectorAll('.english-content');
+    var tamilContent = document.querySelectorAll('.tamil-content');
+
+    if (selectedLanguage === 'english') {
+        for (var i = 0; i < englishContent.length; i++) {
+            englishContent[i].style.display = 'block';
         }
+        for (var i = 0; i < tamilContent.length; i++) {
+            tamilContent[i].style.display = 'none';
+        }
+    } else if (selectedLanguage === 'tamil') {
+        for (var i = 0; i < englishContent.length; i++) {
+            englishContent[i].style.display = 'none';
+        }
+        for (var i = 0; i < tamilContent.length; i++) {
+            tamilContent[i].style.display = 'block';
+        }
+    }
+}
 </script>
 </head>
 
@@ -172,23 +193,30 @@ input:checked + .slider:before {
                 <a href="" class="navbar-brand p-0">
                     <h1 class="text-primary m-0">P.K.M Catering</h1>
                 </a>
+                <select id="languageSelector" onchange="toggleLanguage()">
+                    <option value="english">English</option>
+                    <option value="tamil">Tamil</option>
+                </select>
                 <!-- <button class="nav-item nav-link btn btn-link text-center" onclick="toggleLanguage()">Toggle</button> -->
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
+                    
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <!-- Add the language toggle button -->
                         <!-- <span style="color: white;">Eng</span> -->
-                        <div class="nav-item nav-link ">
-                        <label class="slider-container">
-                            <!-- <span class="lang-text eng-text">En</span> -->
+                        <!-- <div class="nav-item nav-link "> -->
+                        <!-- <label class="slider-container">
                             <input type="checkbox" onclick="toggleLanguage()">
                             <span class="slider"></span>
-                            <!-- <span class="lang-text tam-text">Ta</span> -->
-                        </label>
-                    </div>
+                        </label> -->
+                        <!-- <select id="languageSelector" onchange="toggleLanguage()">
+                            <option value="english">English</option>
+                            <option value="tamil">Tamil</option>
+                        </select> -->
+                    <!-- </div> -->
                     
                 <!-- <span style="color: white;">Tam</span> -->
                         <a href="index.html" class="nav-item nav-link active">Home</a>
