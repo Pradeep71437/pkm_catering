@@ -221,28 +221,28 @@ margin: 0; /* Optional - if you want to remove the margin */
             <th style="color: black">ஷேம தண்டல சாமான்கள்</th>
             <td><?php echo !empty($samangalset) ? implode(', ', $samangalset) : ''; ?></td>
             <td id="cou"></td>
-            <td><input placeholder="Amount" type="number" id="f3"  oninput="calculatottotal2()"  required></td>
+            <td><input placeholder="Amount" type="number" id="f4"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">நிச்சயதார்த்த தட்டுகள்</th>
             <td><?php echo !empty($wedplateset) ? implode(', ', $wedplateset) : ''; ?></td>
             <td id="cou"></td>
-            <td><input placeholder="Amount" type="number" id="f3"  oninput="calculatottotal2()"  required></td>
+            <td><input placeholder="Amount" type="number" id="f5"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">TOILET SET (with Plastic Tray)</th>
             <td><?php echo !empty($toiletset) ? implode(', ', $toiletset) : ''; ?></td>
             <td id="cou"></td>
-            <td><input placeholder="Amount" type="number" id="f3"  oninput="calculatottotal2()"  required></td>
+            <td><input placeholder="Amount" type="number" id="f6"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">வைதீக சாமான்கள்</th>
             <td><?php echo !empty($vedicset) ? implode(', ', $vedicset) : ''; ?></td>
             <td id="cou"></td>
-            <td><input placeholder="Amount" type="number" id="f3"  oninput="calculatottotal2()"  required></td>
+            <td><input placeholder="Amount" type="number" id="f7"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <!-- long and count -->
@@ -250,105 +250,105 @@ margin: 0; /* Optional - if you want to remove the margin */
             <th style="color: black">விரத பட்சணங்கள்</th>
             <td><?php echo !empty($carrybag) ? implode(', ', $carrybag) : ''; ?></td>
             <td id="cou"><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
-            <td><input placeholder="Amount" type="number" id="f8"  oninput="calculatottotal2()" required></td>
+            <td><input placeholder="Amount" type="number" id="f8"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
             <th style="color: black">ஸ்வீட் பாக்ஸ்</th>
             <td><?php echo !empty($carrybagweat) ? implode(', ', $carrybagweat) : ''; ?></td>
             <td id="cou"><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
-            <td><input placeholder="Amount" type="number" id="f9"  oninput="calculatottotal2()" required></td>
+            <td><input placeholder="Amount" type="number" id="f9"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
             <th style="color: black">பணியாரக்காய்கள்</th>
             <td><?php echo !empty($carrybagcookie) ? implode(', ', $carrybagcookie) : ''; ?></td>
             <td id="cou"><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
-            <td><input placeholder="Amount" type="number" id="f10"  oninput="calculatottotal2()" required></td>
+            <td><input placeholder="Amount" type="number" id="f10"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
                 <th style="color: black">ஜானவாசம் காலை டிபன்</th>
                 <td><?php echo !empty($firdaymor) ? implode(', ', $firdaymor) : ''; ?></td>
                 <td id="cou"><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
-                <td><input placeholder="Amount" type="number" id="f11" oninput="calculatottotal2()" required></td>
+                <td><input placeholder="Amount" type="number" id="f11"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">ஜானவாசம் சாப்பாடு</th>
             <td><?php echo !empty($firdayaft) ? implode(', ', $firdayaft) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">ஜானவாசம் மாலை டிபன்</th>
             <td><?php echo !empty($firdayeve) ? implode(', ', $firdayeve) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f13"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f13"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
             <th style="color: black">பிரெஷ் ஜூஸ்</th>
             <td><?php echo !empty($firdaydrink) ? implode(', ', $firdaydrink) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f14"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f14"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
             <th style="color: black">சாட்ஸ்</th>
             <td><?php echo !empty($firdaysnack) ? implode(', ', $firdaysnack) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f15"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f15"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">ஸ்பெஷல் டின்னர்</th>
             <td><?php echo !empty($firdaydinner) ? implode(', ', $firdaydinner) : ''; ?></td>
             <td id="cou"><?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f16"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f16"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">முகூர்த்தம் காலை டிபன்</th>
             <td><?php echo !empty($secdaymor) ? implode(', ', $secdaymor) : ''; ?></td>
             <td id="cou"><?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f17"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f17"  oninput="calculatottotal2()"  required></td>
             </tr>
 
             <tr>
             <th style="color: black">முகூர்த்தம் சாப்பாடு</th>
             <td><?php echo !empty($secdayaft) ? implode(', ', $secdayaft) : ''; ?></td>
             <td id="cou"><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f18"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f18"  oninput="calculatottotal2()"  required></td>
             </tr>
             
             <tr>
             <th style="color: black">முகூர்த்தம் மாலை ஸ்நாக்ஸ்</th>
             <td><?php echo !empty($secdayeve) ? implode(', ', $secdayeve) : ''; ?></td>
             <td id="cou"><?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f19"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f19"  oninput="calculatottotal2()"  required></td>
             </tr> 
 
             <tr>
             <th style="color: black">முகூர்த்தம் டின்னர்</th>
             <td><?php echo !empty($secdaydinner) ? implode(', ', $secdaydinner) : ''; ?></td>
             <td id="cou"><?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f20"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f20"  oninput="calculatottotal2()"  required></td>
             </tr>
                         
             <tr>
             <th style="color: black">சம்மந்தி விருந்து</th>
             <td><?php echo !empty($guestfood) ? implode(', ', $guestfood) : ''; ?></td>
             <td id="cou"><?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f21"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f21"  oninput="calculatottotal2()"  required></td>
             </tr>
                         
             <tr>
             <th style="color: black">Packet food</th>
             <td><?php echo !empty($packetfood) ? implode(', ', $packetfood) : ''; ?></td>
             <td id="cou"><?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?></td>
-            <td ><input placeholder="Amount" type="number" id="f22"  oninput="calculatottotal2()" required></td>
+            <td ><input placeholder="Amount" type="number" id="f22"  oninput="calculatottotal2()"  required> </td>
             </tr>
     
             <tr>
@@ -356,7 +356,7 @@ margin: 0; /* Optional - if you want to remove the margin */
                 <td></td>
                 <td></td>
                 <td>
-                    Total: ₹ <span id="total" style="color: green"></span>
+                    Total: ₹ <span id="total2" style="color: green"></span>
                 </td>
             </tr>
         </table>
@@ -575,19 +575,16 @@ function downloadPDF() {
 
 
 
+    function calculatottotal2() {
+    var total = 0;
 
-function calculatottotal2() {
-
-var total = 0;
-
-// Iterate over input fields and calculate total
-for (var i = 1; i <= 22; i++) {
-var fieldValue = document.getElementById("f" + i).valueAsNumber || 0;
-total += fieldValue;
+    // Iterate over input fields and calculate total
+    for (var i = 1; i <= 22; i++) {
+        var fieldValue = parseFloat(document.getElementById("f" + i).value) || 0;
+        total += fieldValue;
+    }
+    document.getElementById("total2").textContent = total;
 }
-document.getElementById("total").textContent = total;
-}
-
 function calculatAmount() {
 
 var total = 0;
@@ -601,6 +598,7 @@ document.getElementById("total1").textContent = total;
 }
 
 </script>
+
 <script>
   function calculatottotal2() {
     // Your calculation logic here
