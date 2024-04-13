@@ -356,7 +356,7 @@ margin: 0; /* Optional - if you want to remove the margin */
                 <td></td>
                 <td></td>
                 <td>
-                    Total: ₹ <span id="total2" style="color: green"></span>
+                    Total: ₹ <span id="total" style="color: green"></span>
                 </td>
             </tr>
         </table>
@@ -544,66 +544,9 @@ margin: 0; /* Optional - if you want to remove the margin */
             <button id="downloadButton" onclick="downloadPDF2()" class="btn btn-warning">Download</button>
         </div>
     </div>
-    
+    <script src="admin.js"></script>
 </body>
-
-<script>
-
-function downloadPDF() {
-        var element = document.getElementById('pdfTable');
-
-        html2pdf(element, {
-            margin: 1,
-            filename: 'order_details.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
-        });
-    }
-
-    function downloadPDF2() {
-        var element = document.getElementById('pdfTable2');
-
-        html2pdf(element, {
-            margin: 1,
-            filename: 'order_details.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
-        });
-    }
-
-
-
-    function calculatottotal2() {
-    var total = 0;
-
-    // Iterate over input fields and calculate total
-    for (var i = 1; i <= 22; i++) {
-        var fieldValue = parseFloat(document.getElementById("f" + i).value) || 0;
-        total += fieldValue;
-    }
-    document.getElementById("total2").textContent = total;
-}
-function calculatAmount() {
-
-var total = 0;
-
-// Iterate over input fields and calculate total
-for (var i = 1; i <= 22; i++) {
-var fieldValue = document.getElementById("t" + i).valueAsNumber || 0;
-total += fieldValue;
-}
-document.getElementById("total1").textContent = total;
-}
-
-</script>
-
-<script>
-  function calculatottotal2() {
-    // Your calculation logic here
-  }
-
+<!-- <script>
   function handleKeyDown(event, nextInputId) {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -612,6 +555,6 @@ document.getElementById("total1").textContent = total;
       event.preventDefault();
     }
   }
-</script>
+</script> -->
 
 </html>
