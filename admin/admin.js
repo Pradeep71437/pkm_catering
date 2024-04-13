@@ -44,3 +44,12 @@ function calculatottotal2() {
     }
     document.getElementById("total").textContent = total;
 }
+
+function handleKeyDown(event, nextInputId) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById(nextInputId).focus();
+    } else if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+      event.preventDefault();
+    }
+  }
