@@ -170,26 +170,9 @@ input:checked + .slider:before {
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
-            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark  px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0">P.K.M Catering</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="book.html" class="nav-item nav-link">Book</a>
-                       
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="book.html" class="btn btn-primary py-2 px-4">ORDER NOW</a>
-                </div>
-            </nav> -->
+         
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <div class="langlogo ">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="text-primary m-0">P.K.M Catering</h1>
                 </a>
@@ -203,18 +186,36 @@ input:checked + .slider:before {
                         height: auto;
                         border-radius: 15px;
                     }
+                    @media only screen and (max-width: 768px) {
+                        .navbar-brand h1{
+                            font-size: 25px;
+                        }
+                        #languageSelector{
+                            width: 50px;
+                            height: 35px;
+                            font-size: 13px;
+                            text-align: center;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                             appearance: none;
+                        }
+                        
+                        }
                     .lang{
                         background-color:#FEA116 ;
                         color: white;
                     }
-                  
+                 .langlogo{
+                    justify-content:space-between;
+                    display: flex;
+                 }
                 </style>
-                <select id="languageSelector" onchange="toggleLanguage()">
-                    <option value="english" class="lang mt-3">Eng</option>
-                    <option value="tamil" class="lang">தமிழ்</option>
+                <select id="languageSelector" class="" onchange="toggleLanguage()">
+                    <option value="english" class="lang container mt-3">Eng</option>
+                    <option value="tamil" class="lang container">தமிழ்</option>
                 </select>
                 <!-- <button class="nav-item nav-link btn btn-link text-center" onclick="toggleLanguage()">Toggle</button> -->
-                
+            </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -281,27 +282,38 @@ input:checked + .slider:before {
                 <div class="container my-5 py-5">
                     <div class="align-items-center g-5">
                         <div class="text-center text-lg-start">
-                            <div class="container gpic text-center">
+                            <!-- <div class="container gpic text-center"> -->
                                 <!-- English content -->
-                                <div class="english-content">
+                                <div class="english-content ">
+                                    <div class="container gpic text-center">
+
                                     <img src="img/perumalpic.png" alt="" class="img-fluid " width="300" style="animation: none;">
+                                    </div>
+                                    <div class="titleslogan">
                                     <h1 class="display-3 text-primary animated slideInLeft text-center">P.K.Mayakootha Iyengar Catering</h1>
                                     <h5 class="text-white animated slideInLeft mb-4 pb-2 text-center" style="font-weight: 6;">Elevate Your Occasions with the Exquisite Taste of Authentic South Indian Cuisine!</h5>
+                                </div>
                                     <div class="container text-center">
-                                        <a href="book.html" class="btn btn-primary py-3 px-5 me-3 animated slideInLeft rounded-pill">ORDER NOW</a>
+                                        <a href="book.html" class="btn btn-primary py-3 px-5  animated slideInLeft rounded-pill">ORDER NOW</a>
                                     </div>
                                 </div>
                                 <!-- Tamil content -->
                                 <div class="tamil-content" style="display: none;">
                                     <!-- Add your Tamil content here -->
+                                    <div class="container gpic text-center">
+
                                     <img src="img/perumalpic.png" alt="" class="img-fluid " width="300" style="animation: none;">
+                                    </div>                                    
+                                    <div class="titleslogan">
+
                                     <h1 class="display-5 text-primary animated slideInLeft text-center">பி.கே.மாயகூத்த ஐயங்கார் கேட்டரிங்</h1>
                                     <h5 class="text-white animated slideInLeft mb-4 pb-2 text-center" style="font-weight: 6;">உங்கள் விருந்தினர் மகிழ்ச்சியை அளித்தல் மற்றும் அதற்கு தனியாக நம் சுவை உணர்வை அளிக்கும்!!</h5>
+                                    </div>
                                     <div class="container text-center">
                                         <a href="book.html" class="btn btn-primary py-3 px-5 me-3 animated slideInLeft rounded-pill">ஆர்டர்</a>
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
