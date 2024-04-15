@@ -398,7 +398,7 @@ input:checked + .slider:before {
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
                                 <div class="stit container">
-                                <h5 class="text-orange  english-content">Housewarming</h5>
+                                <h5 class="text-orange  english-content">Housewarming Function</h5>
                                     <h5 class="text-orange tamil-content">புதுமனை புகுவிழா</h5>
                             </div>
                                 <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
@@ -520,13 +520,33 @@ input:checked + .slider:before {
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
-                        <h1 class="section-title text-dark mb-5">Our Menu</h1>
-
+                        <h1 class="section-title text-dark mb-4">Our Menu</h1><br>
+                        <button class="btn btn-primary mb-4" onclick="downloadPDF()">DOWNLOAD</button>
                     </div>
                     <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
-                        <h1 class="section-title text-dark mb-5 ">மெனு</h1>
-
+                        <h1 class="section-title text-dark mb-4 ">மெனு</h1><br>
+                        <button class="btn btn-primary mb-4" onclick="downloadPDF()">பதிவிறக்கு</button>
                     </div>
+                    <script>
+                        function downloadPDF() {
+                            // Create an anchor element
+                            var link = document.createElement('a');
+                            link.href = './pkmcateringcatalog.pdf'; // Replace 'path/to/your/pdf/file.pdf' with the actual path to your PDF file
+                            link.download = 'pkmcateringcatalog.pdf'; // Replace 'filename.pdf' with the desired name for the downloaded file
+                            link.target = '_blank'; // Open the PDF file in a new tab
+
+                            // Append the anchor element to the document body
+                            document.body.appendChild(link);
+
+                            // Trigger a click event on the anchor element
+                            link.click();
+
+                            // Remove the anchor element from the document body
+                            document.body.removeChild(link);
+                        }
+                    </script>
+                    <!-- <div class="container text-center mb-5"><button class="btn btn-primary">DOWNLOAD</button></div> -->
+
                     <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                         <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                             <li class="nav-item">
@@ -557,10 +577,10 @@ input:checked + .slider:before {
 
                                     
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3" class="english-content">BREAKFAST</h4>
-                                        <h4 class="text-primary m-3" class="tamil-content">காலை உணவு</h4>
+                                        <h4 class="text-primary m-3 english-content">BREAKFAST</h4>
+                                        <h4 class="text-primary m-3 tamil-content">காலை உணவு</h4>
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6 mb-0">
                                                 <ol>
                                          <li><h5 class="m-4 english-content">Pineapple Pudding - <span class="text-primary">Sweet</span></h5>
                                         <h5 class="m-4 tamil-content">பைனாப்பிள் புட்டிங் - <span class="text-primary">Sweet</span></h5></li>
@@ -574,26 +594,23 @@ input:checked + .slider:before {
                                          <li><h5 class="m-4 english-content">Veg Kichadi</h5>
                                          <h5 class="m-4 tamil-content">வெஜ். கிச்சடி</h5></li>
 
-                                    
-                                         
-
-
-
                                         </ol>
                                         </div>
-                                        <div class="col-6">
-                                            <ol start="8">
+                                        <div class="col-sm-6" >
+                                            <ol start="5">
                                                 <li><h5 class="m-4 english-content">Medhu Vadai</h5>
                                                 <h5 class="m-4 tamil-content">மெது வடை</h5></li>
 
-                                          <li><h5 class="m-4 english-content" >Coconut Chutney</h5>
-                                          <h5 class="m-4" class="tamil-content">தேங்காய் சட்னி</h5></li>
+                                                <li><h5 class="m-4 english-content">Coconut Chutney</h5>
+                                                    <h5 class="m-4 tamil-content">தேங்காய் சட்னி</h5></li>
 
-                                         <li><h5 class="m-4 english-content">Sambaar</h5>
-                                         <h5 class="m-4" class="tamil-content">சாம்பார்</h5></li>
+                                                    <li><h5 class="m-4 english-content">Sambaar</h5>
+                                                        <h5 class="m-4 tamil-content">சாம்பார்</h5></li>
 
-                                         <li><h5 class="m-4 english-content">Coffee</h5>
-                                         <h5 class="m-4" class="tamil-content">காபி</h5></li>
+                                                        <li><h5 class="m-4 english-content">Coffee</h5>
+                                                            <h5 class="m-4 tamil-content">காபி</h5></li>
+
+                                         
 
                                          
       
@@ -607,10 +624,10 @@ input:checked + .slider:before {
                                     <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3" class="english-content">BREAKFAST</h4>
-                                        <h4 class="text-primary m-3" class="tamil-content">காலை உணவு</h4>
+                                        <h4 class="text-primary m-3 english-content">BREAKFAST</h4>
+                                        <h4 class="text-primary m-3 tamil-content">காலை உணவு</h4>
                                      <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                          <li><h5 class="m-4 english-content">Carrot Alva - <span class="text-primary">Sweet</span></h5>
                                          <h5 class="m-4 tamil-content">கேரட் அல்வா - <span class="text-primary">Sweet</span></h5></li>
@@ -633,12 +650,14 @@ input:checked + .slider:before {
                                          <li><h5 class="m-4 english-content">Medhu Vadai</h5>
                                          <h5 class="m-4 tamil-content">மெது வடை</h5></li>
 
+                                         <li ><h5 class="m-4 english-content">Masala Vadai</h5>
+                                            <h5 class="m-4 tamil-content">மசால் வடை</h5></li>
                                         </ol>
                                         </div>
-                                        <div class="col-6">
-                                            <ol start="8">
-                                               <li ><h5 class="m-4 english-content">Masala Vadai</h5>
-                                              <h5 class="m-4 tamil-content">மசால் வடை</h5></li>
+                                        <div class="col-sm-6">
+                                            <ol start="9">
+                                               <!-- <li ><h5 class="m-4 english-content">Masala Vadai</h5>
+                                              <h5 class="m-4 tamil-content">மசால் வடை</h5></li> -->
 
                                          <li><h5 class="m-4 english-content">Coconut Chutney</h5>
                                         <h5 class="m-4 tamil-content">தேங்காய் சட்னி</h5></li>
@@ -678,7 +697,7 @@ input:checked + .slider:before {
                                         <h4 class="text-primary m-3 english-content">LUNCH</h4>
                                         <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                          <li><h5 class="m-4 english-content">Mysorepak - <span class="text-primary">Sweet</span></h5>
                                          <h5 class="m-4 tamil-content" >மைசூர்பாகு - <span class="text-primary">Sweet</span></h5></li>
@@ -714,7 +733,7 @@ input:checked + .slider:before {
 
                                         </ol>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6">
                                             <ol start="10">
                                          <li><h5 class="m-4 english-content">Nei & Parupu</h5>
                                         <h5 class="m-4 tamil-content">நெய் & பருப்பு</h5></li> 
@@ -758,7 +777,7 @@ input:checked + .slider:before {
                                         <h4 class="text-primary m-3 english-content">LUNCH</h4>
                                         <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>                                        
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                         <li ><h5 class="m-4 english-content">Jangiri - <span class="text-primary">Sweet</span></h5>
                                        <h5 class="m-4 tamil-content">ஜாங்கிரி - <span class="text-primary">Sweet</span></h5></li>
@@ -801,7 +820,7 @@ input:checked + .slider:before {
 
                                         </ol>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6">
                                             <ol start="12">
                                             <li ><h5 class="m-4 english-content" >Curd Vadai</h5>
                                            <h5 class="m-4 tamil-content">தயிர்வடை</h5></li>
@@ -845,10 +864,10 @@ input:checked + .slider:before {
                                     <h1 class="text-center  mt-3 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3 english-content">Dinner</h4>
+                                        <h4 class="text-primary m-3 english-content">DINNER</h4>
                                         <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>  
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                          <li><h5 class="m-4 english-content">Badam Alva - <span class="text-primary">Sweet</span></h5>
                                         <h5 class="m-4 tamil-content">பாதாம் அல்வா - <span class="text-primary">Sweet</span></h5></li>
@@ -880,7 +899,7 @@ input:checked + .slider:before {
 
                                         </ol>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6">
                                             <ol start="9">
                                                 <li>
                                                     <h5 class="m-4 english-content">Mysore Bonda</h5>
@@ -949,10 +968,10 @@ input:checked + .slider:before {
                                     <h1 class="text-center  mt-5 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
-                                        <h4 class="text-primary m-3 english-content">Dinner</h4>
+                                        <h4 class="text-primary m-3 english-content">DINNER</h4>
                                         <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>  
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                         <li>
                                             <h5 class="m-4 english-content">Gulab Jamun - <span class="text-primary">Sweet</span></h5>
@@ -1011,7 +1030,7 @@ input:checked + .slider:before {
 
                                         </ol>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6">
                                         <ol start="8">
                                         <li>
                                             <h5 class="m-4 english-content">Thakkali Rasam</h5>
@@ -1068,7 +1087,7 @@ input:checked + .slider:before {
                                     <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
                                         <h4 class="text-primary m-3">DINNER</h4>
                                         <div class="row text-start food-items">
-                                            <div class="col-6">
+                                            <div class="col-sm-6">
                                                 <ol>
                                          <li ><h5 class="m-4 english-content">Rasamalai - <span class="text-primary">Sweet</span></h5>
                                             <h5 class="m-4 tamil-content">ரசமலாய் - <span class="text-primary">Sweet</span></h5></li>
@@ -1119,7 +1138,7 @@ input:checked + .slider:before {
 
                                         </ol>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6">
                                             <ol start="16">
                                        <li><h5 class="m-4 english-content">Potato Roast & Senai Roast</h5><h5 class="m-4 tamil-content">உருளை வறுவல் & சேனை வறுவல்</h5></li>
                                          <li><h5 class="m-4 english-content">Veg Poriyal / Kos Poriyal</h5><h5 class="m-4 tamil-content">வெஜ் பொறியல் / கோஸ் பொரியல்</h5></li>
