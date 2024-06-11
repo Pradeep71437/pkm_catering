@@ -1,0 +1,174 @@
+.message-box{
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(../img/bg-hero2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+.btn-lg-circle2{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* color: rgb(20, 20, 20); */
+}
+
+
+
+.menu-card{
+    border-radius: 24px;
+    border: 1px solid #FEA116;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(255, 211, 14, 0.2), 0 6px 20px 0 rgba(248, 190, 0, 0.19);
+
+}
+.menu-card::-webkit-scrollbar {
+  width: 4px; /* Change the width of the scrollbar */
+  /* margin: 30px; */
+}
+
+.menu-card::-webkit-scrollbar-track {
+  display: none;
+}
+
+.menu-card::-webkit-scrollbar-thumb {
+  background: #FEA116; /* Change the color of the scrollbar thumb */
+  border-radius: 4px; /* Optional: Round the corners of the scrollbar thumb */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .video {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(img/bg-hero2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .english-content {
+          display: block;
+      }
+      .tamil-content {
+          display: none;
+      }
+      
+     /* Slider toggle button styles */
+.slider-container {
+  display: inline-block;
+  position: relative;
+  width: 60px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  padding-top: 5px; /* Add top padding */
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 30px; /* Adjust border-radius to make it round */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%; /* Make the slider button round */
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Eng and Tam text styles */
+.lang-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 5px; /* Adjust padding as needed */
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.eng-text {
+  left: -5px; /* Adjust left positioning */
+}
+
+.tam-text {
+  right: -5px; /* Adjust right positioning */
+}
+.owl-carousel .item {
+  width: 300px;  /* Fixed width for each item */
+  height: 300px; /* Fixed height for each item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure content that overflows is hidden */
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+}

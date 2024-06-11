@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+}
+.neworder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    
+}
+.view{
+    color: rgb(0, 0, 0);
+    background-color:#FEA116;
+    padding: 5px 15px;
+}
+.white{
+    color: rgb(0, 0, 0);
+}
+.remove{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 10, 2);
+    padding: 5px 15px;
+}
+/* table style  */
+/* model css */
+#pdfTable3 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#pdfTable3 .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pdfTable3 .text-left, #pdfTable3 .text-right {
+    flex: 1;
+}
