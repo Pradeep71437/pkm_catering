@@ -1,6 +1,5 @@
 <?php
-$connection = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($connection, "pkm_catering");
+include 'admin/db_connection.php';
 
 $query = "SELECT * FROM orders";
 $result = mysqli_query($connection, $query);

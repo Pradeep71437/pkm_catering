@@ -1,6 +1,6 @@
 <?php
 // Your database connection code here
-$conn = mysqli_connect("localhost", "root", "", "pkm_catering");
+include 'db_connection.php';
 
 // Fetch specific order data based on the passed ID
 if (isset($_GET['id'])) {
@@ -115,7 +115,10 @@ margin: 0; /* Optional - if you want to remove the margin */
 <div class="container" id="pdfTable">
     <div>
     <h1 class="text-warning m-0 text-center m-4" >P.K.M Catering</h1>
-    <h1 class="text-center">Order Details</h1>
+    <div class="row">
+        <div class="col-2"><a href="adminindex.php"  class="btn btn-link text-primary mb-4">Home</a></div>
+        <div class="col-8"><h1 class="text-center">Order Details</h1></div>
+    </div>
     </div>
     <div class="table-responsive">
         <table class="table table-bordered">
@@ -608,5 +611,28 @@ function handleKeyDown(event, nextId) {
     }
 }
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Bundle (including Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Additional Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script>
+
+<!-- Tempus Dominus (Date Time Picker) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Owl Carousel (Comment out local library link if needed) -->
+<!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </body>
 </html>

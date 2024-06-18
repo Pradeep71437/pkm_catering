@@ -100,7 +100,7 @@
         <div class="row">
             <?php
             // Connect to the MySQL database
-            $conn = mysqli_connect("localhost", "root", "", "pkm_catering");
+            include 'admin/db_connection.php';
 
             // Check connection
             if (!$conn) {

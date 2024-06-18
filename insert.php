@@ -1,33 +1,31 @@
 <?php
-$connection = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($connection, "pkm_catering");
-
+include 'admin/db_connection.php';
 
 if(isset($_POST['submit'])) {
-    $uname = mysqli_real_escape_string($connection, $_POST['uname']);
-    $unumber = mysqli_real_escape_string($connection, $_POST['unumber']);
-    $uemail = mysqli_real_escape_string($connection, $_POST['uemail']);
-    $ucity = mysqli_real_escape_string($connection, $_POST['ucity']);
-    $usdate = mysqli_real_escape_string($connection, $_POST['usdate']);
-    $uedate = mysqli_real_escape_string($connection, $_POST['uedate']);
-    $upartydetails = mysqli_real_escape_string($connection, $_POST['upartydetails']);
-    $uhalldetails = mysqli_real_escape_string($connection, $_POST['uhalldetails']);
+    $uname = mysqli_real_escape_string($conn, $_POST['uname']);
+    $unumber = mysqli_real_escape_string($conn, $_POST['unumber']);
+    $uemail = mysqli_real_escape_string($conn, $_POST['uemail']);
+    $ucity = mysqli_real_escape_string($conn, $_POST['ucity']);
+    $usdate = mysqli_real_escape_string($conn, $_POST['usdate']);
+    $uedate = mysqli_real_escape_string($conn, $_POST['uedate']);
+    $upartydetails = mysqli_real_escape_string($conn, $_POST['upartydetails']);
+    $uhalldetails = mysqli_real_escape_string($conn, $_POST['uhalldetails']);
     // large value count
-    $carrybagcou = mysqli_real_escape_string($connection, $_POST['carrybagcou']);
-    $carrybagsweatcou = mysqli_real_escape_string($connection, $_POST['carrybagsweatcou']);
-    $carrybagcookiecou = mysqli_real_escape_string($connection, $_POST['carrybagcookiecou']);
-    $firdaymorcou = mysqli_real_escape_string($connection, $_POST['firdaymorcou']);
-    $firdayaftcou = mysqli_real_escape_string($connection, $_POST['firdayaftcou']);
-    $firdayevecou = mysqli_real_escape_string($connection, $_POST['firdayevecou']);
-    $firdaycooldrinkcou = mysqli_real_escape_string($connection, $_POST['firdaycooldrinkcou']);
-    $firdaysnackcou = mysqli_real_escape_string($connection, $_POST['firdaysnackcou']);
-    $firdaydinnercou = mysqli_real_escape_string($connection, $_POST['firdaydinnercou']);
-    $secdaymorcou = mysqli_real_escape_string($connection, $_POST['secdaymorcou']);
-    $secdayaftercou = mysqli_real_escape_string($connection, $_POST['secdayaftercou']);
-    $secdayevecou = mysqli_real_escape_string($connection, $_POST['secdayevecou']);
-    $secdaydinnercou = mysqli_real_escape_string($connection, $_POST['secdaydinnercou']);
-    $guestfoodcou = mysqli_real_escape_string($connection, $_POST['guestfoodcou']);
-    $packetfoodcou = mysqli_real_escape_string($connection, $_POST['packetfoodcou']);
+    $carrybagcou = mysqli_real_escape_string($conn, $_POST['carrybagcou']);
+    $carrybagsweatcou = mysqli_real_escape_string($conn, $_POST['carrybagsweatcou']);
+    $carrybagcookiecou = mysqli_real_escape_string($conn, $_POST['carrybagcookiecou']);
+    $firdaymorcou = mysqli_real_escape_string($conn, $_POST['firdaymorcou']);
+    $firdayaftcou = mysqli_real_escape_string($conn, $_POST['firdayaftcou']);
+    $firdayevecou = mysqli_real_escape_string($conn, $_POST['firdayevecou']);
+    $firdaycooldrinkcou = mysqli_real_escape_string($conn, $_POST['firdaycooldrinkcou']);
+    $firdaysnackcou = mysqli_real_escape_string($conn, $_POST['firdaysnackcou']);
+    $firdaydinnercou = mysqli_real_escape_string($conn, $_POST['firdaydinnercou']);
+    $secdaymorcou = mysqli_real_escape_string($conn, $_POST['secdaymorcou']);
+    $secdayaftercou = mysqli_real_escape_string($conn, $_POST['secdayaftercou']);
+    $secdayevecou = mysqli_real_escape_string($conn, $_POST['secdayevecou']);
+    $secdaydinnercou = mysqli_real_escape_string($conn, $_POST['secdaydinnercou']);
+    $guestfoodcou = mysqli_real_escape_string($conn, $_POST['guestfoodcou']);
+    $packetfoodcou = mysqli_real_escape_string($conn, $_POST['packetfoodcou']);
 
     // Check if the checkboxes are set before serializing
     $malaifirday = isset($_POST['malaifirday']) ? serialize($_POST['malaifirday']) : '';
@@ -59,7 +57,7 @@ if(isset($_POST['submit'])) {
 
     $query = "INSERT INTO order_details VALUES (null, '$uname', '$unumber', '$uemail', '$ucity', '$usdate', '$uedate', '$upartydetails', '$uhalldetails', '$malaifirday', '$wedmalaiset', '$kasiyathiraiset', '$samangalset', '$wedplateset', '$toiletset', '$vedicset', '$carrybag', '$carrybagcou', '$carrybagweat', '$carrybagsweatcou', '$carrybagcookie', '$carrybagcookiecou', '$firdaymor', '$firdaymorcou', '$firdayaftcou', '$firdayeve', '$firdayevecou', '$firdaydrink', '$firdaycooldrinkcou', '$firdaysnack', '$firdaysnackcou', '$firdaydinner', '$firdaydinnercou', '$secdaymor', '$secdaymorcou', '$secdayaftercou', '$secdayeve', '$secdayevecou', '$secdaydinner', '$secdaydinnercou', '$guestfood', '$guestfoodcou', '$packetfood', '$packetfoodcou', '$firdayaft' ,'$secdayaft')";
     
-    $result = mysqli_query($connection, $query);
+    $result = mysqli_query($conn, $query);
 
     if($result) {
         echo "<script type='text/javascript'>
@@ -74,5 +72,5 @@ if(isset($_POST['submit'])) {
     }
 }
 
-mysqli_close($connection);
+mysqli_close($conn);
 ?>

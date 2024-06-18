@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="../css/style2.css">
     <?php
 
-$conn = mysqli_connect("localhost", "root", "", "pkm_catering");
+include 'db_connection.php';
 
 // Check if the form is submitted
 if (count($_POST) > 0) {

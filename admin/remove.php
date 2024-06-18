@@ -1,6 +1,6 @@
 <?php
 // Establish database connection
-$conn = mysqli_connect("localhost", "root", "", "pkm_catering");
+include 'db_connection.php';
 
 // Check if the remove ID is set and is a valid integer
 if(isset($_GET['remove_id']) && is_numeric($_GET['remove_id'])) {

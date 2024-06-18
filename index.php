@@ -24,7 +24,9 @@
     <meta name="twitter:url" content="http://www.pkmcatering.com">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/apple-touch-icon.png" rel="apple-touch-icon">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +53,7 @@
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(img/bg-hero2.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/bg-hero2-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,6 +145,7 @@ input:checked + .slider:before {
     height: 100%;
     object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
 }
+
     </style>
 
 
@@ -197,50 +200,24 @@ input:checked + .slider:before {
         <div class="container-fluid position-relative p-0">
          
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <div class="langlogo ">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0">P.K.M Catering</h1>
-                </a>
-                <style>
-                    #languageSelector{
-                        background-color: transparent;
-                        border: 2px solid #FEA116;
-                        color: white;
-                        padding: 4px;
-                        width: 80px;
-                        height: auto;
-                        border-radius: 15px;
-                    }
-                    @media only screen and (max-width: 768px) {
-                        .navbar-brand h1{
-                            font-size: 25px;
-                        }
-                        #languageSelector{
-                            width: 50px;
-                            height: 35px;
-                            font-size: 13px;
-                            text-align: center;
-                            -webkit-appearance: none;
-                            -moz-appearance: none;
-                             appearance: none;
-                        }
-                        
-                        }
-                    .lang{
-                        background-color:#FEA116 ;
-                        color: white;
-                    }
-                 .langlogo{
-                    justify-content:space-between;
-                    display: flex;
-                 }
-                </style>
-                <select id="languageSelector" class="" onchange="toggleLanguage()">
-                    <option value="english" class="lang container mt-3">Eng</option>
-                    <option value="tamil" class="lang container">தமிழ்</option>
-                </select>
-                <!-- <button class="nav-item nav-link btn btn-link text-center" onclick="toggleLanguage()">Toggle</button> -->
-            </div>
+            <div class="langlogo d-flex justify-content-between align-items-center">
+    <a href="" class="navbar-brand p-1">
+        <img class="logo img-fluid" style="height: 300px;" src="img/pkm logo.png" alt="">
+    </a>
+    <select id="languageSelector" class="form-select w-auto ms-3" onchange="toggleLanguage()">
+        <option value="english" class="lang container mt-3">Eng</option>
+        <option value="tamil" class="lang container">தமிழ்</option>
+    </select>
+</div>
+
+<style>
+    .lang {
+        background-color: #FEA116;
+        color: white;
+    }
+</style>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -370,7 +347,7 @@ input:checked + .slider:before {
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded pt-3 ">
                             <div class="p-4">
-                                <img src="img/food1.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
+                                <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                             
                                 <!-- <i class="fa fa-3x fa-user-tie text-primary mb-4"></i> -->
                                     <!-- <div class="english-content"> -->
@@ -387,7 +364,7 @@ input:checked + .slider:before {
                         <div class="service-item rounded pt-3 ">
                             <div class="p-4">
                                 <div class="simg ">
-                                    <img src="img/food2.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
+                                    <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food2-min.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
                                 <div class="stit ">
@@ -403,7 +380,7 @@ input:checked + .slider:before {
                         <div class="service-item rounded pt-3 ">
                             <div class="p-4 container">
                                 <div class="simg ">
-                                    <img src="img/food6.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
+                                    <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food3-min.jpeg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
                                 <div class="stit container">
@@ -419,7 +396,7 @@ input:checked + .slider:before {
                         <div class="service-item rounded pt-3 " >
                             <div class="p-4">
                                 <div class="simg  ">
-                                    <img src="img/food5.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
+                                    <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food4-min.jpg" alt="" class="img-fluid m-3 " style="padding-right: 27px;">
                                 </div>
                                 <!-- <i class="fa fa-3x fa-utensils text-primary mb-4"></i> -->
                                 <div class="stit container">
@@ -459,11 +436,11 @@ input:checked + .slider:before {
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded  wow zoomIn pb-2" data-wow-delay="0.1s" src="img/IMG_7757.png">
-                                <img class="img-fluid rounded  wow zoomIn" data-wow-delay="0.1s" src="img/owner images.png">
+                                <img class="img-fluid rounded  wow zoomIn pb-2" data-wow-delay="0.1s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/IMG_7757-min.png">
+                                <img class="img-fluid rounded  wow zoomIn" data-wow-delay="0.1s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/owner%20images-min.png">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded  wow zoomIn" data-wow-delay="0.3s" src="img/about.jpg" style="margin-top: 25%;">
+                                <img class="img-fluid rounded  wow zoomIn" data-wow-delay="0.3s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/about-min.jpg" style="margin-top: 25%;">
                             </div>
                             
                         </div>
@@ -1291,13 +1268,7 @@ input:checked + .slider:before {
                 <!-- <h1 class="mb-5">Our Clients Say!!!</h1> -->
             </div>
             <?php
-// Connect to the MySQL database
-$conn = mysqli_connect("localhost", "root", "", "pkm_catering");
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include 'admin/db_connection.php';
 
 // Execute the query
 $result = mysqli_query($conn, "SELECT * FROM images");
