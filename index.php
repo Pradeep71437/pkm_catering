@@ -2,26 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta charset="utf-8">
-    <title>P.K.M. Mayakootha Iyengar Catering Services - Quality Catering Since 1954</title>
+<meta charset="utf-8">
+    <title>Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="P.K.M. Mayakootha Iyengar Catering, catering services, event catering, wedding catering, corporate catering, quality food, affordable catering, best hospitality">
+    <meta name="keywords" content="P.K.M. Mayakootha Iyengar Catering, catering services, event catering, wedding catering, corporate catering, quality food, affordable catering, best hospitality, Iyengar Catering, Chennai Catering, best Catering services">
     <meta name="description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="http://www.pkmcatering.com">
+    
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Language and Hreflang Tags -->
+    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" hreflang="en" href="http://www.pkmcatering.com">
+    
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="P.K.M. Mayakootha Iyengar Catering Services - Quality Catering Since 1954">
+    <meta property="og:title" content="Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954">
     <meta property="og:description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-    <meta property="og:image" content="URL_to_image.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/PMK%20CATERINGS%20(1).png">
     <meta property="og:url" content="http://www.pkmcatering.com">
     <meta property="og:type" content="website">
-
+    
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="P.K.M. Mayakootha Iyengar Catering Services - Quality Catering Since 1954">
+    <meta name="twitter:title" content="Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954">
     <meta name="twitter:description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-    <meta name="twitter:image" content="URL_to_image.jpg">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/PMK%20CATERINGS%20(1).png">
     <meta name="twitter:url" content="http://www.pkmcatering.com">
+    
+    <!-- Schema Markup for Local Business -->
+
+    <!-- Voice Search Optimization -->
+    <meta name="target" content="voice_search">
 
     <!-- Favicon -->
     <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
@@ -236,14 +250,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active english-content">Home</a>
-                        <a href="index.html" class="nav-item nav-link active tamil-content">ஹோம்</a>
-
-                        <a href="#about" class="nav-item nav-link english-content">About</a>
-                        <a href="#about" class="nav-item nav-link tamil-content">பற்றி</a>
+                        <a href="index.php" class="nav-item nav-link active english-content">Home</a>
+                        <a href="index.php" class="nav-item nav-link active tamil-content">ஹோம்</a>
 
                         <a href="#service" class="nav-item nav-link english-content">Service</a>
                         <a href="#service" class="nav-item nav-link tamil-content">சேவை</a>
+
+                        <a href="#about" class="nav-item nav-link english-content">About</a>
+                        <a href="#about" class="nav-item nav-link tamil-content">பற்றி</a>
 
                         <a href="#menu" class="nav-item nav-link english-content">Menu</a>
                         <a href="#menu" class="nav-item nav-link tamil-content">மெனு</a>
@@ -1129,7 +1143,7 @@
                 <div class="row g-0">
                     <div class="col-md-6">
                         <div class="video">
-                            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="#" data-bs-target="#videoModal">
+                            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtu.be/PNC7Vs_CA0Y?si=-IkcY9b9tb8qFmOf" data-bs-target="#videoModal">
                                 <span></span>
                             </button>
                         </div>
