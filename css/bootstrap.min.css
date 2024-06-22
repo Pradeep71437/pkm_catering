@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -2427,7 +2427,7 @@ textarea.form-control-lg {
     line-height: 1.5;
     color: #666565;
     background-color: #fff;
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
@@ -2521,17 +2521,17 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")
 }
 
 .form-check-input:checked[type="radio"] {
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
     background-color: #FEA116;
     border-color: #FEA116;
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
 .form-check-input:disabled {
@@ -8373,7 +8373,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #070b15 !important
+    background-color: #0F172B !important
 }
 
 .bg-body {
@@ -12536,4 +12536,7 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important
     }
+}
+.text-orange{
+    color: orange;
 }
