@@ -50,6 +50,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
@@ -63,6 +64,11 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
     <style>
+        :root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
         .video {
             position: relative;
             height: 100%;
@@ -233,17 +239,17 @@
         <!-- Spinner End -->
         <!-- Navbar & Hero Start -->
         <div id="indexpage" class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a href="#indexpage" class="navbar-brand p-1">
-                        <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 90px; height: auto;" class="img-fluid logo">
-                    </a>
-                    <select id="languageSelector" class="form-select w-auto ms-3" onchange="toggleLanguage()">
-                        <option value="english" class="lang container mt-3">Eng</option>
-                        <option value="tamil" class="lang container">தமிழ்</option>
-                    </select>
-                </div>
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <div class="langlogo ">
+                <a href="#indexpage" class="navbar-brand p-1 pe-5">
+                        <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 95px; height: auto;" class="img-fluid logo">
+                </a>
+            
+                <select id="languageSelector" class="" onchange="toggleLanguage()">
+                    <option value="english" class="lang container mt-3">Eng</option>
+                    <option value="tamil" class="lang container">தமிழ்</option>
+                </select>
+            </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -270,12 +276,11 @@
                     <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content">ஆர்டர்</a>
                 </div>
             </nav>
-
             <div class="container-fluid py-5 bg-dark hero-header mb-5 justify-content-center d-flex align-items-center">
                 <div class="container my-5 py-5">
                     <div class="align-items-center g-5">
                         <div class="text-center text-lg-start">
-                            <div class="english-content" data-aos="zoom-in">
+                            <div class="english-content" data-aos="zoom-in-up">
                                 <div class="container gpic text-center">
                                     <img src="img/perumalpic.png" alt="Transparent venkateswara Swamy" class="img-fluid" width="300" style="animation: none;">
                                 </div>
@@ -287,7 +292,7 @@
                                     <a href="book.html" class="btn btn-primary py-3 px-5 animated slideInLeft rounded-pill">Book Now</a>
                                 </div>
                             </div>
-                            <div class="tamil-content" style="display: none;" data-aos="zoom-in">
+                            <div class="tamil-content" style="display: none;" data-aos="zoom-in-up">
                                 <div class="container gpic text-center">
                                     <img src="img/perumalpic.png" alt="" class="img-fluid" width="300" style="animation: none;">
                                 </div>
@@ -317,29 +322,29 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-right">
                                 <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg" alt="Catering Services" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-primary english-content">Catering Services</h5>
-                                <h5 class="text-primary tamil-content">கேட்டரிங் சேவைகள்</h5>
+                                <h5 class="text-dark english-content">Catering Services</h5>
+                                <h5 class="text-dark tamil-content">கேட்டரிங் சேவைகள்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-right">
                                 <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food2-min.jpg" alt="Stage Decoration" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-primary english-content">Stage Decoration</h5>
-                                <h5 class="text-primary tamil-content">மேடை அலங்காரம்</h5>
+                                <h5 class="text-dark english-content">Stage Decoration</h5>
+                                <h5 class="text-dark tamil-content">மேடை அலங்காரம்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-left">
                                 <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food3-min.jpeg" alt="Return Gift Bags" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-primary english-content">Return Gift Bags</h5>
-                                <h5 class="text-primary tamil-content">தாம்பூலம் பைகள்</h5>
+                                <h5 class="text-dark english-content">Return Gift Bags</h5>
+                                <h5 class="text-dark tamil-content">தாம்பூலம் பைகள்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-left">
                                 <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food4-min.jpg" alt="Seer Varisai Thattugalu" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-primary english-content">Seer Varisai Thattugalu</h5>
-                                <h5 class="text-primary tamil-content">சீர் வரிசை தட்டுகள்</h5>
+                                <h5 class="text-dark english-content">Seer Varisai Thattugalu</h5>
+                                <h5 class="text-dark tamil-content">சீர் வரிசை தட்டுகள்</h5>
                             </div>
                         </div>
                     </div>
@@ -432,9 +437,9 @@
         </section>
         <!-- About End -->
         <!-- menu start -->
-        <section id="menu">
+        <section id="menu" >
             <div class="container-xxl py-5">
-                <div class="container">
+                <div class="container" data-aos="zoom-in-up">
                     <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
                         <h1 class="section-title text-dark mb-4">Our Menu</h1><br>
                         <button class="btn btn-primary mb-4" onclick="downloadPDF()">DOWNLOAD</button>
@@ -465,7 +470,7 @@
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div id="tab-1" class="tab-pane fade show active">
+                            <div id="tab-1" class="tab-pane fade show active" data-aos="zoom-in-up">
                                 <div class="row">
                                     <h1 class="text-center mt-4 english-content">Jaanavasam</h1>
                                     <h1 class="text-center mt-4 tamil-content" style="font-size: 33px;">ஜானவாசம்</h1>
@@ -596,7 +601,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-2" class="tab-pane fade">
+                            <div id="tab-2" class="tab-pane fade" data-aos="zoom-in-up">
                                 <h1 class="text-center english-content">Jaanavasam</h1>
                                 <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
@@ -792,7 +797,7 @@
                                 </div>
                             </div>
                             <!-- sample -->
-                            <div id="tab-3" class="tab-pane fade">
+                            <div id="tab-3" class="tab-pane fade" data-aos="zoom-in-up">
                                 <div class="row">
                                     <h1 class="text-center english-content mt-3">Jaanavasam</h1>
                                     <h1 class="text-center  mt-3 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
@@ -1120,8 +1125,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -1135,21 +1138,28 @@
 </div> -->
 
         <!-- Contact Start -->
-        <section id="contact">
-            <div class="container-fluid py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="text-center">
+        <section id="contact" >
+            <div class="container-fluid py-5 px-0 wow fadeInUp" >
+                <div class="text-center" data-aos="zoom-in-up">
                     <h1 class="section-title text-dark mb-5">Contact Us</h1>
                     <h1 class="section-title text-dark mb-5 tamil-content" style="display: none;">தொடர்பு கொள்ள</h1>
                 </div>
                 <div class="row g-0">
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <div class="video">
                             <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtu.be/PNC7Vs_CA0Y?si=-IkcY9b9tb8qFmOf" data-bs-target="#videoModal">
                                 <span></span>
                             </button>
                         </div>
+                    </div> -->
+                    <div class="col-md-6" data-aos="zoom-in-up">
+                        <div class="video">
+                            <button type="button" class="btn-play" id="play-button">
+                                <span></span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="col-md-6 bg-dark d-flex align-items-center" data-aos="zoom-in-up">
                         <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                             <h1 class="text-primary mb-4">Send us a message!</h1>
                             <h1 class="text-primary mb-4 tamil-content" style="font-size: 37px; display: none;">எங்களை தொடர்பு கொள்ள!</h1>
@@ -1203,7 +1213,7 @@
         </section>
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow mb-4 fadeInUp" data-wow-delay="0.1s" id="gallery">
+        <div class="container-xxl py-5 wow mb-4 fadeInUp" data-wow-delay="0.1s" data-aos="zoom-in-up" id="gallery">
             <div class="container">
                 <div class="text-center">
                     <div class="text-center wow fadeInUp english-content" data-wow-delay="0.1s">
@@ -1256,7 +1266,8 @@
                         <a class="btn btn-link" href="#about">About Us</a>
                         <a class="btn btn-link" href="#contact">Contact Us</a>
                         <a class="btn btn-link" href="#gallery">Gallery</a>
-                        <a class="btn btn-link" href="book.html">Order</a>
+                        <a class="btn btn-link" href="book.html">Book Now</a>
+                        <a class="btn btn-link" href="book2.html">Order Now</a>
                         <a class="btn btn-link" href="#" id="loginLink">Admin Login</a>
 
                         <div id="loginFormPopup" class="popup text-center">
@@ -1332,6 +1343,7 @@
     <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -1339,8 +1351,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        emailjs.init('DwgZ4Gy7FmuowMVTp')
+    <script type="text/javascript">emailjs.init('DwgZ4Gy7FmuowMVTp')</script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        document.getElementById('play-button').addEventListener('click', function() {
+            const lightbox = GLightbox({
+                elements: [
+                    {
+                        href: 'https://youtu.be/PNC7Vs_CA0Y?si=iYPczx55djW6Z9Ce',
+                        type: 'video',
+                        source: 'youtube', // Specifies that the video is from YouTube
+                    }
+                ]
+            });
+            lightbox.open();
+        });
     </script>
     <script>
         $(function() {
@@ -1421,9 +1446,8 @@
         function downloadPDF() {
             // Create an anchor element
             var link = document.createElement('a');
-            link.href = './pkmcateringcatalog.pdf'; // Replace 'path/to/your/pdf/file.pdf' with the actual path to your PDF file
-            link.download = 'pkmcateringcatalog.pdf'; // Replace 'filename.pdf' with the desired name for the downloaded file
-            link.target = '_blank'; // Open the PDF file in a new tab
+            link.href = 'https://drive.google.com/uc?export=download&id=12BRtGWQ8LG9OWWJybh6quwqSD9VRXK6R'; // Direct download link
+            link.download = 'pkmcateringcatalog.pdf'; // Desired name for the downloaded file
 
             // Append the anchor element to the document body
             document.body.appendChild(link);

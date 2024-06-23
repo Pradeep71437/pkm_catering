@@ -32,8 +32,6 @@ if (isset($_GET['id'])) {
     $secdaydinner = isset($row['secdaydinner']) ? unserialize($row['secdaydinner']) : [];
     $guestfood = isset($row['guestfood']) ? unserialize($row['guestfood']) : [];
     $packetfood = isset($row['packetfood']) ? unserialize($row['packetfood']) : [];
-
-
 } else {
     // Handle the case where no ID is provided
     header("Location: index.php"); // Redirect to the main page
@@ -41,7 +39,8 @@ if (isset($_GET['id'])) {
 }
 
 
-// ?>
+// 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,8 +52,8 @@ if (isset($_GET['id'])) {
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-<!-- Add this script tag to include jsPDF library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <!-- Add this script tag to include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -79,274 +78,283 @@ if (isset($_GET['id'])) {
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="admin.css">
-    
+
 </head>
 
 <body>
     <style>
-        table{
-    margin-top:20px;
-    background-color: #fff;
-}
-table,th,tr{
-    border: 1px solid black;
-}
-td,th{
-    
-    color: black
-}
-table input{
-    width: 100px;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
-    text-align: center;
-}
+        table {
+            margin-top: 20px;
+            background-color: #fff;
+        }
 
-table input[type="number"]::-webkit-inner-spin-button,
-table input[type="number"]::-webkit-outer-spin-button {
--webkit-appearance: none; /* Webkit browsers */
-margin: 0; /* Optional - if you want to remove the margin */
-}
-</style>
+        table,
+        th,
+        tr {
+            border: 1px solid black;
+        }
 
-<div class="container" id="pdfTable">
-    <div>
-    <h1 class="text-warning m-0 text-center m-4" >P.K.M Catering</h1>
-    <div class="row">
-        <div class="col-2"><a href="adminindex.php"  class="btn btn-link text-primary mb-4">Home</a></div>
-        <div class="col-8"><h1 class="text-center">Order Details</h1></div>
+        td,
+        th {
+
+            color: black
+        }
+
+        table input {
+            width: 100px;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        table input[type="number"]::-webkit-inner-spin-button,
+        table input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            /* Webkit browsers */
+            margin: 0;
+            /* Optional - if you want to remove the margin */
+        }
+    </style>
+    <div class="ps-5 m-4 text-warning m-0"><a href="adminindex.php" class="btn btn-link text-primary mb-4">Home</a></div>
+    <div class="container" id="pdfTable">
+        <div>
+            <h1 class="text-warning m-0 text-center m-4">P.K.M Catering</h1>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Order Details</h1>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="text-warning table_res">
+                        <th class="text-warning text-center col-xs-3 col-md-2">Title</th>
+                        <th class="text-warning text-center col-xs-6 col-md-9">Details</th>
+                        <th class="text-warning text-center col-xs-2 col-md-1">Count</th>
+                        <th class="text-warning text-center col-xs-3 col-md-2">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="color: black">Customer Name :</th>
+                        <td><?= $row['uname'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Customer Mobile :</th>
+                        <td><?= $row['unumber'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Customer E-Mail :</th>
+                        <td><?= $row['uemail'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Customer City :</th>
+                        <td><?= $row['ucity'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Event Starting Date :</th>
+                        <td><?= $row['usdate'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Event Ending Date :</th>
+                        <td><?= $row['uedate'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Party Details :</th>
+                        <td><?= $row['upartydetails'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black">Mandapam Details :</th>
+                        <td><?= $row['uhalldetails'] ?></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('புஷ்பம், மாலைகள் ஜானவாசம்','<?= !empty($malaifirday) ? implode('<br> ', $malaifirday) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">புஷ்பம், மாலைகள் ஜானவாசம்</th>
+                        <td><?php echo !empty($malaifirday) ? implode(', ', $malaifirday) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f1" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f2')" required></td>
+                    </tr>
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம்','<?= !empty($wedmalaiset) ? implode('<br> ', $wedmalaiset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">முகூர்த்தம்</th>
+                        <td><?php echo !empty($wedmalaiset) ? implode(', ', $wedmalaiset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f2" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f3')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('காசியாத்திரை செட்','<?= !empty($kasiyathiraiset) ? implode('<br> ', $kasiyathiraiset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">காசியாத்திரை செட்</th>
+                        <td><?php echo !empty($kasiyathiraiset) ? implode(', ', $kasiyathiraiset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f3" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f4')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஷேம தண்டல சாமான்கள்','<?= !empty($samangalset) ? implode('<br> ', $samangalset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">ஷேம தண்டல சாமான்கள்</th>
+                        <td><?php echo !empty($samangalset) ? implode(', ', $samangalset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f4" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f5')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('நிச்சயதார்த்த தட்டுகள்','<?= !empty($wedplateset) ? implode('<br> ', $wedplateset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">நிச்சயதார்த்த தட்டுகள்</th>
+                        <td><?php echo !empty($wedplateset) ? implode(', ', $wedplateset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f5" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f6')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('TOILET SET (with Plastic Tray)','<?= !empty($toiletset) ? implode('<br> ', $toiletset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">TOILET SET (with Plastic Tray)</th>
+                        <td><?php echo !empty($toiletset) ? implode(', ', $toiletset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f6" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f7')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('வைதீக சாமான்கள்','<?= !empty($vedicset) ? implode('<br> ', $vedicset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">வைதீக சாமான்கள்</th>
+                        <td><?php echo !empty($vedicset) ? implode(', ', $vedicset) : ''; ?></td>
+                        <td></td>
+                        <td><input placeholder="Amount" type="number" id="f7" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f8')" required></td>
+                    </tr>
+
+                    <!-- long and count -->
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('விரத பட்சணங்கள்','<?= !empty($carrybag) ? implode('<br> ', $carrybag) : ''; ?>', '<?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?>')">விரத பட்சணங்கள்</th>
+                        <td><?php echo !empty($carrybag) ? implode(', ', $carrybag) : ''; ?></td>
+                        <td><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f8" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f9')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஸ்வீட் பாக்ஸ்','<?= !empty($carrybagweat) ? implode('<br> ', $carrybagweat) : ''; ?>', '<?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?>')">ஸ்வீட் பாக்ஸ்</th>
+                        <td><?php echo !empty($carrybagweat) ? implode(', ', $carrybagweat) : ''; ?></td>
+                        <td><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f9" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f10')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('பணியாரக்காய்கள்','<?= !empty($carrybagcookie) ? implode('<br> ', $carrybagcookie) : ''; ?>', '<?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?>')">பணியாரக்காய்கள்</th>
+                        <td><?php echo !empty($carrybagcookie) ? implode(', ', $carrybagcookie) : ''; ?></td>
+                        <td><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f10" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f11')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் காலை டிபன்','<?= !empty($firdaymor) ? implode('<br> ', $firdaymor) : ''; ?>', '<?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?>')">ஜானவாசம் காலை டிபன்</th>
+                        <td><?php echo !empty($firdaymor) ? implode(', ', $firdaymor) : ''; ?></td>
+                        <td><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f11" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f12')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் சாப்பாடு','<?= !empty($firdayaft) ? implode('<br> ', $firdayaft) : ''; ?>', '<?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?>')">ஜானவாசம் சாப்பாடு</th>
+                        <td><?php echo !empty($firdayaft) ? implode(', ', $firdayaft) : ''; ?></td>
+                        <td><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f12" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f13')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் மாலை டிபன்','<?= !empty($firdayeve) ? implode('<br> ', $firdayeve) : ''; ?>', '<?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?>')">ஜானவாசம் மாலை டிபன்</th>
+                        <td><?php echo !empty($firdayeve) ? implode(', ', $firdayeve) : ''; ?></td>
+                        <td><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f13" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f14')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('பிரெஷ் ஜூஸ்','<?= !empty($firdaydrink) ? implode('<br> ', $firdaydrink) : ''; ?>', '<?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?>')">பிரெஷ் ஜூஸ்</th>
+                        <td><?php echo !empty($firdaydrink) ? implode(', ', $firdaydrink) : ''; ?></td>
+                        <td><?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f14" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f15')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('சாட்ஸ்','<?= !empty($firdaysnack) ? implode('<br> ', $firdaysnack) : ''; ?>', '<?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?>')">சாட்ஸ்</th>
+                        <td><?php echo !empty($firdaysnack) ? implode(', ', $firdaysnack) : ''; ?></td>
+                        <td><?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f15" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f16')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('ஸ்பெஷல் டின்னர்','<?= !empty($firdaydinner) ? implode('<br> ', $firdaydinner) : ''; ?>', '<?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?>')">ஸ்பெஷல் டின்னர்</th>
+                        <td><?php echo !empty($firdaydinner) ? implode(', ', $firdaydinner) : ''; ?></td>
+                        <td><?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f16" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f17')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் காலை டிபன்','<?= !empty($secdaymor) ? implode('<br> ', $secdaymor) : ''; ?>', '<?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?>')">முகூர்த்தம் காலை டிபன்</th>
+                        <td><?php echo !empty($secdaymor) ? implode(', ', $secdaymor) : ''; ?></td>
+                        <td><?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f17" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f18')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் சாப்பாடு','<?= !empty($secdayaft) ? implode('<br> ', $secdayaft) : ''; ?>', '<?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?>')">முகூர்த்தம் சாப்பாடு</th>
+                        <td><?php echo !empty($secdayaft) ? implode(', ', $secdayaft) : ''; ?></td>
+                        <td><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f18" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f19')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் மாலை ஸ்நாக்ஸ்','<?= !empty($secdayeve) ? implode('<br> ', $secdayeve) : ''; ?>', '<?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?>')">முகூர்த்தம் மாலை ஸ்நாக்ஸ்</th>
+                        <td><?php echo !empty($secdayeve) ? implode(', ', $secdayeve) : ''; ?></td>
+                        <td><?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f19" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f20')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் டின்னர்','<?= !empty($secdaydinner) ? implode('<br> ', $secdaydinner) : ''; ?>', '<?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?>')">முகூர்த்தம் டின்னர்</th>
+                        <td><?php echo !empty($secdaydinner) ? implode(', ', $secdaydinner) : ''; ?></td>
+                        <td><?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f20" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f21')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('சம்மந்தி விருந்து', '<?= !empty($guestfood) ? implode('<br> ', $guestfood) : ''; ?>', '<?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?>')">சம்மந்தி விருந்து</th>
+                        <td><?php echo !empty($guestfood) ? implode(', ', $guestfood) : ''; ?></td>
+                        <td><?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f21" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f22')" required></td>
+                    </tr>
+
+                    <tr>
+                        <th style="color: black; cursor: pointer;" onclick="showPopup('Packet food','<?= !empty($packetfood) ? implode('<br> ', $packetfood) : ''; ?>', '<?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?>')">Packet food</th>
+                        <td><?php echo !empty($packetfood) ? implode(', ', $packetfood) : ''; ?></td>
+                        <td><?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?></td>
+                        <td><input placeholder="Amount" type="number" id="f22" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f22')" required> </td>
+                    </tr>
+
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                        <td>Total: ₹ <span id="total" style="color: green"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="download text-center p-5">
+            <button id="downloadButton" onclick="downloadPDF()" class="btn btn-warning">Download</button>
+        </div>
     </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <thead>
-                <tr class="text-warning table_res">
-                    <th class="text-warning text-center col-xs-3 col-md-2">Title</th>
-                    <th class="text-warning text-center col-xs-6 col-md-9">Details</th>
-                    <th class="text-warning text-center col-xs-2 col-md-1">Count</th>
-                    <th class="text-warning text-center col-xs-3 col-md-2">Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th style="color: black">Customer Name :</th>
-                    <td><?= $row['uname'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Customer Mobile :</th>
-                    <td><?= $row['unumber'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Customer E-Mail :</th>
-                    <td><?= $row['uemail'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Customer City :</th>
-                    <td><?= $row['ucity'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Event Starting Date :</th>
-                    <td><?= $row['usdate'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Event Ending Date :</th>
-                    <td><?= $row['uedate'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Party Details :</th>
-                    <td><?= $row['upartydetails'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black">Mandapam Details :</th>
-                    <td><?= $row['uhalldetails'] ?></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('புஷ்பம், மாலைகள் ஜானவாசம்','<?= !empty($malaifirday) ? implode('<br> ', $malaifirday) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">புஷ்பம், மாலைகள் ஜானவாசம்</th>
-                    <td><?php echo !empty($malaifirday) ? implode(', ', $malaifirday) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f1" oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f2')" required></td>
-                </tr>
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம்','<?= !empty($wedmalaiset) ? implode('<br> ', $wedmalaiset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">முகூர்த்தம்</th>
-                    <td><?php echo !empty($wedmalaiset) ? implode(', ', $wedmalaiset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f2"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f3')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('காசியாத்திரை செட்','<?= !empty($kasiyathiraiset) ? implode('<br> ', $kasiyathiraiset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">காசியாத்திரை செட்</th>
-                    <td><?php echo !empty($kasiyathiraiset) ? implode(', ', $kasiyathiraiset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f3"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f4')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஷேம தண்டல சாமான்கள்','<?= !empty($samangalset) ? implode('<br> ', $samangalset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">ஷேம தண்டல சாமான்கள்</th>
-                    <td><?php echo !empty($samangalset) ? implode(', ', $samangalset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f4"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f5')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('நிச்சயதார்த்த தட்டுகள்','<?= !empty($wedplateset) ? implode('<br> ', $wedplateset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">நிச்சயதார்த்த தட்டுகள்</th>
-                    <td><?php echo !empty($wedplateset) ? implode(', ', $wedplateset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f5"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f6')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('TOILET SET (with Plastic Tray)','<?= !empty($toiletset) ? implode('<br> ', $toiletset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">TOILET SET (with Plastic Tray)</th>
-                    <td><?php echo !empty($toiletset) ? implode(', ', $toiletset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f6"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f7')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('வைதீக சாமான்கள்','<?= !empty($vedicset) ? implode('<br> ', $vedicset) : ''; ?>', '<?= !empty($row['']) ? $row[''] : ''; ?>')">வைதீக சாமான்கள்</th>
-                    <td><?php echo !empty($vedicset) ? implode(', ', $vedicset) : ''; ?></td>
-                    <td></td>
-                    <td><input placeholder="Amount" type="number" id="f7"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f8')" required></td>
-                </tr>
-
-            <!-- long and count -->
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('விரத பட்சணங்கள்','<?= !empty($carrybag) ? implode('<br> ', $carrybag) : ''; ?>', '<?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?>')">விரத பட்சணங்கள்</th>
-                    <td><?php echo !empty($carrybag) ? implode(', ', $carrybag) : ''; ?></td>
-                    <td><?= !empty($row['carrybagcou']) ? $row['carrybagcou'] : ''; ?></td>
-                    <td><input placeholder="Amount" type="number" id="f8"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f9')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஸ்வீட் பாக்ஸ்','<?= !empty($carrybagweat) ? implode('<br> ', $carrybagweat) : ''; ?>', '<?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?>')">ஸ்வீட் பாக்ஸ்</th>
-                    <td><?php echo !empty($carrybagweat) ? implode(', ', $carrybagweat) : ''; ?></td>
-                    <td><?= !empty($row['carrybagsweatcou']) ? $row['carrybagsweatcou'] : ''; ?></td>
-                    <td><input placeholder="Amount" type="number" id="f9"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f10')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('பணியாரக்காய்கள்','<?= !empty($carrybagcookie) ? implode('<br> ', $carrybagcookie) : ''; ?>', '<?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?>')">பணியாரக்காய்கள்</th>
-                    <td><?php echo !empty($carrybagcookie) ? implode(', ', $carrybagcookie) : ''; ?></td>
-                    <td><?= !empty($row['carrybagcookiecou']) ? $row['carrybagcookiecou'] : ''; ?></td>
-                    <td><input placeholder="Amount" type="number" id="f10"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f11')" required></td>
-                </tr>
-            
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் காலை டிபன்','<?= !empty($firdaymor) ? implode('<br> ', $firdaymor) : ''; ?>', '<?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?>')">ஜானவாசம் காலை டிபன்</th>
-                    <td><?php echo !empty($firdaymor) ? implode(', ', $firdaymor) : ''; ?></td>
-                    <td><?= !empty($row['firdaymorcou']) ? $row['firdaymorcou'] : ''; ?></td>
-                    <td><input placeholder="Amount" type="number" id="f11"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f12')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் சாப்பாடு','<?= !empty($firdayaft) ? implode('<br> ', $firdayaft) : ''; ?>', '<?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?>')">ஜானவாசம் சாப்பாடு</th>
-                    <td><?php echo !empty($firdayaft) ? implode(', ', $firdayaft) : ''; ?></td>
-                    <td><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f12"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f13')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஜானவாசம் மாலை டிபன்','<?= !empty($firdayeve) ? implode('<br> ', $firdayeve) : ''; ?>', '<?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?>')">ஜானவாசம் மாலை டிபன்</th>
-                    <td><?php echo !empty($firdayeve) ? implode(', ', $firdayeve) : ''; ?></td>
-                    <td><?= !empty($row['firdayevecou']) ? $row['firdayevecou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f13"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f14')" required></td>
-                </tr>
-            
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('பிரெஷ் ஜூஸ்','<?= !empty($firdaydrink) ? implode('<br> ', $firdaydrink) : ''; ?>', '<?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?>')">பிரெஷ் ஜூஸ்</th>
-                    <td><?php echo !empty($firdaydrink) ? implode(', ', $firdaydrink) : ''; ?></td>
-                    <td><?= !empty($row['firdaycooldrinkcou']) ? $row['firdaycooldrinkcou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f14"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f15')" required></td>
-                </tr>
-            
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('சாட்ஸ்','<?= !empty($firdaysnack) ? implode('<br> ', $firdaysnack) : ''; ?>', '<?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?>')">சாட்ஸ்</th>
-                    <td><?php echo !empty($firdaysnack) ? implode(', ', $firdaysnack) : ''; ?></td>
-                    <td><?= !empty($row['firdaysnackcou']) ? $row['firdaysnackcou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f15"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f16')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('ஸ்பெஷல் டின்னர்','<?= !empty($firdaydinner) ? implode('<br> ', $firdaydinner) : ''; ?>', '<?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?>')">ஸ்பெஷல் டின்னர்</th>
-                    <td><?php echo !empty($firdaydinner) ? implode(', ', $firdaydinner) : ''; ?></td>
-                    <td><?= !empty($row['firdaydinnercou']) ? $row['firdaydinnercou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f16"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f17')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் காலை டிபன்','<?= !empty($secdaymor) ? implode('<br> ', $secdaymor) : ''; ?>', '<?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?>')">முகூர்த்தம் காலை டிபன்</th>
-                    <td><?php echo !empty($secdaymor) ? implode(', ', $secdaymor) : ''; ?></td>
-                    <td><?= !empty($row['secdaymorcou']) ? $row['secdaymorcou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f17"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f18')" required></td>
-                </tr>
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் சாப்பாடு','<?= !empty($secdayaft) ? implode('<br> ', $secdayaft) : ''; ?>', '<?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?>')">முகூர்த்தம் சாப்பாடு</th>
-                    <td><?php echo !empty($secdayaft) ? implode(', ', $secdayaft) : ''; ?></td>
-                    <td><?= !empty($row['secdayaftercou']) ? $row['secdayaftercou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f18"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f19')" required></td>
-                </tr>
-            
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் மாலை ஸ்நாக்ஸ்','<?= !empty($secdayeve) ? implode('<br> ', $secdayeve) : ''; ?>', '<?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?>')">முகூர்த்தம் மாலை ஸ்நாக்ஸ்</th>
-                    <td><?php echo !empty($secdayeve) ? implode(', ', $secdayeve) : ''; ?></td>
-                    <td><?= !empty($row['secdayevecou']) ? $row['secdayevecou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f19"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f20')" required></td>
-                </tr> 
-
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('முகூர்த்தம் டின்னர்','<?= !empty($secdaydinner) ? implode('<br> ', $secdaydinner) : ''; ?>', '<?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?>')">முகூர்த்தம் டின்னர்</th>
-                    <td><?php echo !empty($secdaydinner) ? implode(', ', $secdaydinner) : ''; ?></td>
-                    <td><?= !empty($row['secdaydinnercou']) ? $row['secdaydinnercou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f20"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f21')" required></td>
-                </tr>
-                        
-                <tr>
-                <th style="color: black; cursor: pointer;" onclick="showPopup('சம்மந்தி விருந்து', '<?= !empty($guestfood) ? implode('<br> ', $guestfood) : ''; ?>', '<?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?>')">சம்மந்தி விருந்து</th>
-                    <td><?php echo !empty($guestfood) ? implode(', ', $guestfood) : ''; ?></td>
-                    <td><?= !empty($row['guestfoodcou']) ? $row['guestfoodcou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f21"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f22')" required></td>
-                </tr>
-                        
-                <tr>
-                    <th style="color: black; cursor: pointer;" onclick="showPopup('Packet food','<?= !empty($packetfood) ? implode('<br> ', $packetfood) : ''; ?>', '<?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?>')">Packet food</th>
-                    <td><?php echo !empty($packetfood) ? implode(', ', $packetfood) : ''; ?></td>
-                    <td><?= !empty($row['packetfoodcou']) ? $row['packetfoodcou'] : ''; ?></td>
-                    <td ><input placeholder="Amount" type="number" id="f22"  oninput="calculatottotal2()" onkeydown="handleKeyDown(event, 'f22')" required> </td>
-                </tr>
-    
-                <tr>
-                    <th></th>
-                    <td></td>
-                    <td></td>
-                    <td>Total: ₹ <span id="total" style="color: green"></span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="download text-center p-5">
-        <button id="downloadButton" onclick="downloadPDF()" class="btn btn-warning">Download</button>
-    </div>
-</div>
-<div class="container">
+    <!-- <div class="container">
     <div class="table-responsive">
         <table class="table table-bordered" id="pdfTable2" style="width: 50%;text-align: center;">
             <thead>
@@ -508,9 +516,8 @@ margin: 0; /* Optional - if you want to remove the margin */
             </tbody>
         </table>
     </div>
-</div>
-<div class="download text-center p-3"><button id="downloadButton" onclick="downloadPDF2()" class="btn btn-warning">Download</button></div>
-<!-- sample code  -->
+</div> -->
+    <!-- sample code  -->
     <!-- Bootstrap Modal --
     <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -525,28 +532,30 @@ margin: 0; /* Optional - if you want to remove the margin */
             </div>
         </div>
     </div>-->
-<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="popupModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="p-4" id="pdfTable3">
-                    <div class="row pb-4">
-                        <div class="col-8 h5" id="popupTitle"></div>
-                        <div class="col-4 h6">Count : <span  id="popupFooter"></span></div>
+    <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-4" id="pdfTable3">
+                        <div class="row pb-4">
+                            <div class="col-12 p-2 h5" id="popupTitle">Popup Title</div>
+                            <div class="col-12 h6">Count : <span id="popupFooter">0</span></div>
+                        </div>
+                        <div id="popupBody">Popup Body Content</div>
                     </div>
-                    <div id="popupBody"></div>
+                </div>
+                <div class="download text-center p-3">
+                    <button onclick="downloadPDF3()" class="btn btn-warning">Download</button>
                 </div>
             </div>
-            <div class="download text-center p-3"><button  onclick="downloadPDF3()" class="btn btn-warning">Download</button></div>
         </div>
     </div>
-</div>
 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -554,85 +563,80 @@ margin: 0; /* Optional - if you want to remove the margin */
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-function showPopup(title, bodyContent, headerContent) {
-    // Set the popup header
-    document.getElementById('popupModalLabel').innerHTML = title;
-    
-    // Set the popup body content
-    document.getElementById('popupTitle').innerHTML = title;
-    document.getElementById('popupBody').innerHTML = bodyContent;
-    document.getElementById('popupFooter').innerHTML = headerContent;
-    
-    // Show the modal
-    $('#popupModal').modal('show');
-}
+        function showPopup(title, bodyContent, headerContent) {
+            // Set the popup header
+            document.getElementById('popupModalLabel').innerHTML = title;
 
-function downloadPDF3() {
-    var element = document.getElementById('pdfTable3');
-    var title = document.getElementById('popupTitle').textContent.trim(); // Get the title text
-    var usdate = '<?= $row['usdate'] ?>'; // Get the usdate value from PHP
-    var filename = (title ? title + ' ' : '') + usdate + '.pdf'; // Combine title and usdate for the filename
+            // Set the popup body content
+            document.getElementById('popupTitle').innerHTML = title;
+            document.getElementById('popupBody').innerHTML = bodyContent;
+            document.getElementById('popupFooter').innerHTML = headerContent;
 
-    html2pdf().from(element).set({
-        margin: 1,
-        filename: filename,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, width: element.scrollWidth },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    }).save();
-}
+            // Show the modal
+            $('#popupModal').modal('show');
+        }
+
+        function downloadPDF3() {
+            var element = document.getElementById('pdfTable3');
+            var title = document.getElementById('popupTitle').textContent.trim(); // Get the title text
+            var usdate = '<?= $row['usdate'] ?>'; // Get the usdate value from PHP
+            var filename = (title ? title + ' ' : '') + usdate + '.pdf'; // Combine title and usdate for the filename
+
+            html2pdf().from(element).set({
+                margin: 1,
+                filename: filename,
+                image: {
+                    type: 'jpeg',
+                    quality: 0.98
+                },
+                html2canvas: {
+                    scale: 2,
+                    width: element.scrollWidth
+                },
+                jsPDF: {
+                    unit: 'mm',
+                    format: 'a4',
+                    orientation: 'portrait'
+                }
+            }).save();
+        }
     </script>
-<!-- sample end -->
+    <!-- sample end -->
     <script src="admin.js"></script>
     <script>
-function calculateAmount(rateId, couId, amountId) {
-    // Get the value entered in the rate input field
-    var rate = parseFloat(document.getElementById(rateId).value);
+        function handleKeyDown(event, nextId) {
+            if (event.key === 'Enter') {
+                document.getElementById(nextId).focus();
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    // Get the value from the cou cell
-    var cou = parseFloat(document.getElementById(couId).innerText);
+    <!-- Bootstrap Bundle (including Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    // Check if both rate and cou are valid numbers
-    if (!isNaN(rate) && !isNaN(cou)) {
-        // Calculate the result
-        var result = rate * cou;
+    <!-- Additional Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script>
 
-        // Display the result in the amount input field
-        document.getElementById(amountId).value = result;
-    } else {
-        // If either rate or cou is not a valid number, clear the amount field
-        document.getElementById(amountId).value = '';
-    }
-}
+    <!-- Tempus Dominus (Date Time Picker) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
 
-function handleKeyDown(event, nextId) {
-    if (event.key === 'Enter') {
-        document.getElementById(nextId).focus();
-    }
-}
-</script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel (Comment out local library link if needed) -->
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap Bundle (including Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-<!-- Additional Libraries -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script>
-
-<!-- Tempus Dominus (Date Time Picker) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-
-<!-- Owl Carousel (Comment out local library link if needed) -->
-<!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </body>
+
 </html>

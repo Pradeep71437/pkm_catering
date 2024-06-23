@@ -8,7 +8,30 @@
     <link href="lib/wow/wow.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
     <style>
         .custom-img {
             width: 100%;
@@ -29,24 +52,25 @@
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="text-warning m-0">P.K.M Catering</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0 pe-4">
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="index.php#about" class="nav-item nav-link">About</a>
-                    <a href="index.php#service" class="nav-item nav-link">Service</a>
-                    <a href="index.php#menu" class="nav-item nav-link">Menu</a>
-                    <a href="/index.php#contact" class="nav-item nav-link">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="#indexpage" class="navbar-brand p-1">
+                    <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 90px; height: auto;" class="img-fluid logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.php" class="nav-item nav-link active">Home</a>
+                        <a href="index.php#service" class="nav-item nav-link">Service</a>
+                        <a href="index.php#about" class="nav-item nav-link">About</a>
+                        <a href="index.php#menu" class="nav-item nav-link">Menu</a>
+                        <a href="index.php#contact" class="nav-item nav-link">Contact</a>
+                        <a href="gallery.php" class="nav-item nav-link">Gallery</a>
+                    </div>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">ORDER NOW</a>
                 </div>
-                <a href="book.html" class="btn btn-warning py-2 px-4">ORDER NOW</a>
-            </div>
-        </nav>
+            </nav>
 
         <div class="container-fluid py-5 bg-dark hero-header mb-5" style="min-height: 100px;">
             <div class="container text-center my-5 pt-5 pb-4">

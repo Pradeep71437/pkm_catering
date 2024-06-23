@@ -22,18 +22,6 @@ function downloadPDF2() {
     });
 }
 
-function calculatAmount() {
-
-var total = 0;
-
-// Iterate over input fields and calculate total
-for (var i = 1; i <= 22; i++) {
-var fieldValue = document.getElementById("t" + i).valueAsNumber || 0;
-total += fieldValue;
-}
-document.getElementById("total1").textContent = total;
-}
-
 function calculatottotal2() {
     var total = 0;
 
@@ -46,3 +34,4 @@ function calculatottotal2() {
 }
 
 
+// view page 

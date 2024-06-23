@@ -12,13 +12,12 @@ include 'db_connection.php';
 $result = mysqli_query($conn, "SELECT * FROM order_details");
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>P.K.M Catering</title>
+    <title>Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -34,51 +33,68 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
-   <link rel="stylesheet" href="../css/style2.css">
    <link rel="stylesheet" href="admin.css">
-</head>
+   <style>
+    .neworder {
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+@media (max-width: 576px) {
+    .opt a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .opt a:last-child {
+        margin-bottom: 0;
+    }
+}
+   </style>
+   </head>
 <body>
-    <div class="container">
-        <a href="" class="navbar-brand p-0">
-            <h1 class="text-primary m-0 text-center m-4" >P.K.M Catering</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
-        </a><br>
+<div class="container">
+<div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0">P.K.M Catering</h1>
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
         <div class="row">
-            <div class="col-1"><a href="../index.php"  class="btn btn-link text-primary mb-4">Home</a></div>
-            <div class="col-2"><a href="masala.php"  class="btn btn-link text-primary mb-4">grocery iteams</a></div>
-            <div class="col-7">
-            <h1 class="text-center">Orders</h1>
+            <div class="col-md-3 text-left">
+                <a href="../index.php" class="btn btn-link text-primary">Home</a>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center my-4">Orders</h1>
             </div>
         </div>
     </div>
-    <div class="container orders ">
-    <?php
+    <div class="container orders">
+        <?php
         // Loop through each order and create a neworder div
         while ($row = mysqli_fetch_assoc($result)) {
             ?>
-           <div class="m-4 container neworder ">
-            <h3 class="m-4 white">New Order: <span> <?= $row['id'] ?>(<?= $row['uname'] ?>)</span></h3>
-            <div class="opt">
-            <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
-            <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>
-            <a href="update-process.php?id=<?php echo $row["id"]; ?>" class="view">Update</a>
+            <div class="m-4 container neworder">
+                <h3 class="m-4">New Order: <span><?= $row['id'] ?> (<?= $row['uname'] ?>)</span></h3>
+                <div class="opt">
+                    <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
+                    <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>
+                    <a href="update-process.php?id=<?= $row['id'] ?>" class="view">UPDATE</a>
+                </div>
             </div>
-           </div>
-           <?php
+            <?php
         }
         ?>
     </div>
-
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
