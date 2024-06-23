@@ -59,7 +59,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
@@ -264,6 +263,8 @@
 
                         <a href="#contact" class="nav-item nav-link english-content">Contact</a>
                         <a href="#contact" class="nav-item nav-link tamil-content">தொடர்பு</a>
+
+                        <a href="gallery.php" class="nav-item nav-link english-content">Gallery</a>
                     </div>
                     <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">ORDER NOW</a>
                     <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content">ஆர்டர்</a>
@@ -1309,23 +1310,6 @@
         <!-- Back to Top -->
         <a href="#indexpage" class="btn btn-lg btn-primary btn-lg-circle2 back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <script>
-        // JavaScript to toggle the display of login form
-        document.getElementById('loginLink').addEventListener('click', function() {
-            document.getElementById('loginFormPopup').style.display = 'block';
-        });
-
-        document.getElementById('closeBtn').addEventListener('click', function() {
-            document.getElementById('loginFormPopup').style.display = 'none';
-        });
-
-        window.addEventListener('click', function(event) {
-            var popup = document.getElementById('loginFormPopup');
-            if (event.target == popup) {
-                popup.style.display = 'none';
-            }
-        });
-    </script>
 
     <!-- jQuery (Required for Owl Carousel) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1353,12 +1337,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('DwgZ4Gy7FmuowMVTp')
+    </script>
     <script>
         $(function() {
             $('.lazyload').lazy();
         });
     </script>
-
     <!-- Initialize Carousel -->
     <script>
         $(document).ready(function() {
@@ -1402,14 +1390,7 @@
             }
         });
     </script>
-
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-        emailjs.init('DwgZ4Gy7FmuowMVTp')
-    </script>
     <script>
         const btn = document.getElementById('button');
 
@@ -1453,6 +1434,23 @@
             // Remove the anchor element from the document body
             document.body.removeChild(link);
         }
+    </script>
+    <script>
+        // JavaScript to toggle the display of login form
+        document.getElementById('loginLink').addEventListener('click', function() {
+            document.getElementById('loginFormPopup').style.display = 'block';
+        });
+
+        document.getElementById('closeBtn').addEventListener('click', function() {
+            document.getElementById('loginFormPopup').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            var popup = document.getElementById('loginFormPopup');
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
     </script>
 </body>
 

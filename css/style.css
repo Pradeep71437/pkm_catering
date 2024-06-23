@@ -330,3 +330,113 @@ align-items: center;
     padding-right: 0;
     border-right: none;
 }
+/* sample  */
+        .english-content {
+            display: block;
+        }
+
+        .tamil-content {
+            display: none;
+        }
+
+        /* Slider toggle button styles */
+        .slider-container {
+            display: inline-block;
+            position: relative;
+            width: 60px;
+            /* Adjust width as needed */
+            height: 30px;
+            /* Adjust height as needed */
+            padding-top: 5px;
+            /* Add top padding */
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 30px;
+            /* Adjust border-radius to make it round */
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+            /* Make the slider button round */
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Eng and Tam text styles */
+        .lang-text {
+            color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 5px;
+            /* Adjust padding as needed */
+            font-size: 12px;
+            /* Adjust font size as needed */
+        }
+
+        .eng-text {
+            left: -5px;
+            /* Adjust left positioning */
+        }
+
+        .tam-text {
+            right: -5px;
+            /* Adjust right positioning */
+        }
+
+        .owl-carousel .item {
+            width: 300px;
+            /* Fixed width for each item */
+            height: 300px;
+            /* Fixed height for each item */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Ensure content that overflows is hidden */
+        }
+
+        .owl-carousel .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure images cover the container while maintaining aspect ratio */
+        }
+
+        .logo {
+            height: 900px;
+            /* Increase the height */
+            width: auto;
+            /* Maintain aspect ratio */
+        }
