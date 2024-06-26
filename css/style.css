@@ -193,7 +193,7 @@ align-items: center;
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg);
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +280,7 @@ align-items: center;
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/bg-hero2.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
     
     background-position: center center;
     background-repeat: no-repeat;

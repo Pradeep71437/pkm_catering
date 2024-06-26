@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P.K.M Catering | Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/wow/wow.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
-    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/apple-touch-icon.png" rel="apple-touch-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P.K.M. Catering | Gallery</title>
+<meta name="keywords" content="P.K.M. Mayakootha Iyengar Catering, catering gallery, event catering photos, wedding catering gallery, corporate catering images, quality food, best hospitality, Chennai Catering, Iyengar Catering">
+<meta name="description" content="Explore the gallery of P.K.M. Mayakootha Iyengar Catering Services showcasing our quality, tasty, and healthy food at various events. Our gallery highlights our exceptional catering services since 1954.">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Favicon -->
+<link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
+<link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Libraries Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Icon Font Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.css">
+<!-- Libraries Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style2.css">
+
+<!-- Canonical Tag -->
+<link rel="canonical" href="http://www.pkmcatering.com/gallery">
+
+<!-- Robots Meta Tag -->
+<meta name="robots" content="index, follow">
+
+<!-- Language and Hreflang Tags -->
+<meta http-equiv="content-language" content="en">
+<link rel="alternate" hreflang="en" href="http://www.pkmcatering.com/gallery">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="P.K.M. Catering | Gallery">
+<meta property="og:description" content="Explore the gallery of P.K.M. Mayakootha Iyengar Catering Services showcasing our quality, tasty, and healthy food at various events. Our gallery highlights our exceptional catering services since 1954.">
+<meta property="og:image" content="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png">
+<meta property="og:url" content="http://www.pkmcatering.com/gallery.php">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="P.K.M. Catering | Gallery">
+<meta name="twitter:description" content="Explore the gallery of P.K.M. Mayakootha Iyengar Catering Services showcasing our quality, tasty, and healthy food at various events. Our gallery highlights our exceptional catering services since 1954.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png">
+<meta name="twitter:url" content="http://www.pkmcatering.com/gallery.php">
+
+<!-- Schema Markup for Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "P.K.M. Mayakootha Iyengar Catering Services",
+  "image": "https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png",
+  "@id": "http://www.pkmcatering.com",
+  "url": "http://www.pkmcatering.com/gallery.php",
+  "telephone": "+91-9940700250",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30/30, Ramakrishnapuram 3rd Street,West Mambalam",
+    "addressLocality": "Chennai",
+    "addressRegion": "TN",
+    "postalCode": "600033",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61560437146613&is_tour_dismissed",
+    "https://www.instagram.com/pkm_iyengar_catering/?hl=en",
+    "https://www.youtube.com/channel/UCvWY7iAk4NtbWBBwDF2id7w"
+  ]
+}
+</script>
     <style>
         .custom-img {
             width: 100%;

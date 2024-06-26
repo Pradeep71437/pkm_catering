@@ -38,26 +38,36 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
    <link rel="stylesheet" href="admin.css">
    <style>
     .neworder {
-    background-color: #343a40;
-    color: white;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-@media (max-width: 576px) {
-    .opt a {
-        display: block;
-        margin-bottom: 10px;
+        background-color: #343a40;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
     }
-    .opt a:last-child {
-        margin-bottom: 0;
+    .neworder .row {
+        align-items: center;
     }
-}
+    .neworder .opt {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    @media (max-width: 576px) {
+        .neworder .opt {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .neworder .opt a {
+            margin-bottom: 10px;
+        }
+    }
    </style>
-   </head>
+</head>
+
 <body>
 <div class="container">
-<div class="container">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12 text-center">
                 <a href="" class="navbar-brand p-0">
@@ -79,22 +89,26 @@ $result = mysqli_query($conn, "SELECT * FROM order_details");
         <?php
         // Loop through each order and create a neworder div
         while ($row = mysqli_fetch_assoc($result)) {
-            ?>
-            <div class="m-4 container neworder">
-                <h3 class="m-4">New Order: <span><?= $row['id'] ?> (<?= $row['uname'] ?>)</span></h3>
-                <div class="opt">
-                    <a href="remove.php?remove_id=<?= $row['id'] ?>" class="remove">REMOVE</a>
-                    <a href="view_order.php?id=<?= $row['id'] ?>" class="view">VIEW ORDER</a>
-                    <a href="update-process.php?id=<?= $row['id'] ?>" class="view">UPDATE</a>
+        ?>
+        <div class="m-4 container neworder">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="m-4">New Order: <span><?= $row['id'] ?> (<?= $row['uname'] ?>)</span></h3>
+                </div>
+                <div class="col-md-6 opt">
+                    <a href="remove.php?remove_id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">REMOVE</a>
+                    <a href="view_order.php?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">VIEW ORDER</a>
+                    <a href="update-process.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">UPDATE</a>
                 </div>
             </div>
-            <?php
+        </div>
+        <?php
         }
         ?>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="P.K.M. Mayakootha Iyengar Catering, catering services, event catering, wedding catering, corporate catering, quality food, affordable catering, best hospitality, Iyengar Catering, Chennai Catering, best Catering services">
     <meta name="description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-    
+
     <!-- Canonical Tag -->
     <link rel="canonical" href="http://www.pkmcatering.com">
-    
+
     <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow">
-    
+
     <!-- Language and Hreflang Tags -->
     <meta http-equiv="content-language" content="en">
     <link rel="alternate" hreflang="en" href="http://www.pkmcatering.com">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954">
     <meta property="og:description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/PMK%20CATERINGS%20(1).png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png">
     <meta property="og:url" content="http://www.pkmcatering.com">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954">
     <meta name="twitter:description" content="P.K.M. Mayakootha Iyengar Catering Services has been delivering quality, tasty, and healthy food since 1954. Our commitment to customer satisfaction and best hospitality sets us apart in the catering industry.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/PMK%20CATERINGS%20(1).png">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png">
     <meta name="twitter:url" content="http://www.pkmcatering.com">
-    
+
     <!-- Schema Markup for Local Business -->
 
     <!-- Voice Search Optimization -->
-    <meta name="target" content="voice_search">
+    <meta name="target" content="PKM catering">
 
     <!-- Favicon -->
-    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20favicon-32x32.png" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20apple-touch-icon.png" rel="apple-touch-icon">
 
 
     <!-- Google Web Fonts -->
@@ -63,17 +63,70 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "P.K.M. Mayakootha Iyengar Catering Services",
+      "image": "https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png",
+      "@id": "http://www.pkmcatering.com",
+      "url": "http://www.pkmcatering.com",
+      "telephone": "+91-9940700250",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30/30, Ramakrishnapuram 3rd Street,West Mambalam",
+        "addressLocality": "Chennai",
+        "addressRegion": "TN",
+        "postalCode": "600033",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61560437146613&is_tour_dismissed",
+        "https://www.instagram.com/pkm_iyengar_catering/?hl=en",
+        "https://www.youtube.com/channel/UCvWY7iAk4NtbWBBwDF2id7w"
+      ]
+    }
+    </script>
+     <!-- Schema Markup for Breadcrumb -->
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "http://www.pkmcatering.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gallery",
+          "item": "http://www.pkmcatering.com/gallery.php"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Book Now",
+          "item": "http://www.pkmcatering.com/book.html"
+        }
+      ]
+    }
+    </script>
     <style>
         :root {
-    --primary: #FEA116;
-    --light: #F1F8FF;
-    --dark: #0F172B;
-}
+            --primary: #FEA116;
+            --light: #F1F8FF;
+            --dark: #0F172B;
+        }
+
         .video {
             position: relative;
             height: 100%;
             min-height: 500px;
-            background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/bg-hero2-min.jpg);
+            background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -190,20 +243,7 @@
         }
     </style>
 
-
     <script>
-        //  function toggleLanguage() {
-        //         var englishContent = document.querySelectorAll('.english-content');
-        //         var tamilContent = document.querySelectorAll('.tamil-content');
-
-        //         for (var i = 0; i < englishContent.length; i++) {
-        //             englishContent[i].style.display = (englishContent[i].style.display === 'none') ? 'block' : 'none';
-        //         }
-
-        //         for (var i = 0; i < tamilContent.length; i++) {
-        //             tamilContent[i].style.display = (tamilContent[i].style.display === 'none') ? 'block' : 'none';
-        //         }
-        //     }
         function toggleLanguage() {
             var selectedLanguage = document.getElementById("languageSelector").value;
             var englishContent = document.querySelectorAll('.english-content');
@@ -236,20 +276,19 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
-        <!-- Navbar & Hero Start -->
+
         <div id="indexpage" class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <div class="langlogo ">
-                <a href="#indexpage" class="navbar-brand p-1 pe-5">
+                    <a href="#indexpage" class="navbar-brand p-1 pe-5">
                         <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 95px; height: auto;" class="img-fluid logo">
-                </a>
-            
-                <select id="languageSelector" class="" onchange="toggleLanguage()">
-                    <option value="english" class="lang container mt-3">Eng</option>
-                    <option value="tamil" class="lang container">தமிழ்</option>
-                </select>
-            </div>
+                    </a>
+
+                    <select id="languageSelector" class="" onchange="toggleLanguage()">
+                        <option value="english" class="lang container mt-3">Eng</option>
+                        <option value="tamil" class="lang container">தமிழ்</option>
+                    </select>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -272,7 +311,7 @@
 
                         <a href="gallery.php" class="nav-item nav-link english-content">Gallery</a>
                     </div>
-                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">ORDER NOW</a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">Book Now</a>
                     <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content">ஆர்டர்</a>
                 </div>
             </nav>
@@ -309,9 +348,7 @@
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
 
-        <!-- Service Start -->
         <section id="service">
             <div class="container-xxl py-5">
                 <div class="container text-center">
@@ -320,31 +357,31 @@
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-3 col-sm-6">
-                            <div class="service-item rounded pt-3" data-aos="zoom-in-right">
-                                <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg" alt="Catering Services" class="img-fluid m-3 lazyload rounded" loading="lazy">
+                            <div class="service-item rounded pt-3" data-aos="zoom-in-up">
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/PKM%20Caterings%20services.png" alt="Catering Services" class="img-fluid m-3 lazyload rounded" loading="lazy">
                                 <h5 class="text-dark english-content">Catering Services</h5>
-                                <h5 class="text-dark tamil-content">கேட்டரிங் சேவைகள்</h5>
+                                <h5 class="text-dark tamil-content" style="display: none;">கேட்டரிங் சேவைகள்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                            <div class="service-item rounded pt-3" data-aos="zoom-in-right">
-                                <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food2-min.jpg" alt="Stage Decoration" class="img-fluid m-3 lazyload rounded" loading="lazy">
+                            <div class="service-item rounded pt-3" data-aos="zoom-in-up">
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/decoration%20services.png" alt="Stage Decoration" class="img-fluid m-3 lazyload rounded" loading="lazy">
                                 <h5 class="text-dark english-content">Stage Decoration</h5>
-                                <h5 class="text-dark tamil-content">மேடை அலங்காரம்</h5>
+                                <h5 class="text-dark tamil-content" style="display: none;">மேடை அலங்காரம்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                            <div class="service-item rounded pt-3" data-aos="zoom-in-left">
-                                <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food3-min.jpeg" alt="Return Gift Bags" class="img-fluid m-3 lazyload rounded" loading="lazy">
+                            <div class="service-item rounded pt-3" data-aos="zoom-in-up">
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/Return%20Gifts%20services.png" alt="Return Gift Bags" class="img-fluid m-3 lazyload rounded" loading="lazy">
                                 <h5 class="text-dark english-content">Return Gift Bags</h5>
-                                <h5 class="text-dark tamil-content">தாம்பூலம் பைகள்</h5>
+                                <h5 class="text-dark tamil-content" style="display: none;">தாம்பூலம் பைகள்</h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                            <div class="service-item rounded pt-3" data-aos="zoom-in-left">
-                                <img src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food4-min.jpg" alt="Seer Varisai Thattugalu" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-dark english-content">Seer Varisai Thattugalu</h5>
-                                <h5 class="text-dark tamil-content">சீர் வரிசை தட்டுகள்</h5>
+                            <div class="service-item rounded pt-3" data-aos="zoom-in-up">
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/mangala%20vadhyam%20services.png" alt="Mangala Vadhyam" class="img-fluid m-3 lazyload rounded" loading="lazy">
+                                <h5 class="text-dark english-content">Mangala Vadhyam</h5>
+                                <h5 class="text-dark tamil-content" style="display: none;">மங்கள வாத்யம்</h5>
                             </div>
                         </div>
                     </div>
@@ -352,50 +389,47 @@
             </div>
         </section>
 
-        <!-- Service End -->
 
-
-        <!-- About Start -->
         <section id="about">
             <div class="container-xxl py-5">
                 <div class="container text-center">
-                    <div class="text-center wow fadeInUp english-content" data-aos="zoom-in-up" data-wow-delay="0.1s">
+                    <div class="text-center wow fadeInUp english-content" data-aos="zoom-in-up">
                         <h1 class="section-title text-dark mb-5">About Us</h1>
                     </div>
-                    <div class="text-center wow fadeInUp tamil-content" data-aos="zoom-in-up" data-wow-delay="0.1s">
+                    <div class="text-center wow fadeInUp tamil-content" data-aos="zoom-in-up">
                         <h1 class="section-title text-dark mb-5">எங்கள் பற்றி</h1>
                     </div>
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6">
                             <div class="row g-3">
-                                <div class="col-6 text-start" data-aos="zoom-in-right">
-                                    <img class="img-fluid rounded wow zoomIn pb-2 lazyload" data-wow-delay="0.1s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/IMG_7757-min.png" alt="Company Image 1" loading="lazy">
-                                    <img class="img-fluid rounded wow zoomIn lazyload" data-wow-delay="0.1s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/owner%20images-min.png" alt="Company Image 2" loading="lazy">
+                                <div class="col-6 text-start" data-aos="zoom-in-up">
+                                    <img class="img-fluid rounded wow zoomIn pb-2 lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20caterings%20Founder.png" alt="PKM catering Founder" loading="lazy">
+                                    <img class="img-fluid rounded wow zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20caterings%20CEO.png" alt="PKM catering CEO" loading="lazy">
                                 </div>
                                 <div class="col-6 text-start" data-aos="zoom-in-up">
-                                    <img class="img-fluid rounded wow zoomIn lazyload" data-wow-delay="0.3s" src="https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/about-min.jpg" alt="Company Image 3" loading="lazy" style="margin-top: 25%;">
+                                    <img class="img-fluid rounded wow zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/about%20us%20right.png" alt="Pkm catering-service" loading="lazy" style="margin-top: 25%;">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="english-content" data-aos="zoom-out-left">
+                            <div class="english-content" data-aos="zoom-in-up">
                                 <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
                                 <p class="mb-4"><strong>Srimate Ramanujaya Namah.</strong> P.K.Mayakootha Iyengar Catering Services has been a beacon of quality in the catering industry since 1996, carrying forward a legacy that began in 1954. Founded by the esteemed Sri U.V. Adiyen P.K.M. Narasimhan, the only son of P.K. Mayakutha Iyengar, our company honors the traditions and culinary excellence that have attracted Vaishnavas of Divya Desam for decades.</p>
                                 <p class="mb-4">Our roots trace back to "Matama Mayilai Thiru Allikeni," where P.K. Mayakutha Iyengar's hand-cooked meals became legendary. Today, we continue this legacy, offering premier catering services that prioritize quality, taste, and health at an affordable cost. Our deep understanding of guests' needs, coupled with our dedication to exceptional hospitality, sets us apart in a fiercely competitive industry.</p>
                                 <p class="mb-4">At P.K.M. Mayakootha Iyengar Catering Services, we believe in uncompromising quality. Despite the competitive landscape, we prioritize customer satisfaction above all else. Our commitment to delivering delicious, healthy food and outstanding service ensures that every event we cater is a memorable success. Whether it's a wedding, corporate event, or special occasion, our goal is to exceed your expectations and make every moment special.</p>
                                 <div class="row g-4 mb-4">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">Years of</p>
                                                 <h6 class="text-uppercase mb-0">Experience</h6>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">Events</p>
                                                 <h6 class="text-uppercase mb-0">Attended</h6>
@@ -404,24 +438,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tamil-content" data-aos="zoom-out-left">
+                            <div class="tamil-content" data-aos="zoom-in-up">
                                 <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
                                 <p class="mb-4"><strong>ஸ்ரீமதே ராமாநுஜாய நம.</strong> P.K. Mayakootha Iyengar Catering Services என்பது, 1996 ஆம் ஆண்டும் பிறக்கும் தொடக்கமாக, 1954 ஆம் ஆண்டுகளில் இந்த துறையில் தங்கள் போட்டியில் பணியாற்றி வருகின்றனர் "மாடமா மயிலை திரு அல்லிக்கேணி" திவ்யதேசத்தின் வைணவர்கள் அனைவரையும் ஈர்த்த நளபாகச் சக்ரவர்த்தி ஶ்ரீ.உ.வே. பெ.கி.மாயக்கூத்த அய்யங்காருடன் அடிப்படையில் இந்த நிறுவனம் தொடங்கியுள்ளது.</p>
                                 <p class="mb-4">வேளுக்குடி ஶ்ரீ.உ.வே.கிருஷ்ணன் ஸ்வாமி, KAG Tiles உரிமையாளர் போன்ற பிரபலங்களும் எங்கள் வாடிக்கையாளர்கள் என்பதில் நாம் பெருமைப்படுகிறோம்.</p>
                                 <p class="mb-4">தற்போது, இந்த கேட்டரிங் சேவையில் கடுமையான போட்டிகள் இருக்கின்றன; ஆனால், நம்முடைய முன்னேற்றம் இல்லை. குறைந்த விலையில் தரமான, சுவையான, ஆரோக்கியமான உணவு, விருந்தினர்களின் தேவைக்கு அழைப்பு கொடுக்கும். இதே நம் குறிக்கோள். போட்டிகள் இருப்பினும், எங்கள் லாபத்தை குறைத்துக் கொள்வது இல்லை. லாபத்தை குறைத்துக் கொண்டு வாடிக்கையாளர்களின் ஆதரவை பெற்றுக் கொள்கிறோம். இது எங்கள் நிறுவனம் என்பதில் பெருமைப்படுகிறோம்.</p>
                                 <div class="row g-4 mb-4">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">அனுபவ</p>
                                                 <h6 class="text-uppercase mb-0">ஆண்டுகள்</h6>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">செயலாக்கப்பட்ட</p>
                                                 <h6 class="text-uppercase mb-0">நிகழ்வுகள்</h6>
@@ -437,7 +471,7 @@
         </section>
         <!-- About End -->
         <!-- menu start -->
-        <section id="menu" >
+        <section id="menu">
             <div class="container-xxl py-5">
                 <div class="container" data-aos="zoom-in-up">
                     <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
@@ -475,7 +509,7 @@
                                     <h1 class="text-center mt-4 english-content">Jaanavasam</h1>
                                     <h1 class="text-center mt-4 tamil-content" style="font-size: 33px;">ஜானவாசம்</h1>
 
-                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">BREAKFAST</h4>
                                         <h4 class="text-primary m-3 tamil-content">காலை உணவு</h4>
                                         <div class="row text-start food-items">
@@ -525,7 +559,7 @@
                                     <h1 class="text-center english-content mt-4">Mugurtham</h1>
                                     <h1 class="text-center mt-4 tamil-content" style="font-size: 33px;">முகூர்த்தம்</h1>
 
-                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">BREAKFAST</h4>
                                         <h4 class="text-primary m-3 tamil-content">காலை உணவு</h4>
                                         <div class="row text-start food-items">
@@ -606,7 +640,7 @@
                                 <h1 class="text-center mt-4 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
                                 <div class="row">
-                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">LUNCH</h4>
                                         <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>
                                         <div class="row text-start food-items">
@@ -697,7 +731,7 @@
                                 <h1 class="text-center english-content mt-5">Mugurtham</h1>
                                 <h1 class="text-center mt-5 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
-                                <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;">
+                                <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;" data-aos="zoom-in-up">
                                     <h4 class="text-primary m-3 english-content">LUNCH</h4>
                                     <h4 class="text-primary m-3 tamil-content">மதிய உணவு</h4>
                                     <div class="row text-start food-items">
@@ -802,7 +836,7 @@
                                     <h1 class="text-center english-content mt-3">Jaanavasam</h1>
                                     <h1 class="text-center  mt-3 tamil-content" style="font-size: 33px">ஜானவாசம்</h1>
 
-                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">DINNER</h4>
                                         <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>
                                         <div class="row text-start food-items">
@@ -892,7 +926,7 @@
                                     <h1 class="text-center mt-4 english-content">Mugurtham</h1>
                                     <h1 class="text-center  mt-5 tamil-content" style="font-size: 33px">முகூர்த்தம்</h1>
 
-                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">DINNER</h4>
                                         <h4 class="text-primary m-3 tamil-content">இரவு உணவு</h4>
                                         <div class="row text-start food-items">
@@ -972,7 +1006,7 @@
                                     </div>
                                     <h1 class="text-center mt-4">Special Dinner</h1>
 
-                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;">
+                                    <div class="col-sm-12 menu-card container" style="width: 100%;height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3">DINNER</h4>
                                         <div class="row text-start food-items">
                                             <div class="col-sm-6">
@@ -981,7 +1015,6 @@
                                                         <h5 class="m-4 english-content">Rasamalai - <span class="text-primary">Sweet</span></h5>
                                                         <h5 class="m-4 tamil-content">ரசமலாய் - <span class="text-primary">Sweet</span></h5>
                                                     </li>
-                                                    <!-- <li class="english-content"><h5 class="m-4">Rasamalai - <span class="text-primary">Sweet</span></h5></li> -->
 
                                                     <li>
                                                         <h5 class="m-4 english-content">Padhir Peni - <span class="text-primary">Sweet</span></h5>
@@ -1134,12 +1167,12 @@
         </section>
         <!-- Menu End -->
 
-        <!-- <div class="container-xxl py-5 wow mb-4 fadeInUp" data-wow-delay="0.1s">
+        <!-- <div class="container-xxl py-5 wow mb-4 fadeInUp" >
 </div> -->
 
         <!-- Contact Start -->
-        <section id="contact" >
-            <div class="container-fluid py-5 px-0 wow fadeInUp" >
+        <section id="contact">
+            <div class="container-fluid py-5 px-0 wow fadeInUp">
                 <div class="text-center" data-aos="zoom-in-up">
                     <h1 class="section-title text-dark mb-5">Contact Us</h1>
                     <h1 class="section-title text-dark mb-5 tamil-content" style="display: none;">தொடர்பு கொள்ள</h1>
@@ -1202,7 +1235,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <input class="btn btn-warning w-100 py-3 rounded-3" type="submit" id="button" value="Send Email">
+                                        <input class="btn btn-primary w-100 py-3 rounded-3" type="submit" id="button" value="Send Email">
                                     </div>
                                 </div>
                             </form>
@@ -1237,7 +1270,7 @@
                         while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                             <div class="item">
-                                <img src="<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['attributes']) ?>" loading="lazy">
+                                <img class="p-4" src="<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['attributes']) ?>" loading="lazy">
                             </div>
                     <?php
                         }
@@ -1265,7 +1298,7 @@
                         <h4 class=" text-start text-primary  mb-4">Company</h4>
                         <a class="btn btn-link" href="#about">About Us</a>
                         <a class="btn btn-link" href="#contact">Contact Us</a>
-                        <a class="btn btn-link" href="#gallery">Gallery</a>
+                        <a class="btn btn-link" href="gallery.php">Gallery</a>
                         <a class="btn btn-link" href="book.html">Book Now</a>
                         <a class="btn btn-link" href="book2.html">Order Now</a>
                         <a class="btn btn-link" href="#" id="loginLink">Admin Login</a>
@@ -1273,10 +1306,18 @@
                         <div id="loginFormPopup" class="popup text-center">
                             <form class="popup-content" action="log.php" method="post">
                                 <span class="close" id="closeBtn">&times;</span>
-                                <h2>Login</h2>
-                                <input type="text" placeholder="Username" required class="m-3 inputs" name="uname">
-                                <input type="password" placeholder="Password" required class="mb-3 inputs" name="upass"><br>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <h2 class="mb-4">Login</h2>
+                                <div class="form-group">
+                                    <label for="uname">Username:</label>
+                                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="upass">Password:</label>
+                                    <input type="password" class="form-control" id="upass" placeholder="Enter password" name="upass" required>
+                                </div>
+                                <div class="pt-3">
+                                <button type="submit" class="btn btn-primary text-center rounded-pill">Login</button>
+                                </div>
                             </form>
                         </div>
 
@@ -1340,10 +1381,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script> -->
 
     <!-- Owl Carousel (Comment out local library link if needed) -->
-    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -1351,18 +1390,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">emailjs.init('DwgZ4Gy7FmuowMVTp')</script>
+    <script type="text/javascript">
+        emailjs.init('DwgZ4Gy7FmuowMVTp')
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.getElementById('play-button').addEventListener('click', function() {
             const lightbox = GLightbox({
-                elements: [
-                    {
-                        href: 'https://youtu.be/PNC7Vs_CA0Y?si=iYPczx55djW6Z9Ce',
-                        type: 'video',
-                        source: 'youtube', // Specifies that the video is from YouTube
-                    }
-                ]
+                elements: [{
+                    href: 'https://youtu.be/PNC7Vs_CA0Y?si=iYPczx55djW6Z9Ce',
+                    type: 'video',
+                    source: 'youtube', // Specifies that the video is from YouTube
+                }]
             });
             lightbox.open();
         });
