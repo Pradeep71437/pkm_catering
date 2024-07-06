@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PMK Catering</title>
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/favicon-32x32%20pkm%20.avif" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/apple-touch-icon.avif" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -175,7 +176,7 @@ if (isset($_GET['id'])) {
 <body>
 <div class="container text-center">
     <div class="row pt-5">
-        <div class="col-2"><a href="adminindex.php" class="btn btn-link text-primary mb-4"> Home </a></div>
+        <div class="col-2"><a href="adminindex.php" class="btn btn-link text-primary mb-4" accesskey="1"> Home </a></div>
         <div class="col-8">
         <h2 >Kindly Fill The Details to Update Your Order</h2>
         </div>
@@ -349,10 +350,13 @@ if (isset($_GET['id'])) {
                                 <div class="col-sm-6">
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="மெது வடை" <?php echo in_array('மெது வடை', $firdaymor) ? 'checked' : ''; ?>> <span>Medhu Vadai (மெது வடை)</span></li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="தேங்காய் சட்னி" <?php echo in_array('தேங்காய் சட்னி', $firdaymor) ? 'checked' : ''; ?>> <span>Coconut Chutney (தேங்காய் சட்னி)</span></li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="புதினா சட்னி" <?php echo in_array('புதினா சட்னி', $firdaymor) ? 'checked' : ''; ?>> <span>Pudina chutney (புதினா சட்னி)</span></li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="சாம்பார்" <?php echo in_array('சாம்பார்', $firdaymor) ? 'checked' : ''; ?>> <span>Sambaar (சாம்பார்)</span></li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="காபி" <?php echo in_array('காபி', $firdaymor) ? 'checked' : ''; ?>> <span>Coffee (காபி)</span></li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="டீ" <?php echo in_array('டீ', $firdaymor) ? 'checked' : ''; ?>> <span>Tea (டீ)</span></li>
                                     <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="பால்" <?php echo in_array('பால்', $firdaymor) ? 'checked' : ''; ?>> <span>Milk (பால்)</span></li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Boost" <?php echo in_array('Boost', $firdaymor) ? 'checked' : ''; ?>> <span>Boost (பூஸ்ட்)</span></li>
+                                    <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Horlicks" <?php echo in_array('Horlicks', $firdaymor) ? 'checked' : ''; ?>> <span>Horlicks (ஹார்லிக்ஸ்)</span></li>
                                 </div>
                                 
                             </div>

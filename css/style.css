@@ -193,22 +193,11 @@ align-items: center;
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/decoration.avif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
     background-attachment: fixed;
-}
-
-.hero-header img {
-    animation: imgRotate 50s linear infinite;
-}
-
-@keyframes imgRotate { 
-    100% { 
-        transform: rotate(360deg); 
-    } 
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -280,7 +269,7 @@ align-items: center;
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif");
     
     background-position: center center;
     background-repeat: no-repeat;
@@ -520,4 +509,15 @@ align-items: center;
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+/* visuallly hidden */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

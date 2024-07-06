@@ -37,9 +37,6 @@ if (isset($_GET['id'])) {
     header("Location: index.php"); // Redirect to the main page
     exit();
 }
-
-
-// 
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +53,8 @@ if (isset($_GET['id'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/favicon-32x32%20pkm%20.avif" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/apple-touch-icon.avif" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,17 +62,18 @@ if (isset($_GET['id'])) {
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <!-- <link href="../lib/animate/animate.min.css" rel="stylesheet">
     <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> -->
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> #fff -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="admin.css">
@@ -118,7 +117,7 @@ if (isset($_GET['id'])) {
             /* Optional - if you want to remove the margin */
         }
     </style>
-    <div class="ps-5 m-4 text-warning m-0"><a href="adminindex.php" class="btn btn-link text-primary mb-4">Home</a></div>
+    <div class="ps-5 m-4 text-warning m-0"><a href="adminindex.php" class="btn btn-link text-primary mb-4" accesskey="1">Home</a></div>
     <div class="container" id="pdfTable">
         <div>
             <h1 class="text-warning m-0 text-center m-4">P.K.M Catering</h1>
@@ -350,9 +349,9 @@ if (isset($_GET['id'])) {
                 </tbody>
             </table>
         </div>
-        <div class="download text-center p-5">
-            <button id="downloadButton" onclick="downloadPDF()" class="btn btn-warning">Download</button>
-        </div>
+    </div>
+    <div class="download text-center p-5">
+        <button id="downloadButton" onclick="downloadPDF()" class="btn btn-warning">Download</button>
     </div>
     <!-- <div class="container">
     <div class="table-responsive">
@@ -518,20 +517,6 @@ if (isset($_GET['id'])) {
     </div>
 </div> -->
     <!-- sample code  -->
-    <!-- Bootstrap Modal --
-    <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="popupModalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="popupBody"></div>
-            </div>
-        </div>
-    </div>-->
     <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -547,7 +532,7 @@ if (isset($_GET['id'])) {
                             <div class="col-12 p-2 h5" id="popupTitle">Popup Title</div>
                             <div class="col-12 h6">Count : <span id="popupFooter">0</span></div>
                         </div>
-                        <div id="popupBody">Popup Body Content</div>
+                        <div contenteditable="true" id="popupBody">Popup Body Content</div>
                     </div>
                 </div>
                 <div class="download text-center p-3">
@@ -577,29 +562,25 @@ if (isset($_GET['id'])) {
         }
 
         function downloadPDF3() {
-            var element = document.getElementById('pdfTable3');
-            var title = document.getElementById('popupTitle').textContent.trim(); // Get the title text
-            var usdate = '<?= $row['usdate'] ?>'; // Get the usdate value from PHP
-            var filename = (title ? title + ' ' : '') + usdate + '.pdf'; // Combine title and usdate for the filename
+        var element = document.getElementById('pdfTable3');
+        var title = document.getElementById('popupTitle').textContent.trim(); // Get the title text
+        var usdate = '<?= $row['usdate'] ?>'; // Get the usdate value from PHP
+        var filename = (title ? title + ' ' : '') + usdate + '.pdf'; // Combine title and usdate for the filename
 
-            html2pdf().from(element).set({
-                margin: 1,
-                filename: filename,
-                image: {
-                    type: 'jpeg',
-                    quality: 0.98
-                },
-                html2canvas: {
-                    scale: 2,
-                    width: element.scrollWidth
-                },
-                jsPDF: {
-                    unit: 'mm',
-                    format: 'a4',
-                    orientation: 'portrait'
-                }
-            }).save();
-        }
+        // Make contenteditable="false"
+        document.getElementById('popupBody').contentEditable = "false";
+
+        html2pdf().from(element).set({
+            margin: 1,
+            filename: filename,
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        }).save().then(function () {
+            // Reset contenteditable="true" after download
+            document.getElementById('popupBody').contentEditable = "true";
+        });
+    }
     </script>
     <!-- sample end -->
     <script src="admin.js"></script>
@@ -613,30 +594,29 @@ if (isset($_GET['id'])) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Bundle (including Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Additional Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script> -->
 
     <!-- Tempus Dominus (Date Time Picker) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script> -->
 
     <!-- Owl Carousel (Comment out local library link if needed) -->
     <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
 </body>
-
 </html>

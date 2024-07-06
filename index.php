@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Chennai's Top Iyengar Catering Services: A Legacy of Quality Since 1954</title>
@@ -38,8 +37,8 @@
     <meta name="target" content="PKM catering">
 
     <!-- Favicon -->
-    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20favicon-32x32.png" rel="icon" type="image/x-icon">
-    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/favicon-32x32%20pkm%20.avif" rel="icon" type="image/x-icon">
+    <link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/apple-touch-icon.avif" rel="apple-touch-icon">
 
 
     <!-- Google Web Fonts -->
@@ -53,9 +52,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <!-- Libraries Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -65,55 +65,54 @@
     <link rel="stylesheet" href="css/style2.css">
     <!-- Schema Markup for Local Business -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "P.K.M. Mayakootha Iyengar Catering Services",
-      "image": "https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png",
-      "@id": "http://www.pkmcatering.com",
-      "url": "http://www.pkmcatering.com",
-      "telephone": "+91-9940700250",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "30/30, Ramakrishnapuram 3rd Street,West Mambalam",
-        "addressLocality": "Chennai",
-        "addressRegion": "TN",
-        "postalCode": "600033",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61560437146613&is_tour_dismissed",
-        "https://www.instagram.com/pkm_iyengar_catering/?hl=en",
-        "https://www.youtube.com/channel/UCvWY7iAk4NtbWBBwDF2id7w"
-      ]
-    }
-    </script>
-     <!-- Schema Markup for Breadcrumb -->
-     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "http://www.pkmcatering.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Gallery",
-          "item": "http://www.pkmcatering.com/gallery.php"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Book Now",
-          "item": "http://www.pkmcatering.com/book.html"
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "P.K.M. Mayakootha Iyengar Catering Services",
+            "image": "https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20promo%20image-min.png",
+            "@id": "http://www.pkmcatering.com",
+            "url": "http://www.pkmcatering.com",
+            "telephone": "+91-9940700250",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "30/30, Ramakrishnapuram 3rd Street,West Mambalam",
+                "addressLocality": "Chennai",
+                "addressRegion": "TN",
+                "postalCode": "600033",
+                "addressCountry": "IN"
+            },
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61560437146613&is_tour_dismissed",
+                "https://www.instagram.com/pkm_iyengar_catering/?hl=en",
+                "https://www.youtube.com/channel/UCvWY7iAk4NtbWBBwDF2id7w"
+            ]
         }
-      ]
-    }
+    </script>
+    <!-- Schema Markup for Breadcrumb -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "http://www.pkmcatering.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Gallery",
+                    "item": "http://www.pkmcatering.com/gallery.php"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Book Now",
+                    "item": "http://www.pkmcatering.com/book.html"
+                }
+            ]
+        }
     </script>
     <style>
         :root {
@@ -126,7 +125,7 @@
             position: relative;
             height: 100%;
             min-height: 500px;
-            background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg%20background.JPG);
+            background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -218,14 +217,11 @@
 
         .owl-carousel .item {
             width: 300px;
-            /* Fixed width for each item */
             height: 300px;
-            /* Fixed height for each item */
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            /* Ensure content that overflows is hidden */
         }
 
         .owl-carousel .item img {
@@ -242,34 +238,10 @@
             /* Maintain aspect ratio */
         }
     </style>
-
-    <script>
-        function toggleLanguage() {
-            var selectedLanguage = document.getElementById("languageSelector").value;
-            var englishContent = document.querySelectorAll('.english-content');
-            var tamilContent = document.querySelectorAll('.tamil-content');
-
-            if (selectedLanguage === 'english') {
-                for (var i = 0; i < englishContent.length; i++) {
-                    englishContent[i].style.display = 'block';
-                }
-                for (var i = 0; i < tamilContent.length; i++) {
-                    tamilContent[i].style.display = 'none';
-                }
-            } else if (selectedLanguage === 'tamil') {
-                for (var i = 0; i < englishContent.length; i++) {
-                    englishContent[i].style.display = 'none';
-                }
-                for (var i = 0; i < tamilContent.length; i++) {
-                    tamilContent[i].style.display = 'block';
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <div class="container-fluid bg-white p-0">
+    <main class="container-fluid bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -277,111 +249,119 @@
             </div>
         </div>
 
-        <div id="indexpage" class="container-fluid position-relative p-0">
+        <header id="indexpage" class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <div class="langlogo ">
+                <div class="langlogo">
                     <a href="#indexpage" class="navbar-brand p-1 pe-5">
-                        <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 95px; height: auto;" class="img-fluid logo">
+                        <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20logo.png" alt="PKM catering logo" width="95" height="auto" style="max-width: 95px; height: auto;" class="img-fluid logo">
                     </a>
-
-                    <select id="languageSelector" class="" onchange="toggleLanguage()">
-                        <option value="english" class="lang container mt-3">Eng</option>
-                        <option value="tamil" class="lang container">தமிழ்</option>
+                    <label for="languageSelector" class="visually-hidden">Language</label>
+                    <select id="languageSelector" class="form-control" onchange="toggleLanguage()">
+                        <option value="english" style="background-color: #FEA116;" class="text-center" >Eng</option>
+                        <option value="tamil" style="background-color: #FEA116;" class="text-center" >தமிழ்</option>
                     </select>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span id="toggleLabel" class="visually-hidden">Toggle navigation</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-labelledby="toggleLabel">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.php" class="nav-item nav-link active english-content">Home</a>
-                        <a href="index.php" class="nav-item nav-link active tamil-content">ஹோம்</a>
+                        <a href="index.php" class="nav-item nav-link active english-content" accesskey="1">Home</a>
+                        <a href="index.php" class="nav-item nav-link active tamil-content" accesskey="1">ஹோம்</a>
 
-                        <a href="#service" class="nav-item nav-link english-content">Service</a>
-                        <a href="#service" class="nav-item nav-link tamil-content">சேவை</a>
+                        <a href="#service" class="nav-item nav-link english-content" accesskey="2">Service</a>
+                        <a href="#service" class="nav-item nav-link tamil-content" accesskey="2">சேவை</a>
 
-                        <a href="#about" class="nav-item nav-link english-content">About</a>
-                        <a href="#about" class="nav-item nav-link tamil-content">பற்றி</a>
+                        <a href="#about" class="nav-item nav-link english-content" accesskey="3">About</a>
+                        <a href="#about" class="nav-item nav-link tamil-content" accesskey="3">பற்றி</a>
 
-                        <a href="#menu" class="nav-item nav-link english-content">Menu</a>
-                        <a href="#menu" class="nav-item nav-link tamil-content">மெனு</a>
+                        <a href="#menu" class="nav-item nav-link english-content" accesskey="4">Menu</a>
+                        <a href="#menu" class="nav-item nav-link tamil-content" accesskey="4">மெனு</a>
 
-                        <a href="#contact" class="nav-item nav-link english-content">Contact</a>
-                        <a href="#contact" class="nav-item nav-link tamil-content">தொடர்பு</a>
+                        <a href="#contact" class="nav-item nav-link english-content" accesskey="5">Contact</a>
+                        <a href="#contact" class="nav-item nav-link tamil-content" accesskey="5">தொடர்பு</a>
 
-                        <a href="gallery.php" class="nav-item nav-link english-content">Gallery</a>
+                        <a href="gallery.php" class="nav-item nav-link english-content" accesskey="6">Gallery</a>
                     </div>
-                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content">Book Now</a>
-                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content">ஆர்டர்</a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 english-content rounded-3 fw-semibold">Book Now</a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 mb-1 tamil-content rounded-3 fw-semibold">ஆர்டர்</a>
                 </div>
             </nav>
             <div class="container-fluid py-5 bg-dark hero-header mb-5 justify-content-center d-flex align-items-center">
-                <div class="container my-5 py-5">
+                <div class="container my-3 py-3 py-lg-5 my-lg-5">
                     <div class="align-items-center g-5">
                         <div class="text-center text-lg-start">
                             <div class="english-content" data-aos="zoom-in-up">
                                 <div class="container gpic text-center">
-                                    <img src="img/perumalpic.png" alt="Transparent venkateswara Swamy" class="img-fluid" width="300" style="animation: none;">
+                                    <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/perumalpic.png" alt="Transparent venkateswara Swamy" class="img-fluid" style="width: 300px; height: auto; animation: none;">
                                 </div>
                                 <div class="titleslogan">
                                     <h1 class="display-3 text-primary animated slideInLeft text-center">P.K.Mayakootha Iyengar Catering</h1>
-                                    <h5 class="text-white animated slideInLeft mb-4 pb-2 text-center" style="font-weight: 6;">Elevate Your Occasions with the Exquisite Taste of Authentic South Indian Cuisine!</h5>
+                                    <h2 class="text-white animated slideInLeft mb-4 pb-2 text-center h5" style="font-weight: 6;">Elevate Your Occasions with the Exquisite Taste of Authentic South Indian Cuisine!</h2>
                                 </div>
                                 <div class="container text-center">
-                                    <a href="book.html" class="btn btn-primary py-3 px-5 animated slideInLeft rounded-pill">Book Now</a>
+                                    <a href="book.html" class="btn btn-primary py-3 px-5 animated slideInLeft rounded-pill fw-semibold text-nowrap">Book Now</a>
                                 </div>
                             </div>
                             <div class="tamil-content" style="display: none;" data-aos="zoom-in-up">
                                 <div class="container gpic text-center">
-                                    <img src="img/perumalpic.png" alt="" class="img-fluid" width="300" style="animation: none;">
+                                    <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/perumalpic.png" alt="Transparent venkateswara Swamy" class="img-fluid" width="300px" height="auto" style="width: 300px; height: auto; animation: none;">
                                 </div>
                                 <div class="titleslogan">
-                                    <h1 class="display-5 text-primary animated slideInLeft text-center">பி.கே.மாயகூத்த ஐயங்கார் கேட்டரிங்</h1>
-                                    <h5 class="text-white animated slideInLeft mb-4 pb-2 text-center" style="font-weight: 6;">உங்கள் விருந்தினர் மகிழ்ச்சியை அளித்தல் மற்றும் அதற்கு தனியாக நம் சுவை உணர்வை அளிக்கும்!!</h5>
+                                    <h1 class="display-5 text-primary animated slideInLeft text-center">P.K.மாயகூத்த ஐயங்கார் கேட்டரிங்</h1>
+                                    <h2 class="text-white animated slideInLeft mb-4 pb-2 text-center h5" style="font-weight: 6;">உங்கள் விருந்தினர் மகிழ்ச்சியை அளித்தல் மற்றும் அதற்கு தனியாக நம் சுவை உணர்வை அளிக்கும்!!</h2>
                                 </div>
                                 <div class="container text-center">
-                                    <a href="book.html" class="btn btn-primary py-3 px-5 me-3 animated slideInLeft rounded-pill">ஆர்டர்</a>
+                                    <a href="book.html" class="btn btn-primary py-3 px-5 me-3 animated slideInLeft rounded-pill text-nowrap">ஆர்டர்</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <section id="service">
+        <section id="service" aria-labelledby="service-heading">
             <div class="container-xxl py-5">
                 <div class="container text-center">
-                    <div class="text-center" data-aos="zoom-in-up">
-                        <h1 class="section-title text-dark mb-5">Our Services</h1>
+                    <!-- <div class="text-center" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1 english-content">Our Services</h2>
+                        <h2 class="section-title text-dark mb-5 h1 tamil-content"> Services</h2>
+                    </div> -->
+                    <div class="text-center  fadeInUp english-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">Our Services</h2>
+                    </div>
+                    <div class="text-center  fadeInUp tamil-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">எங்கள் சேவைகள்</h2>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-up">
-                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/PKM%20Caterings%20services.png" alt="Catering Services" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-dark english-content">Catering Services</h5>
-                                <h5 class="text-dark tamil-content" style="display: none;">கேட்டரிங் சேவைகள்</h5>
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/PKM-Caterings%20about%20us.avif" alt="Catering Services" class="img-fluid m-3 lazyload rounded" width="235" height="150" loading="lazy">
+                                <h3 class="text-dark english-content h5">Catering Services</h3>
+                                <h3 class="text-dark tamil-content h5" style="display: none;">கேட்டரிங் சேவைகள்</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="service-item rounded pt-3 text-center" data-aos="zoom-in-up">
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/decoration.avif" alt="Stage Decoration" class="img-fluid m-3 lazyload rounded" width="235" height="150" loading="lazy">
+                                <h3 class="text-dark english-content h5">Stage Decoration</h3>
+                                <h3 class="text-dark tamil-content h5" style="display: none;">மேடை அலங்காரம்</h3>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-up">
-                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/decoration%20services.png" alt="Stage Decoration" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-dark english-content">Stage Decoration</h5>
-                                <h5 class="text-dark tamil-content" style="display: none;">மேடை அலங்காரம்</h5>
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/Return-Gifts%20about%20us.avif" alt="Return Gift Bags" class="img-fluid m-3 lazyload rounded" width="235" height="150" loading="lazy">
+                                <h3 class="text-dark english-content h5">Return Gift Bags</h3>
+                                <h3 class="text-dark tamil-content h5" style="display: none;">தாம்பூலம் பைகள்</h3>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="service-item rounded pt-3" data-aos="zoom-in-up">
-                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/Return%20Gifts%20services.png" alt="Return Gift Bags" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-dark english-content">Return Gift Bags</h5>
-                                <h5 class="text-dark tamil-content" style="display: none;">தாம்பூலம் பைகள்</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="service-item rounded pt-3" data-aos="zoom-in-up">
-                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/mangala%20vadhyam%20services.png" alt="Mangala Vadhyam" class="img-fluid m-3 lazyload rounded" loading="lazy">
-                                <h5 class="text-dark english-content">Mangala Vadhyam</h5>
-                                <h5 class="text-dark tamil-content" style="display: none;">மங்கள வாத்யம்</h5>
+                                <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/mangala-vadhyam.avif" alt="Mangala Vadhyam" class="img-fluid m-3 lazyload rounded" width="235" height="150" loading="lazy">
+                                <h3 class="text-dark english-content h5">Mangala Vadhyam</h3>
+                                <h3 class="text-dark tamil-content h5" style="display: none;">மங்கள வாத்யம்</h3>
                             </div>
                         </div>
                     </div>
@@ -389,76 +369,75 @@
             </div>
         </section>
 
-
         <section id="about">
             <div class="container-xxl py-5">
                 <div class="container text-center">
-                    <div class="text-center wow fadeInUp english-content" data-aos="zoom-in-up">
-                        <h1 class="section-title text-dark mb-5">About Us</h1>
+                    <div class="text-center  fadeInUp english-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">About Us</h2>
                     </div>
-                    <div class="text-center wow fadeInUp tamil-content" data-aos="zoom-in-up">
-                        <h1 class="section-title text-dark mb-5">எங்கள் பற்றி</h1>
+                    <div class="text-center  fadeInUp tamil-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">எங்கள் பற்றி</h2>
                     </div>
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6">
                             <div class="row g-3">
                                 <div class="col-6 text-start" data-aos="zoom-in-up">
-                                    <img class="img-fluid rounded wow zoomIn pb-2 lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20caterings%20Founder.png" alt="PKM catering Founder" loading="lazy">
-                                    <img class="img-fluid rounded wow zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20caterings%20CEO.png" alt="PKM catering CEO" loading="lazy">
+                                    <img class="img-fluid rounded  zoomIn pb-2 lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/PKM-CATERING-OWNER.avif" width="300" height="150" alt="PKM catering Founder" loading="lazy">
+                                    <img class="img-fluid rounded  zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/PKM-CATERING-CEO.avif" width="300" height="150" alt="PKM catering CEO" loading="lazy">
                                 </div>
                                 <div class="col-6 text-start" data-aos="zoom-in-up">
-                                    <img class="img-fluid rounded wow zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/about%20us%20right.png" alt="Pkm catering-service" loading="lazy" style="margin-top: 25%;">
+                                    <img class="img-fluid rounded  zoomIn lazyload" src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/about%20us%20right.avif" alt="Pkm catering-service" width="300" height="400" loading="lazy" style="margin-top: 25%;">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="english-content" data-aos="zoom-in-up">
-                                <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
-                                <p class="mb-4"><strong>Srimate Ramanujaya Namah.</strong> P.K.Mayakootha Iyengar Catering Services has been a beacon of quality in the catering industry since 1996, carrying forward a legacy that began in 1954. Founded by the esteemed Sri U.V. Adiyen P.K.M. Narasimhan, the only son of P.K. Mayakutha Iyengar, our company honors the traditions and culinary excellence that have attracted Vaishnavas of Divya Desam for decades.</p>
-                                <p class="mb-4">Our roots trace back to "Matama Mayilai Thiru Allikeni," where P.K. Mayakutha Iyengar's hand-cooked meals became legendary. Today, we continue this legacy, offering premier catering services that prioritize quality, taste, and health at an affordable cost. Our deep understanding of guests' needs, coupled with our dedication to exceptional hospitality, sets us apart in a fiercely competitive industry.</p>
-                                <p class="mb-4">At P.K.M. Mayakootha Iyengar Catering Services, we believe in uncompromising quality. Despite the competitive landscape, we prioritize customer satisfaction above all else. Our commitment to delivering delicious, healthy food and outstanding service ensures that every event we cater is a memorable success. Whether it's a wedding, corporate event, or special occasion, our goal is to exceed your expectations and make every moment special.</p>
+                                <h3 class="mb-4 text-primary h1">Welcome to P.K.M Catering</h3>
+                                <p class="mb-4"><strong>Sri Mathe Ramanujaya Namaha. </strong> P.K. Mayakootha Iyengar Catering Services has been operational since 1996. Beginning his culinary journey in 1954, my father, Shri U. Ve. P.K. Mayakootha Iyengar, captivated all Vaishnavites of the "Madama Mailai Thiru Allikeni" Divya Desam with his exceptional skills and was celebrated as the culinary emperor. I, P.K.M. Narasimhan, am his only son, and I have proudly continued this legacy under his esteemed name.</p>
+                                <p class="mb-4">We are honored to have esteemed clients such as Velukkudi Shri U. Ve. Krishnan Swami and the owner of KAG Tiles. Despite the fierce competition in the catering industry, our goal remains to provide high-quality, delicious, and healthy food at affordable prices while meeting the needs of our guests with the best hospitality.</p>
+                                <p class="mb-4">Even amidst competition, we do not compromise on the quality of our food for profit. We take pride in being a company that prioritizes customer satisfaction over profits, earning the support and loyalty of our clients.</p>
                                 <div class="row g-4 mb-4">
                                     <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h4 class="flex-shrink-0 display-5 text-primary mb-0 h1">70</h4><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">Years of</p>
-                                                <h6 class="text-uppercase mb-0">Experience</h6>
+                                                <h3 class="text-uppercase mb-0 h6">Experience</h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h4 class="flex-shrink-0 display-5 text-primary mb-0 h1">1300</h4><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">Events</p>
-                                                <h6 class="text-uppercase mb-0">Attended</h6>
+                                                <h3 class="text-uppercase mb-0 h6">Attended</h3>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tamil-content" data-aos="zoom-in-up">
-                                <h1 class="mb-4 text-primary">Welcome to P.K.M Catering</h1>
-                                <p class="mb-4"><strong>ஸ்ரீமதே ராமாநுஜாய நம.</strong> P.K. Mayakootha Iyengar Catering Services என்பது, 1996 ஆம் ஆண்டும் பிறக்கும் தொடக்கமாக, 1954 ஆம் ஆண்டுகளில் இந்த துறையில் தங்கள் போட்டியில் பணியாற்றி வருகின்றனர் "மாடமா மயிலை திரு அல்லிக்கேணி" திவ்யதேசத்தின் வைணவர்கள் அனைவரையும் ஈர்த்த நளபாகச் சக்ரவர்த்தி ஶ்ரீ.உ.வே. பெ.கி.மாயக்கூத்த அய்யங்காருடன் அடிப்படையில் இந்த நிறுவனம் தொடங்கியுள்ளது.</p>
-                                <p class="mb-4">வேளுக்குடி ஶ்ரீ.உ.வே.கிருஷ்ணன் ஸ்வாமி, KAG Tiles உரிமையாளர் போன்ற பிரபலங்களும் எங்கள் வாடிக்கையாளர்கள் என்பதில் நாம் பெருமைப்படுகிறோம்.</p>
-                                <p class="mb-4">தற்போது, இந்த கேட்டரிங் சேவையில் கடுமையான போட்டிகள் இருக்கின்றன; ஆனால், நம்முடைய முன்னேற்றம் இல்லை. குறைந்த விலையில் தரமான, சுவையான, ஆரோக்கியமான உணவு, விருந்தினர்களின் தேவைக்கு அழைப்பு கொடுக்கும். இதே நம் குறிக்கோள். போட்டிகள் இருப்பினும், எங்கள் லாபத்தை குறைத்துக் கொள்வது இல்லை. லாபத்தை குறைத்துக் கொண்டு வாடிக்கையாளர்களின் ஆதரவை பெற்றுக் கொள்கிறோம். இது எங்கள் நிறுவனம் என்பதில் பெருமைப்படுகிறோம்.</p>
+                                <h2 class="mb-4 text-primary h1">Welcome to P.K.M Catering</h2>
+                                <p class="mb-4"><strong>ஸ்ரீமதே ராமாநுஜாய நம. </strong> P.K.Mayakootha Iyengar Catering services... எனும் இந்த நிறுவனம் 1996ல் இருந்து இயங்கி வருகிறது...1954 முதலே இந்த துறையில் பணியாற்றி தனது கைப்பக்குவத்தினால் "மாடமா மயிலை திரு அல்லிக்கேணி" திவ்ய தேசத்தின் வைணவர்கள் அனைவரையும் ஈர்த்த அப்போதைய நளபாகச் சக்ரவர்த்தி...ஶ்ரீ.உ.வே.பெ.கி.மாயக்கூத்த அய்யங்காருடைய ஒரே புதல்வன் அடியேன் P.K.M.நரசிம்ஹன் ,எனது தந்தையின் பெயரிலேயே இந்த நிறுவனம் இயங்கி வருகிறது.</p>
+                                <p class="mb-4">வேளுக்குடி ஶ்ரீ.உ.வே.கிருஷ்ணன் ஸ்வாமி, KAG Tiles owner போன்ற சில பிரபலங்கள் எங்கள் வாடிக்கையாளர்கள் என்பதில் நாங்கள் பெருமை கொள்கிறோம்..தற்போது இந்த கேட்டரிங் சேவை துறையில் கடுமையான போட்டிகள் இருப்பினும்... .. குறைந்த விலையில் தரமான, சுவையான, ஆரோக்கியமான உணவு, விருந்தினர்களின் தேவை அறிந்து உபசரிப்பது Best Hospitality இவைகள்தான் எங்கள் குறிக்கோள் ஆகும்.</p>
+                                <p class="mb-4">போட்டிகள் இருப்பினும் எங்கள் லாபத்திற்காக உணவின் தரத்தை குறைத்துக் கொள்வது இல்லை.லாபத்தை குறைத்துக் கொண்டு வாடிக்கையாளர்களின் ஆதரவு மட்டுமே போதும் என்ற அடிப்படையில் இயங்கும் நிறுவனம் எங்கள் நிறுவனம் என்பதில் பெருமை கொள்கிறோம்.</p>
                                 <div class="row g-4 mb-4">
                                     <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">70</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h4 class="flex-shrink-0 display-5 text-primary mb-0 h1">70</h4><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">அனுபவ</p>
-                                                <h6 class="text-uppercase mb-0">ஆண்டுகள்</h6>
+                                                <h3 class="text-uppercase mb-0 h6">ஆண்டுகள்</h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6" data-aos="zoom-in-up">
                                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                            <h1 class="flex-shrink-0 display-5 text-primary mb-0">2000</h1><span class="m-3 text-primary" style="font-size: 40px;">+</span>
+                                            <h4 class="flex-shrink-0 display-5 text-primary mb-0 h1">1300</h4><span class="m-3 text-primary" style="font-size: 40px;">+</span>
                                             <div class="ps-4">
                                                 <p class="mb-0">செயலாக்கப்பட்ட</p>
-                                                <h6 class="text-uppercase mb-0">நிகழ்வுகள்</h6>
+                                                <h3 class="text-uppercase mb-0 h6">நிகழ்வுகள்</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -474,15 +453,15 @@
         <section id="menu">
             <div class="container-xxl py-5">
                 <div class="container" data-aos="zoom-in-up">
-                    <div class="text-center wow fadeInUp  english-content" data-wow-delay="0.1s">
+                    <div class="text-center  fadeInUp  english-content">
                         <h1 class="section-title text-dark mb-4">Our Menu</h1><br>
                         <button class="btn btn-primary mb-4" onclick="downloadPDF()">DOWNLOAD</button>
                     </div>
-                    <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <div class="text-center  fadeInUp tamil-content">
                         <h1 class="section-title text-dark mb-4 ">மெனு</h1><br>
                         <button class="btn btn-primary mb-4" onclick="downloadPDF()">பதிவிறக்கு</button>
                     </div>
-                    <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="tab-class text-center  fadeInUp">
                         <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="pill" href="#tab-1">
@@ -555,10 +534,8 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <h1 class="text-center english-content mt-4">Mugurtham</h1>
                                     <h1 class="text-center mt-4 tamil-content" style="font-size: 33px;">முகூர்த்தம்</h1>
-
                                     <div class="col-sm-12 menu-card container" style="width: 100%; height: 400px;" data-aos="zoom-in-up">
                                         <h4 class="text-primary m-3 english-content">BREAKFAST</h4>
                                         <h4 class="text-primary m-3 tamil-content">காலை உணவு</h4>
@@ -1152,8 +1129,6 @@
                                                         <h5 class="m-4 english-content">Ice Cream & Beeda</h5>
                                                         <h5 class="m-4 tamil-content">ஐஸ் கிரீம் & பீடா</h5>
                                                     </li>
-
-
                                                 </ol>
                                             </div>
                                         </div>
@@ -1167,69 +1142,66 @@
         </section>
         <!-- Menu End -->
 
-        <!-- <div class="container-xxl py-5 wow mb-4 fadeInUp" >
-</div> -->
-
         <!-- Contact Start -->
         <section id="contact">
-            <div class="container-fluid py-5 px-0 wow fadeInUp">
-                <div class="text-center" data-aos="zoom-in-up">
+            <div class="container-fluid py-5 px-0  fadeInUp">
+                <!-- <div class="text-center" data-aos="zoom-in-up">
                     <h1 class="section-title text-dark mb-5">Contact Us</h1>
                     <h1 class="section-title text-dark mb-5 tamil-content" style="display: none;">தொடர்பு கொள்ள</h1>
-                </div>
+                </div> -->
+                <div class="text-center  fadeInUp english-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">Contact Us</h2>
+                    </div>
+                    <div class="text-center  fadeInUp tamil-content" data-aos="zoom-in-up">
+                        <h2 class="section-title text-dark mb-5 h1">தொடர்பு கொள்ள</h2>
+                    </div>
                 <div class="row g-0">
-                    <!-- <div class="col-md-6">
-                        <div class="video">
-                            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtu.be/PNC7Vs_CA0Y?si=-IkcY9b9tb8qFmOf" data-bs-target="#videoModal">
-                                <span></span>
-                            </button>
-                        </div>
-                    </div> -->
                     <div class="col-md-6" data-aos="zoom-in-up">
                         <div class="video">
-                            <button type="button" class="btn-play" id="play-button">
+                            <button type="button" class="btn-play" id="play-button" aria-label="Play">
                                 <span></span>
                             </button>
+
                         </div>
                     </div>
                     <div class="col-md-6 bg-dark d-flex align-items-center" data-aos="zoom-in-up">
-                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                            <h1 class="text-primary mb-4">Send us a message!</h1>
+                        <div class="p-5  fadeInUp">
+                            <h1 class="text-primary mb-4 english-content">Send us a message!</h1>
                             <h1 class="text-primary mb-4 tamil-content" style="font-size: 37px; display: none;">எங்களை தொடர்பு கொள்ள!</h1>
 
                             <form id="form">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" name="name" id="name" class="form-control rounded-3" placeholder="Your Name" required>
+                                            <input type="text" name="name" id="name" class="form-control rounded-3" placeholder="Your Name" required autocomplete="name">
                                             <label for="name" class="english-content">Your Name</label>
                                             <label for="name" class="tamil-content" style="display: none;">பெயர்</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" name="email" id="email" class="form-control rounded-3" placeholder="Your Email" required>
+                                            <input type="email" name="email" id="email" class="form-control rounded-3" placeholder="Your Email" required autocomplete="email">
                                             <label for="email" class="english-content">Your Email</label>
                                             <label for="email" class="tamil-content" style="display: none;">இமெயில்</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="date" name="date" id="date" class="form-control rounded-3" placeholder="Date & Time" required>
+                                            <input type="date" name="date" id="date" class="form-control rounded-3" placeholder="Date & Time" required autocomplete="bday">
                                             <label for="date" class="english-content">Date</label>
                                             <label for="date" class="tamil-content" style="display: none;">தேதி & நேரம்</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="tel" name="contact" id="contact" class="form-control rounded-3" placeholder="Contact Number" required>
-                                            <label for="contact" class="english-content">Contact Number</label>
-                                            <label for="contact" class="tamil-content" style="display: none;">தொடர்பு எண்</label>
+                                            <input type="tel" name="contact" id="contact-input" class="form-control rounded-3" placeholder="Contact Number" required autocomplete="tel">
+                                            <label for="contact-input" class="english-content">Contact Number</label>
+                                            <label for="contact-input" class="tamil-content" style="display: none;">தொடர்பு எண்</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea name="request" id="request" class="form-control rounded-3" placeholder="Special Request" style="height: 100px" required></textarea>
+                                            <textarea name="request" id="request" class="form-control rounded-3" placeholder="Special Request" style="height: 100px" required autocomplete="off"></textarea>
                                             <label for="request" class="english-content">Special Request</label>
                                             <label for="request" class="tamil-content" style="display: none;">உங்கள் கோரிக்கை</label>
                                         </div>
@@ -1246,13 +1218,13 @@
         </section>
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow mb-4 fadeInUp" data-wow-delay="0.1s" data-aos="zoom-in-up" id="gallery">
+        <section class="container-xxl py-5  mb-4 fadeInUp" data-aos="zoom-in-up" id="gallery">
             <div class="container">
                 <div class="text-center">
-                    <div class="text-center wow fadeInUp english-content" data-wow-delay="0.1s">
+                    <div class="text-center  fadeInUp english-content">
                         <h1 class="section-title text-dark mb-5">Gallery</h1>
                     </div>
-                    <div class="text-center wow fadeInUp tamil-content" data-wow-delay="0.1s">
+                    <div class="text-center  fadeInUp tamil-content">
                         <h1 class="section-title text-dark mb-5">புகைப்படம்</h1>
                     </div>
                 </div>
@@ -1270,7 +1242,7 @@
                         while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                             <div class="item">
-                                <img class="p-4" src="<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['attributes']) ?>" loading="lazy">
+                                <img class="rounded p-3" src="<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['attributes']) ?>" loading="lazy" width="300" height="300">
                             </div>
                     <?php
                         }
@@ -1288,10 +1260,10 @@
                     <a class="btn btn-primary text-center" style="padding: 10px 15px; border-radius: 20px; font-size: 17px;" href="gallery.php">View More</a>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Testimonial End -->
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer   wow fadeIn" data-wow-delay="0.1s">
+        <footer class="container-fluid bg-dark text-light footer    fadeIn">
             <div class="container ">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
@@ -1316,7 +1288,7 @@
                                     <input type="password" class="form-control" id="upass" placeholder="Enter password" name="upass" required>
                                 </div>
                                 <div class="pt-3">
-                                <button type="submit" class="btn btn-primary text-center rounded-pill">Login</button>
+                                    <button type="submit" class="btn btn-primary text-center rounded-pill">Login</button>
                                 </div>
                             </form>
                         </div>
@@ -1349,7 +1321,6 @@
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             <p>&copy; <a href="#">pkmcatering</a>, All Right Reserved.
-
                                 Developed By <a class="" href="https://nexglimpse.in"><b>Nexglimpse</b></a></p><br><br>
                             </a>
                         </div>
@@ -1357,11 +1328,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
         <!-- Footer End -->
         <!-- Back to Top -->
-        <a href="#indexpage" class="btn btn-lg btn-primary btn-lg-circle2 back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+        <a href="#indexpage" class="btn btn-lg btn-primary btn-lg-circle2 back-to-top">
+            <span class="visually-hidden">Back to top</span>
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </a>
+    </main>
 
     <!-- jQuery (Required for Owl Carousel) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1370,10 +1344,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Additional Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/counterup2@1.0.4/dist/index.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
 
     <!-- Tempus Dominus (Date Time Picker) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -1385,8 +1357,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -1404,6 +1375,16 @@
                 }]
             });
             lightbox.open();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Using passive event listener for scroll event
+            window.addEventListener('scroll', function() {
+                // Your scroll event handler code here
+            }, {
+                passive: true
+            });
         });
     </script>
     <script>
@@ -1445,7 +1426,7 @@
                 $dots.empty(); // Clear existing dots
 
                 for (var i = 0; i < totalPages; i++) {
-                    $dots.append('<button role="button" class="owl-dot"></button>');
+                    $dots.append('<button role="button" class="owl-dot" aria-label="Slide 1"></button>');
                 }
 
                 // Highlight the active dot
@@ -1485,7 +1466,7 @@
         function downloadPDF() {
             // Create an anchor element
             var link = document.createElement('a');
-            link.href = 'https://drive.google.com/uc?export=download&id=12BRtGWQ8LG9OWWJybh6quwqSD9VRXK6R'; // Direct download link
+            link.href = 'https://drive.google.com/uc?export=download&id=1APX_v1jSUbOdOC5AbByHbNJL-DZ0NtFZ'; // Direct download link
             link.download = 'pkmcateringcatalog.pdf'; // Desired name for the downloaded file
 
             // Append the anchor element to the document body
@@ -1496,6 +1477,29 @@
 
             // Remove the anchor element from the document body
             document.body.removeChild(link);
+        }
+    </script>
+    <script>
+        function toggleLanguage() {
+            var selectedLanguage = document.getElementById("languageSelector").value;
+            var englishContent = document.querySelectorAll('.english-content');
+            var tamilContent = document.querySelectorAll('.tamil-content');
+
+            if (selectedLanguage === 'english') {
+                for (var i = 0; i < englishContent.length; i++) {
+                    englishContent[i].style.display = 'block';
+                }
+                for (var i = 0; i < tamilContent.length; i++) {
+                    tamilContent[i].style.display = 'none';
+                }
+            } else if (selectedLanguage === 'tamil') {
+                for (var i = 0; i < englishContent.length; i++) {
+                    englishContent[i].style.display = 'none';
+                }
+                for (var i = 0; i < tamilContent.length; i++) {
+                    tamilContent[i].style.display = 'block';
+                }
+            }
         }
     </script>
     <script>

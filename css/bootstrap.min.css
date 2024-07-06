@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -2431,7 +2426,7 @@ textarea.form-control-lg {
     line-height: 1.5;
     color: #666565;
     background-color: #fff;
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg");
+    background-image: url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif");
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
@@ -2527,17 +2522,17 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif")
 }
 
 .form-check-input:checked[type="radio"] {
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif")
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
     background-color: #FEA116;
     border-color: #FEA116;
-    background-image: url("https://raw.githubusercontent.com/santhosh6565/catering-service/main/uploads/food1-min.jpg")
+    background-image: url("https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/bg-background.avif")
 }
 
 .form-check-input:disabled {

@@ -8,8 +8,8 @@
 <meta name="description" content="Book now with P.K.M. Mayakootha Iyengar Catering Services to experience quality, tasty, and healthy food for your event. We have been delivering exceptional catering services since 1954.">
 
 <!-- Favicon -->
-<link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20favicon-32x32.png" rel="icon" type="image/x-icon">
-<link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20apple-touch-icon.png" rel="apple-touch-icon">
+<link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/favicon-32x32%20pkm%20.avif" rel="icon" type="image/x-icon">
+<link href="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/apple-touch-icon.avif" rel="apple-touch-icon">
 
 <!-- Google Web Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,9 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"> -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> -->
 
 <!-- Customized Bootstrap Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -102,31 +102,30 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="#indexpage" class="navbar-brand p-1">
-                    <img src="img/pkm logo.png" alt="PKM catering logo" style="max-width: 90px; height: auto;" class="img-fluid logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <a href="#indexpage" class="navbar-brand p-1 pe-5">
+                    <img src="https://raw.githubusercontent.com/pkm1996/pkmcatering/main/uploads/pkm%20logo.png" alt="PKM catering logo" width="95" height="auto" style="max-width: 95px; height: auto;" class="img-fluid logo">
+                </a>                             
+                <span id="toggleLabel" class="visually-hidden">Toggle navigation</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-labelledby="toggleLabel">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.php" class="nav-item nav-link active">Home</a>
-                        <a href="index.php#service" class="nav-item nav-link">Service</a>
-                        <a href="index.php#about" class="nav-item nav-link">About</a>
-                        <a href="index.php#menu" class="nav-item nav-link">Menu</a>
-                        <a href="index.php#contact" class="nav-item nav-link">Contact</a>
-                        <a href="gallery.php" class="nav-item nav-link">Gallery</a>
+                        <a href="index.php" class="nav-item nav-link" accesskey="1">Home</a>
+                        <a href="index.php#service" class="nav-item nav-link" accesskey="2">Service</a>
+                        <a href="index.php#about" class="nav-item nav-link" accesskey="3">About</a>
+                        <a href="index.php#menu" class="nav-item nav-link" accesskey="4">Menu</a>
+                        <a href="index.php#contact" class="nav-item nav-link" accesskey="5">Contact</a>
+                        <a href="gallery.php" class="nav-item nav-link" accesskey="6">Gallery</a>
                     </div>
                 </div>
             </nav>
-
-            <div class="container-fluid py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
+            <div id="booklanding" class="container-fluid py-5 bg-dark hero-header mb-5" style="min-height: 100px;">
+                <div class="container text-center my-5 p-3">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Book Now</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
                             <li class="breadcrumb-item text-white active" aria-current="page">Book Now</li>
                         </ol>
                     </nav>
@@ -141,7 +140,7 @@
 <div class="container">
     <!-- <form id="form" action="insert.php" method="post" class="mt-5 container" onsubmit="return validateForm()"> -->
     <form action="insert.php" method="post" class="mt-5 container" onsubmit="return validateAndSendEmail()">
-        <h4>Personal Details:</h4>
+        <h3 class="h4">Personal Details:</h3>
         <div class="row m-3">
             <div class="col-md-6">
                 <label for="name" class="mx-3"><b>Your Name</b></label>
@@ -164,7 +163,7 @@
                 <div class="error-message text-danger m-3" id="cityError"></div>
             </div>
         </div>
-        <h4>Order Details:</h4>
+        <h3 class="h4">Order Details:</h3>
         <div class="row m-3">
             <div class="col-md-6">
                 <label for="sdate" class="mx-3"><b>Event Starting Date</b></label>
@@ -328,10 +327,13 @@
                                         <div class="col-sm-6">
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="மெது வடை"> <span>Medhu Vadai (மெது வடை)</span></li>
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="தேங்காய் சட்னி"> <span>Coconut Chutney (தேங்காய் சட்னி)</span></li>
+                                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="புதினா சட்னி"> <span>Pudina chutney (புதினா சட்னி)</span></li>
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="சாம்பார்"> <span>Sambaar (சாம்பார்)</span></li>
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="காபி"> <span>Coffee (காபி)</span></li>
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="டீ"> <span>Tea (டீ)</span></li>
                                             <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="பால்"> <span>Milk (பால்)</span></li>
+                                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Boost"> <span>Boost (பூஸ்ட்)</span></li>
+                                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="firdaymor[]" value="Horlicks"> <span>Horlicks (ஹார்லிக்ஸ்)</span></li>
                                         </div>
                                         
                                     </div>
@@ -923,7 +925,6 @@
         <div class="row m-3">
             <!-- long ones 1 -->
 
-
             <div class="col-sm-12 col-lg-4 mt-4 align-items-center justify-content-center">
                 <div class="dropdown">
                     <input type="button" class="btn btn-primary form-control dropdown-toggle" style="color: black;" value="புஷ்பம், மாலைகள் ஜானவாசம்"  data-bs-toggle="dropdown" >
@@ -1167,7 +1168,7 @@
         <!-- <button type="submit" class="btn btn-primary m-3">Submit</button> -->
         <div class="sub-btn text-center container mt-5">
             <!-- <input type="submit" class="btn px-5 py-3 btn-primary text-center rounded-pill" name="submit" value="Submit Order"> -->
-            <input type="submit" id="button" class="btn px-5 py-3 btn-primary text-center rounded-pill" name="submit" value="Submit Order">
+            <input type="submit" id="button" class="btn px-5 py-3 btn-primary text-center rounded-pill fw-semibold" name="submit" value="Submit Order">
         </div>
     </form>
 </div>
@@ -1179,11 +1180,11 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h4 class=" text-start text-primary  mb-4">Company</h4>
-                        <a class="btn btn-link" href="/index.php">Home</a>
-                        <a class="btn btn-link" href="/index.php#contact">Contact Us</a>
-                        <a class="btn btn-link" href="/index.php#about">About</a>
-                        <a class="btn btn-link" href="/index.php#menu">Menu</a>
+                        <h4 class=" text-start text-primary h3  mb-4">Company</h4>
+                        <a class="btn btn-link" href="index.php">Home</a>
+                        <a class="btn btn-link" href="index.php#contact">Contact Us</a>
+                        <a class="btn btn-link" href="index.php#about">About</a>
+                        <a class="btn btn-link" href="index.php#menu">Menu</a>
                         <a class="btn btn-link" href="book.html">Book Now</a>
                         <a class="btn btn-link" href="#" id="loginLink">Admin Login</a>
 
@@ -1243,7 +1244,10 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-circle2 back-to-top"><i class="bi bi-arrow-up"></i></a>      
+        <a href="#booklanding" class="btn btn-lg btn-primary btn-lg-circle2 back-to-top">
+            <span class="visually-hidden">Back to top</span>
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </a>      
     </div>
 
         <script>
@@ -1265,17 +1269,18 @@ window.addEventListener('click', function(event) {
         </script>
         
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">emailjs.init('DwgZ4Gy7FmuowMVTp')</script>
    
      
@@ -1427,7 +1432,6 @@ function validateHallDetails() {
 }
 
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function checkAll(source) {
             $(source).closest('.dropdown-menu').find('input[type="checkbox"]').prop('checked', source.checked);
